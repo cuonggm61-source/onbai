@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thi Thử: Phương Trình Mặt Phẳng (30 Câu)</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f0f2f5; color: #333; max-width: 900px; margin: 0 auto; padding: 20px; }
+        
+        /* Màn hình Bắt đầu */
+        #start-screen {
+            background: white; padding: 40px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            text-align: center; margin-top: 50px;
+        }
+        .start-btn {
+            background-color: #27ae60; color: white; border: none; padding: 15px 40px; 
+            border-radius: 30px; font-size: 1.2em; font-weight: bold; cursor: pointer; 
+            transition: transform 0.2s, background 0.2s; margin-top: 20px;
+        }
+        .start-btn:hover { background-color: #2ecc71; transform: scale(1.05); }
+
+        /* Thanh điều khiển (ẩn lúc đầu) */
+        .sticky-header {
+            display: none; /* Ẩn mặc định */
+            position: fixed; top: 0; left: 0; width: 100%; background: #2c3e50; color: white;
+            padding: 15px 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            justify-content: center; align-items: center; gap: 20px;
+        }
+        .timer-box { font-size: 1.5em; font-weight: bold; color: #f1c40f; }
+        .submit-btn { background-color: #e74c3c; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-size: 1em; font-weight: bold; }
+        .submit-btn:hover { background-color: #c0392b; }
+
+        /* Khung câu hỏi (ẩn lúc đầu) */
+        .quiz-container { 
+            display: none; /* Ẩn mặc định */
+            background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin-top: 60px; 
+        }
+        
+        h1 { text-align: center; color: #2c3e50; margin-bottom: 30px; }
+        .question-card { margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 20px; }
+        .question-title { font-weight: 600; font-size: 1.1em; margin-bottom: 15px; color: #2980b9; }
+        .options { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+        @media (max-width: 600px) { .options { grid-template-columns: 1fr; } }
+        
+        .option-label { 
+            display: block; padding: 10px 15px; border: 1px solid #ddd; border-radius: 5px; cursor: pointer; transition: 0.2s; 
+        }
+        .option-label:hover { background-color: #f8f9fa; }
+        input[type="radio"] { margin-right: 10px; }
+
+        /* Các class màu sắc (dùng nội bộ khi chấm điểm nhưng bị che bởi modal) */
+        .correct-answer { background-color: #d4edda !important; border-color: #28a745 !important; color: #155724; }
+        .wrong-answer { background-color: #f8d7da !important; border-color: #dc3545 !important; color: #721c24; }
+        
+        .explanation { 
+            display: none; margin-top: 15px; padding: 15px; background-color: #e8f4fd; 
+            border-left: 5px solid #3498db; border-radius: 4px; font-size: 0.95em; 
+        }
+
+        /* Modal Kết quả */
+        .result-modal {
+            display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+            background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 30px rgba(0,0,0,0.3);
+            text-align: center; z-index: 2000; width: 80%; max-width: 400px;
+        }
+        /* Overlay ngăn chặn thao tác bên dưới */
+        .overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 1500; }
+        
+        .score-display { font-size: 3em; color: #2c3e50; font-weight: bold; display: block; margin: 20px 0; }
+        .info-list { text-align: left; margin: 20px auto; max-width: 400px; line-height: 1.8; }
+    </style>
+</head>
+<body>
+
+    <div id="start-screen">
+        <h1 style="font-size: 2em;">Ôn Tập: Phương Trình Mặt Phẳng</h1>
+        <div class="info-list">
+            <p>📋 <strong>Số lượng:</strong> 30 câu hỏi trắc nghiệm.</p>
+            <p>⏰ <strong>Thời gian:</strong> 20 phút.</p>
+            <p>📚 <strong>Nội dung:</strong> Lý thuyết và bài tập về phương trình mặt phẳng trong không gian Oxyz.</p>
+            <p>💡 <strong>Lưu ý:</strong> Hết giờ hệ thống sẽ tự động nộp bài.</p>
+        </div>
+        <button class="start-btn" onclick="beginQuiz()">BẮT ĐẦU LÀM BÀI</button>
+    </div>
+
+    <div class="sticky-header" id="sticky-header">
+        <div>Thời gian: <span id="timer" class="timer-box">20:00</span></div>
+        <button class="submit-btn" onclick="submitQuiz()">NỘP BÀI</button>
+    </div>
+
+    <div class="quiz-container" id="quiz-container">
+        <h1>Đề Thi Thử</h1>
+        <div id="quiz-content"></div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+    <div class="result-modal" id="resultModal">
+        <h2>Kết Quả Bài Thi</h2>
+        <span class="score-display" id="final-score">0/30</span>
+        <p id="score-message"></p>
+        <button class="submit-btn" style="background:#34495e; margin-top:20px; width: 100%;" onclick="location.reload()">Thi lại</button>
+    </div>
+
+    <script>
+        const quizData = [
+            // --- PHẦN LÝ THUYẾT & CƠ BẢN (1-10) ---
+            {
+                q: "Vectơ pháp tuyến \\(\\vec{n}\\) của mặt phẳng (P) thỏa mãn điều kiện nào?",
+                a: ["\\(\\vec{n} = \\vec{0}\\) và vuông góc với (P)", "\\(\\vec{n} \\neq \\vec{0}\\) và vuông góc với (P)", "\\(\\vec{n} \\neq \\vec{0}\\) và song song với (P)", "\\(\\vec{n} = \\vec{0}\\) và song song với (P)"],
+                correct: 1,
+                explain: "Định nghĩa: Vectơ pháp tuyến phải khác vectơ-không và có giá vuông góc với mặt phẳng."
+            },
+            {
+                q: "Nếu mặt phẳng (\\(\\alpha\\)) có cặp vectơ chỉ phương \\(\\vec{a}, \\vec{b}\\) thì vectơ pháp tuyến \\(\\vec{n}\\) được tính bằng công thức:",
+                a: ["\\(\\vec{n} = \\vec{a} . \\vec{b}\\)", "\\(\\vec{n} = \\vec{a} + \\vec{b}\\)", "\\(\\vec{n} = [\\vec{a}, \\vec{b}]\\)", "\\(\\vec{n} = |[\\vec{a}, \\vec{b}]|\\)"],
+                correct: 2,
+                explain: "Vectơ pháp tuyến bằng tích có hướng của cặp vectơ chỉ phương: \\(\\vec{n} = [\\vec{a}, \\vec{b}]\\)."
+            },
+            {
+                q: "Phương trình tổng quát của mặt phẳng đi qua \\(M(x_0; y_0; z_0)\\) và có VTPT \\(\\vec{n}=(A;B;C)\\) là:",
+                a: ["\\(A(x-x_0) + B(y-y_0) + C(z-z_0) = 0\\)", "\\(A(x+x_0) + B(y+y_0) + C(z+z_0) = 0\\)", "\\(\\frac{x-x_0}{A} = \\frac{y-y_0}{B} = \\frac{z-z_0}{C}\\)", "\\(Ax + By + Cz + D = 0\\) với \\(D = Ax_0 + By_0 + Cz_0\\)"],
+                correct: 0,
+                explain: "Công thức chuẩn: \\(A(x-x_0) + B(y-y_0) + C(z-z_0) = 0\\)."
+            },
+            {
+                q: "Mặt phẳng (P): \\(3x - 2y + z - 1 = 0\\) có một vectơ pháp tuyến là:",
+                a: ["\\((3; 2; 1)\\)", "\\((3; -2; -1)\\)", "\\((3; -2; 1)\\)", "\\((-3; 2; 1)\\)"],
+                correct: 2,
+                explain: "Hệ số của x, y, z lần lượt là 3, -2, 1. Vậy \\(\\vec{n}=(3; -2; 1)\\)."
+            },
+            {
+                q: "Điểm nào sau đây thuộc mặt phẳng (P): \\(x - 2y + z - 5 = 0\\)?",
+                a: ["M(1; 1; 6)", "N(5; 0; 0)", "P(0; 0; -5)", "Q(2; -1; 5)"],
+                correct: 0,
+                explain: "Thay M(1;1;6): \\(1 - 2(1) + 6 - 5 = 0\\) (Đúng). Các điểm khác thay vào không thỏa mãn."
+            },
+            {
+                q: "Phương trình mặt phẳng đi qua 3 điểm A(a;0;0), B(0;b;0), C(0;0;c) với abc ≠ 0 là:",
+                a: ["\\(\\frac{x}{a} + \\frac{y}{b} + \\frac{z}{c} = 0\\)", "\\(\\frac{x}{a} + \\frac{y}{b} + \\frac{z}{c} = 1\\)", "\\(ax + by + cz = 1\\)", "\\(x + y + z = 1\\)"],
+                correct: 1,
+                explain: "Đây là phương trình mặt phẳng theo đoạn chắn."
+            },
+            {
+                q: "Khoảng cách từ điểm \\(M(x_0; y_0; z_0)\\) đến mặt phẳng (\\(\\alpha\\)): \\(Ax + By + Cz + D = 0\\) là:",
+                a: ["\\(\\frac{|Ax_0 + By_0 + Cz_0 + D|}{\\sqrt{A+B+C}}\\)", "\\(\\frac{Ax_0 + By_0 + Cz_0 + D}{\\sqrt{A^2+B^2+C^2}}\\)", "\\(\\frac{|Ax_0 + By_0 + Cz_0 + D|}{\\sqrt{A^2+B^2+C^2}}\\)", "\\(\\sqrt{A^2+B^2+C^2}\\)"],
+                correct: 2,
+                explain: "Công thức tính khoảng cách từ điểm đến mặt phẳng."
+            },
+            {
+                q: "Mặt phẳng (P) song song với mặt phẳng (Q): \\(2x - y + 3z - 1 = 0\\) sẽ có VTPT là:",
+                a: ["\\((2; 1; 3)\\)", "\\((2; -1; -3)\\)", "\\((-2; 1; -3)\\)", "\\((4; -2; 6)\\)"],
+                correct: 3,
+                explain: "Hai MP song song có cùng VTPT hoặc VTPT tỉ lệ. \\((4; -2; 6) = 2(2; -1; 3)\\)."
+            },
+            {
+                q: "Mặt phẳng chứa trục Ox có phương trình dạng:",
+                a: ["Ax + By + D = 0", "By + Cz = 0", "Ax + Cz = 0", "z = 0"],
+                correct: 1,
+                explain: "Mặt phẳng chứa trục Ox thì phương trình không có x và hằng số tự do D=0. Dạng: By + Cz = 0."
+            },
+            {
+                q: "Điều kiện để hai mặt phẳng vuông góc là:",
+                a: ["Tích có hướng của 2 VTPT bằng \\(\\vec{0}\\)", "Tích vô hướng của 2 VTPT bằng 0", "Hai VTPT tỉ lệ với nhau", "Hai VTPT bằng nhau"],
+                correct: 1,
+                explain: "Hai mặt phẳng vuông góc khi và chỉ khi hai vectơ pháp tuyến của chúng vuông góc (Tích vô hướng bằng 0)."
+            },
+
+            // --- PHẦN BÀI TẬP (11-25) ---
+            {
+                q: "Viết phương trình mặt phẳng đi qua M(2; 1; -3) và có VTPT \\(\\vec{n}=(3; -2; 6)\\).",
+                a: ["\\(3x - 2y + 6z - 14 = 0\\)", "\\(3x - 2y + 6z + 14 = 0\\)", "\\(3x + 2y + 6z + 14 = 0\\)", "\\(3x - 2y + 6z - 18 = 0\\)"],
+                correct: 1,
+                explain: "\\(3(x-2) - 2(y-1) + 6(z+3) = 0 \\Leftrightarrow 3x - 6 - 2y + 2 + 6z + 18 = 0 \\Leftrightarrow 3x - 2y + 6z + 14 = 0\\)."
+            },
+            {
+                q: "Viết phương trình mặt phẳng đi qua A(1; 0; -2), B(-1; -1; 3) và vuông góc với (P): \\(2x - y + 2z + 11 = 0\\).",
+                a: ["\\(3x + 14y + 4z + 5 = 0\\)", "\\(3x + 14y + 4z - 5 = 0\\)", "\\(2x - y + 2z + 2 = 0\\)", "\\(3x - 14y + 4z + 5 = 0\\)"],
+                correct: 0,
+                explain: "VTPT của (Q) là tích có hướng của \\(\\vec{AB}=(-2;-1;5)\\) và \\(\\vec{n_P}=(2;-1;2)\\). \\(\\vec{n_Q} = [\\vec{AB}, \\vec{n_P}] = (3; 14; 4)\\). PT: \\(3(x-1) + 14y + 4(z+2) = 0 \\Leftrightarrow 3x + 14y + 4z + 5 = 0\\)."
+            },
+            {
+                q: "Phương trình mặt phẳng trung trực của đoạn AB với A(2; 1; 1) và B(2; -1; 3).",
+                a: ["\\(y - z + 2 = 0\\)", "\\(y + z - 2 = 0\\)", "\\(x + y - z = 0\\)", "\\(-y + z - 2 = 0\\)"],
+                correct: 3,
+                explain: "Trung điểm I(2; 0; 2). VTPT \\(\\vec{AB} = (0; -2; 2)\\) chọn \\((0; -1; 1)\\). PT: \\(0(x-2) - 1(y-0) + 1(z-2) = 0 \\Leftrightarrow -y + z - 2 = 0\\)."
+            },
+            {
+                q: "Viết phương trình mặt phẳng đi qua M(1; 2; -1) và vuông góc với trục Ox.",
+                a: ["x - 1 = 0", "y - 2 = 0", "z + 1 = 0", "x + y + z = 0"],
+                correct: 0,
+                explain: "Vuông góc với Ox nên VTPT là \\(\\vec{i}=(1;0;0)\\). PT: \\(1(x-1) + 0 + 0 = 0 \\Leftrightarrow x - 1 = 0\\)."
+            },
+            {
+                q: "Viết phương trình mặt phẳng (P) đi qua A(2; -1; 3) và song song với (Q): \\(x + 2y - z + 5 = 0\\).",
+                a: ["\\(x + 2y - z + 3 = 0\\)", "\\(x + 2y - z - 3 = 0\\)", "\\(x + 2y - z + 5 = 0\\)", "\\(2x + 4y - 2z - 6 = 0\\)"],
+                correct: 0,
+                explain: "Song song (Q) nên dạng \\(x + 2y - z + D = 0\\) (D≠5). Thay A vào: \\(2 + 2(-1) - 3 + D = 0 \\Leftrightarrow -3 + D = 0 \\Leftrightarrow D = 3\\)."
+            },
+            {
+                q: "Cho 3 điểm A(2;0;0), B(0;3;0), C(0;0;6). Phương trình mặt phẳng (ABC) là:",
+                a: ["\\(\\frac{x}{2} + \\frac{y}{3} + \\frac{z}{6} = 0\\)", "\\(3x + 2y + z - 6 = 0\\)", "\\(3x + 2y + z - 1 = 0\\)", "\\(\\frac{x}{3} + \\frac{y}{2} + \\frac{z}{6} = 1\\)"],
+                correct: 1,
+                explain: "PT đoạn chắn: \\(\\frac{x}{2} + \\frac{y}{3} + \\frac{z}{6} = 1\\). Quy đồng mẫu 6: \\(3x + 2y + z = 6 \\Leftrightarrow 3x + 2y + z - 6 = 0\\)."
+            },
+            {
+                q: "Viết phương trình mặt phẳng đi qua A(1; 2; 3) và chứa trục Oz.",
+                a: ["2x - y = 0", "x - 2y = 0", "2x + y = 0", "3x - z = 0"],
+                correct: 0,
+                explain: "Chứa Oz nên đi qua O(0;0;0) và nhận \\(\\vec{k}=(0;0;1)\\) làm VTCP. VTCP thứ 2 là \\(\\vec{OA}=(1;2;3)\\). \\(\\vec{n} = [\\vec{OA}, \\vec{k}] = (2; -1; 0)\\). PT: \\(2x - y = 0\\)."
+            },
+            {
+                q: "Cho A(1; 1; 1), B(0; 4; 0), C(2; 2; 0). Phương trình mặt phẳng (ABC) là:",
+                a: ["x + y + 2z - 4 = 0", "x - y + 2z + 4 = 0", "x + y - 2z - 4 = 0", "2x + 2y + z - 4 = 0"],
+                correct: 0,
+                explain: "\\(\\vec{AB}=(-1;3;-1)\\), \\(\\vec{AC}=(1;1;-1)\\). \\(\\vec{n}=[\\vec{AB}, \\vec{AC}] = (-2; -2; -4)\\), chọn \\((1; 1; 2)\\). Đi qua B(0;4;0): \\(1(x) + 1(y-4) + 2(z) = 0 \\Leftrightarrow x + y + 2z - 4 = 0\\)."
+            },
+            {
+                q: "Mặt phẳng (P) đi qua M(1; -1; 1), N(2; 1; 2) và song song với trục Oz có phương trình:",
+                a: ["2x - y - 3 = 0", "x - 2y - 3 = 0", "2x + y - 3 = 0", "x + 2y + z = 0"],
+                correct: 0,
+                explain: "\\(\\vec{MN}=(1;2;1)\\). Song song Oz nên VTCP \\(\\vec{k}=(0;0;1)\\). \\(\\vec{n}=[\\vec{MN}, \\vec{k}] = (2; -1; 0)\\). PT qua M: \\(2(x-1) - 1(y+1) = 0 \\Leftrightarrow 2x - y - 3 = 0\\)."
+            },
+            {
+                q: "Tìm m để hai mặt phẳng (P): \\(mx + (m-1)y + z - 10 = 0\\) và (Q): \\(2x + y - 2z + 3 = 0\\) vuông góc.",
+                a: ["m = 1", "m = -1", "m = 2", "m = -2"],
+                correct: 0,
+                explain: "Vuông góc \\(\\Leftrightarrow \\vec{n_P} . \\vec{n_Q} = 0 \\Leftrightarrow 2m + 1(m-1) - 2 = 0 \\Leftrightarrow 3m - 3 = 0 \\Leftrightarrow m = 1\\)."
+            },
+            
+            // --- PHẦN VẬN DỤNG & NÂNG CAO (26-30) ---
+            {
+                q: "Cho A(0; 1; 0), B(2; 3; 1) và (Q): \\(x + 2y - z = 0\\). Phương trình mặt phẳng (P) qua A, B và vuông góc với (Q) là:",
+                a: ["4x - 3y - 2z + 3 = 0", "4x + 3y - 2z + 3 = 0", "x + y + z - 1 = 0", "2x - 3y - z + 3 = 0"],
+                correct: 0,
+                explain: "\\(\\vec{AB}=(2;2;1)\\), \\(\\vec{n_Q}=(1;2;-1)\\). \\(\\vec{n_P}=[\\vec{AB}, \\vec{n_Q}]=(-4;3;2)\\). Chọn VTPT \\((4;-3;-2)\\). Qua A(0;1;0): \\(4x - 3(y-1) - 2z = 0 \\Leftrightarrow 4x - 3y - 2z + 3 = 0\\)."
+            },
+            {
+                q: "Mặt phẳng (P): \\(2x - y + 2z - 1 = 0\\). Mặt phẳng (Q) song song với (P) và cách (P) một khoảng bằng 3 có phương trình:",
+                a: ["\\(2x - y + 2z - 10 = 0\\) hoặc \\(2x - y + 2z + 8 = 0\\)", "\\(2x - y + 2z + 10 = 0\\)", "\\(2x - y + 2z - 8 = 0\\)", "\\(2x - y + 2z + 5 = 0\\)"],
+                correct: 0,
+                explain: "(Q) dạng \\(2x-y+2z+D=0\\). Lấy \\(M(0;-1;0) \\in (P)\\). \\(d(M, Q) = \\frac{|0 - (-1) + 0 + D|}{\\sqrt{4+1+4}} = 3 \\Leftrightarrow |1+D|=9\\). Suy ra D=8 hoặc D=-10."
+            },
+            {
+                q: "Viết phương trình mặt phẳng (P) chứa giao tuyến của 2 mặt phẳng (\\(\\alpha\\)): 3x - y + z - 2 = 0 và (\\(\\beta\\)): x + 4y - 5 = 0, đồng thời song song với (\\(\\gamma\\)): 2x + 21y - z + 7 = 0.",
+                a: ["2x + 21y - z - 23 = 0", "2x + 21y - z + 23 = 0", "x - y + z + 1 = 0", "Không tồn tại"],
+                correct: 0,
+                explain: "Dạng chùm MP: \\(m(3x-y+z-2) + (x+4y-5) = 0\\). Tìm m để VTPT tỉ lệ với (2;21;-1). Giải ra \\(m=2/3\\) hoặc tìm 2 điểm chung rồi viết PT. Kết quả: \\(2x + 21y - z - 23 = 0\\)."
+            },
+            {
+                q: "Cho điểm M(1; 2; 3). Gọi A, B, C lần lượt là hình chiếu của M trên Ox, Oy, Oz. Phương trình mặt phẳng (ABC) là:",
+                a: ["\\(\\frac{x}{1} + \\frac{y}{2} + \\frac{z}{3} = 1\\)", "\\(x + y + z = 1\\)", "\\(6x + 3y + 2z - 6 = 0\\)", "\\(2x + y + 3z = 6\\)"],
+                correct: 0,
+                explain: "Hình chiếu: A(1;0;0), B(0;2;0), C(0;0;3). Phương trình đoạn chắn: \\(\\frac{x}{1} + \\frac{y}{2} + \\frac{z}{3} = 1\\)."
+            },
+            {
+                q: "Tìm m để khoảng cách từ M(1; 2; 3) đến mặt phẳng (P): \\(2x - 2y + z + m = 0\\) bằng 2.",
+                a: ["m = -7 hoặc m = 5", "m = 7 hoặc m = -5", "m = 1", "m = 4"],
+                correct: 0,
+                explain: "\\(d = \\frac{|2(1) - 2(2) + 3 + m|}{\\sqrt{4+4+1}} = 2 \\Leftrightarrow \\frac{|m+1|}{3} = 2 \\Leftrightarrow |m+1| = 6 \\Leftrightarrow m = 5 \\cup m = -7\\)."
+            }
+        ];
+
+        // --- Logic Xử Lý ---
+        let timeRemaining = 20 * 60; // 20 phút
+        let timerInterval;
+
+        function beginQuiz() {
+            document.getElementById('start-screen').style.display = 'none';
+            document.getElementById('sticky-header').style.display = 'flex';
+            document.getElementById('quiz-container').style.display = 'block';
+            
+            renderQuestions();
+            startTimer();
+        }
+
+        function startTimer() {
+            const timerElement = document.getElementById("timer");
+            timerInterval = setInterval(() => {
+                timeRemaining--;
+                let minutes = Math.floor(timeRemaining / 60);
+                let seconds = timeRemaining % 60;
+                timerElement.textContent = `${minutes < 10 ? '0' + minutes : minutes}:${seconds < 10 ? '0' + seconds : seconds}`;
+                
+                if (timeRemaining <= 0) {
+                    clearInterval(timerInterval);
+                    submitQuiz();
+                    alert("Đã hết thời gian làm bài!");
+                }
+            }, 1000);
+        }
+
+        function renderQuestions() {
+            const container = document.getElementById("quiz-content");
+            container.innerHTML = "";
+            quizData.forEach((item, index) => {
+                const html = `
+                    <div class="question-card" id="q${index}">
+                        <div class="question-title">Câu ${index + 1}: ${item.q}</div>
+                        <div class="options">
+                            ${item.a.map((opt, i) => `
+                                <label class="option-label">
+                                    <input type="radio" name="q${index}" value="${i}">
+                                    <span>${opt}</span>
+                                </label>
+                            `).join('')}
+                        </div>
+                        <div class="explanation" id="explain${index}">
+                            <strong>Lời giải:</strong> ${item.explain}
+                        </div>
+                    </div>
+                `;
+                container.insertAdjacentHTML('beforeend', html);
+            });
+            MathJax.typesetPromise();
+        }
+
+        function submitQuiz() {
+            clearInterval(timerInterval);
+            let score = 0;
+            const total = quizData.length;
+
+            quizData.forEach((item, index) => {
+                const inputs = document.getElementsByName(`q${index}`);
+                const explainDiv = document.getElementById(`explain${index}`);
+                const labels = document.querySelectorAll(`#q${index} .option-label`);
+                
+                let selected = -1;
+                inputs.forEach(input => {
+                    input.disabled = true;
+                    if (input.checked) selected = parseInt(input.value);
+                });
+
+                if (selected === item.correct) {
+                    score++;
+                    // Không hiện màu đúng ở đây vì overlay che mất rồi, và người dùng không xem được
+                } else {
+                    // Không hiện màu sai
+                }
+
+                // KHÔNG hiển thị giải thích
+                // explainDiv.style.display = "block"; 
+            });
+
+            document.getElementById("final-score").textContent = `${score}/${total}`;
+            document.getElementById("score-message").textContent = score >= 24 ? "Xuất sắc! Bạn nắm rất chắc kiến thức." : score >= 15 ? "Khá tốt, hãy ôn tập thêm các câu sai." : "Cần cố gắng nhiều hơn nhé!";
+            document.getElementById("overlay").style.display = "block";
+            document.getElementById("resultModal").style.display = "block";
+            
+            MathJax.typesetPromise();
+        }
+
+        function closeModal() {
+            // Hàm này không còn nút gọi, nhưng giữ lại để tránh lỗi nếu có reference
+            document.getElementById("overlay").style.display = "none";
+            document.getElementById("resultModal").style.display = "none";
+        }
+    </script>
+</body>
+</html>
