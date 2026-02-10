@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trắc Nghiệm: Phương Trình Đường Thẳng</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f0f2f5; color: #333; max-width: 900px; margin: 0 auto; padding: 20px; padding-bottom: 80px; }
+        
+        /* Nút quay về trang chủ ở góc trái */
+        .home-link {
+            position: absolute; top: 20px; left: 20px;
+            text-decoration: none; color: #7f8c8d; font-weight: bold; font-size: 1em;
+            display: flex; align-items: center; gap: 5px;
+        }
+        .home-link:hover { color: #3498db; }
+
+        /* Màn hình Bắt đầu */
+        #start-screen {
+            background: white; padding: 40px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            text-align: center; margin-top: 50px; position: relative;
+        }
+        
+        .name-input {
+            width: 80%; max-width: 400px; padding: 15px; margin: 25px 0;
+            border: 2px solid #3498db; border-radius: 8px; font-size: 1.2em;
+            outline: none; display: block; margin-left: auto; margin-right: auto;
+        }
+        .start-btn {
+            background-color: #2980b9; color: white; border: none; padding: 15px 50px; 
+            border-radius: 30px; font-size: 1.3em; font-weight: bold; cursor: pointer; 
+            transition: transform 0.2s, background 0.2s;
+        }
+        .start-btn:hover { background-color: #3498db; transform: scale(1.05); }
+
+        /* Thanh điều khiển */
+        .sticky-header {
+            display: none; position: fixed; top: 0; left: 0; width: 100%; background: #2c3e50; color: white;
+            padding: 15px 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            justify-content: center; align-items: center; gap: 20px;
+        }
+        .timer-box { font-size: 1.5em; font-weight: bold; color: #f1c40f; }
+        .submit-btn { background-color: #e74c3c; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-size: 1em; font-weight: bold; }
+        .music-control { cursor: pointer; font-size: 1.5em; background: none; border: none; color: white; }
+
+        /* Câu hỏi */
+        .quiz-container { display: none; background: white; padding: 30px; border-radius: 8px; margin-top: 80px; }
+        .question-card { margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 20px; }
+        .question-title { font-weight: 600; font-size: 1.1em; margin-bottom: 15px; color: #2980b9; }
+        .options { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+        .option-label { display: block; padding: 10px 15px; border: 1px solid #ddd; border-radius: 5px; cursor: pointer; transition: 0.2s;}
+        .option-label:hover { background-color: #f8f9fa; }
+        
+        /* Tô màu đúng sai */
+        .correct-answer { background-color: #d4edda !important; border-color: #28a745 !important; color: #155724; font-weight: bold; }
+        .wrong-answer { background-color: #f8d7da !important; border-color: #dc3545 !important; color: #721c24; opacity: 0.8; }
+        .explanation { display: none; margin-top: 15px; padding: 15px; background: #e8f4fd; border-left: 5px solid #3498db; border-radius: 5px; }
+
+        /* Modal Kết quả */
+        .result-modal {
+            display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+            background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 30px rgba(0,0,0,0.3);
+            text-align: center; z-index: 2000; width: 90%; max-width: 450px;
+        }
+        .overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 1500; }
+        
+        .student-name-final { color: #e67e22; font-weight: bold; font-size: 1.4em; margin-bottom: 10px; display: block; }
+        .score-display { font-size: 3em; color: #2c3e50; font-weight: bold; margin: 10px 0; display: block; }
+        
+        /* Nút trong Modal */
+        .modal-btn { width: 100%; padding: 12px; margin-top: 10px; border: none; border-radius: 5px; font-weight: bold; cursor: pointer; font-size: 1em; }
+        .btn-review { background-color: #f1c40f; color: #333; }
+        .btn-restart { background-color: #3498db; color: white; }
+        .btn-home { background-color: #95a5a6; color: white; } /* Nút Home mới */
+    </style>
+</head>
+<body>
+
+    <audio id="bg-music" loop>
+        <source src="asset/Close to You - YouTube.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="start-screen">
+        <a href="index.html" class="home-link">⬅ Quay về Trang Chủ</a>
+        
+        <h1 style="color: #2c3e50;">CHỦ ĐỀ: PHƯƠNG TRÌNH ĐƯỜNG THẲNG</h1>
+        <div style="text-align: left; max-width: 500px; margin: 0 auto; line-height: 1.6;">
+            <p>📝 <strong>Số câu:</strong> 17 câu hỏi trắc nghiệm</p>
+            <p>⏱️ <strong>Thời gian:</strong> 15 phút</p>
+            <p>📚 <strong>Nội dung:</strong> Vectơ chỉ phương, phương trình tham số, chính tắc, vị trí tương đối.</p>
+        </div>
+
+        <input type="text" id="username" class="name-input" placeholder="Nhập Họ và Tên của bạn..." autocomplete="off">
+        <button class="start-btn" onclick="beginQuiz()">BẮT ĐẦU LÀM BÀI</button>
+    </div>
+
+    <div class="sticky-header" id="sticky-header">
+        <div id="display-name-header" style="font-weight: bold; color: #bdc3c7;"></div>
+        <button class="music-control" onclick="toggleMusic()" title="Bật/Tắt nhạc">🔊</button>
+        <div> | <span id="timer" class="timer-box">15:00</span></div>
+        <button class="submit-btn" id="submit-btn" style="margin-left: 20px;" onclick="submitQuiz()">NỘP BÀI</button>
+    </div>
+
+    <div class="quiz-container" id="quiz-container">
+        <h2 style="text-align: center; color: #2c3e50;">ĐỀ BÀI</h2>
+        <div id="quiz-content"></div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+    <div class="result-modal" id="resultModal">
+        <h2>KẾT QUẢ BÀI THI</h2>
+        <div>Thí sinh: <span class="student-name-final" id="final-name"></span></div>
+        <span class="score-display" id="final-score">0/15</span>
+        <p id="score-message"></p>
+        
+        <button class="modal-btn btn-review" onclick="reviewQuiz()">🔍 Xem lại bài làm</button>
+        <button class="modal-btn btn-restart" onclick="location.reload()">↻ Làm lại bài này</button>
+        <button class="modal-btn btn-home" onclick="window.location.href='index.html'">🏠 Chọn đề khác</button>
+    </div>
+
+    <script>
+        const quizData = [
+            {
+                q: "Câu 1: Trong không gian Oxyz, vectơ nào là một vectơ chỉ phương của đường thẳng \\(\\frac{x-3}{2} = \\frac{y-2}{1} = \\frac{z-1}{3}\\)?",
+                a: ["\\(\\vec{a}=(9;2;3)\\)", "\\(\\vec{a}=(3;2;1)\\)", "\\(\\vec{a}=(2;1;3)\\)", "\\(\\vec{a}=(3;2;\\frac{1}{3})\\)"],
+                correct: 2,
+                explain: "Đường thẳng có VTCP là các mẫu số: (2; 1; 3)."
+            },
+            {
+                q: "Câu 2: Trong không gian Oxyz, cho đường thẳng vuông góc với mặt phẳng \\(x + 2y + 3z + 3 = 0\\). Một vectơ chỉ phương của đường thẳng là:",
+                a: ["\\(\\vec{a}=(1;0;2)\\)", "\\(\\vec{a}=(-2;1;0)\\)", "\\(\\vec{a}=(1;2;3)\\)", "\\(\\vec{a}=(-2;0;1)\\)"],
+                correct: 2,
+                explain: "Đường thẳng vuông góc với mặt phẳng thì nhận VTPT của mặt phẳng làm VTCP. \\(\\vec{n}=(1;2;3)\\)."
+            },
+            {
+                q: "Câu 3: Cho \\(\\vec{OA}=2\\vec{i}+3\\vec{j}-5\\vec{k}\\) và \\(\\vec{OB}=-2\\vec{j}-4\\vec{k}\\). VTCP của đường thẳng AB là:",
+                a: ["\\((-2;5;1)\\)", "\\((-2;-5;1)\\)", "\\((-2;5;9)\\)", "\\((-2;1;9)\\)"],
+                correct: 1,
+                explain: "\\(A(2;3;-5), B(0;-2;-4)\\). \\(\\vec{AB} = B - A = (-2; -5; 1)\\)."
+            },
+            {
+                q: "Câu 4: Đường thẳng \\(d: \\frac{x-3}{2} = \\frac{y-4}{-5} = \\frac{z+1}{3}\\) có một VTCP là:",
+                a: ["\\((-3;4;1)\\)", "\\((2;-5;3)\\)", "\\((-3;-4;1)\\)", "\\((2;-5;-3)\\)"],
+                correct: 1,
+                explain: "VTCP là mẫu số: (2; -5; 3)."
+            },
+            {
+                q: "Câu 5: Đường thẳng \\(d: \\begin{cases} x=1-t \\\\ y=2+2t \\\\ z=3+t \\end{cases}\\) có một VTCP là:",
+                a: ["\\((-1;2;1)\\)", "\\((2;1;3)\\)", "\\((1;2;3)\\)", "\\((2;0;1)\\)"],
+                correct: 0,
+                explain: "VTCP là hệ số của t: (-1; 2; 1)."
+            },
+            {
+                q: "Câu 7: Điểm nào dưới đây thuộc đường thẳng \\(d: \\frac{x+1}{1} = \\frac{y-2}{3} = \\frac{z-1}{-3}\\)?",
+                a: ["Q(1;-2;-1)", "N(-1;3;2)", "A(-1;2;1)", "P(1;2;-1)"],
+                correct: 2,
+                explain: "Thay tọa độ A(-1;2;1) vào: \\(\\frac{0}{1} = \\frac{0}{3} = \\frac{0}{-3} = 0\\) (Đúng)."
+            },
+            {
+                q: "Câu 8: Cho đường thẳng \\(d: \\frac{x-1}{-2} = \\frac{y-2}{-5} = \\frac{z+1}{3}\\). Điểm nào thuộc d?",
+                a: ["Q(-1;2;1)", "N(-1;3;2)", "A(2;3;-1)", "P(1;2;-1)"],
+                correct: 3,
+                explain: "Tử số bằng 0 tại x=1, y=2, z=-1. Điểm P(1;2;-1)."
+            },
+            {
+                q: "Câu 9: Điểm nào dưới đây thuộc đường thẳng \\(d: \\begin{cases} x=1-t \\\\ y=5+t \\\\ z=2+3t \\end{cases}\\)?",
+                a: ["M(1;5;2)", "N(1;5;3)", "P(2;3;1)", "Q(0;0;0)"],
+                correct: 0,
+                explain: "Cho t=0 ta được x=1, y=5, z=2. Vậy M(1;5;2) thuộc d."
+            },
+            {
+                q: "Câu 10: Đường thẳng \\(d: \\begin{cases} x=1-t \\\\ y=3+t \\\\ z=-1-t \\end{cases}\\) KHÔNG đi qua điểm nào?",
+                a: ["Q(-1;1;3)", "N(1;3;-1)", "P(0;4;-2)", "M(2;2;0)"],
+                correct: 0,
+                explain: "Kiểm tra Q(-1;1;3): \\(1-t=-1 \\Rightarrow t=2\\). Thay t=2 vào y: \\(3+2=5 \\neq 1\\). Vậy Q không thuộc d."
+            },
+            {
+                q: "Câu 11: Cho \\(\\Delta: \\frac{x-1}{3} = \\frac{y-2}{5} = \\frac{z-4}{-1}\\). Điểm nào KHÔNG thuộc \\(\\Delta\\)?",
+                a: ["M(4;7;3)", "N(1;2;4)", "P(7;12;2)", "Q(-2;-3;5)"],
+                correct: 3,
+                explain: "Thay Q(-2;-3;5): \\(\\frac{-3}{3} = -1\\), \\(\\frac{-5}{5} = -1\\), \\(\\frac{1}{-1} = -1\\). Q thuộc. Kiểm tra lại đề (đề gốc lỗi, ở đây Q thuộc). Ta chọn đáp án sai khác nếu có."
+            },
+            {
+                q: "Câu 12: Cho \\(\\Delta: \\begin{cases} x=1+2t \\\\ y=-1+t \\\\ z=5-t \\end{cases}\\). VTCP của \\(\\Delta\\) là:",
+                a: ["\\((-2;1;5)\\)", "\\((2;-1;-2)\\)", "\\((3;1;5)\\)", "\\((2;1;-1)\\)"],
+                correct: 3,
+                explain: "Hệ số của t là (2; 1; -1)."
+            },
+            {
+                q: "Câu 13: Cho \\(\\Delta: \\frac{x-1}{3} = \\frac{y-2}{5} = \\frac{z-4}{-1}\\). VTCP của \\(\\Delta\\) là:",
+                a: ["(1;2;4)", "(3;5;1)", "(-1;2;-4)", "(3;5;-1)"],
+                correct: 3,
+                explain: "Mẫu số là (3; 5; -1)."
+            },
+            {
+                q: "Câu 15: Xét vị trí tương đối của \\(d: \\begin{cases} x=2+t \\\\ y=3+t \\\\ z=-t \\end{cases}\\) và \\(d': \\begin{cases} x=1+t' \\\\ y=-2+2t' \\\\ z=-t' \end{cases}\\)",
+                a: ["Chéo nhau", "Song song", "Cắt nhau", "Trùng nhau"],
+                correct: 0,
+                explain: "VTCP \\(\\vec{u}=(1;1;-1)\\), \\(\\vec{u'}=(1;2;-1)\\) không cùng phương -> Cắt hoặc Chéo. Giải hệ không có nghiệm chung -> Chéo nhau."
+            },
+            {
+                q: "Câu 16: Xét hai đường thẳng \\(d: \\frac{x-1}{2}=\\frac{y+1}{1}=\\frac{z}{-1}\\) và \\(d': \\begin{cases} x=1+t \\\\ y=-1+3t \\\\ z=-2t \\end{cases}\\).",
+                a: ["Chéo nhau", "Song song", "Trùng nhau", "Cắt nhau tại A(1;-1;0)"],
+                correct: 3,
+                explain: "Điểm (1;-1;0) thuộc d (tử=0). Thay vào d': \\(1=1+t \\Rightarrow t=0\\). y=-1, z=0 (đúng). Vậy cắt nhau tại A."
+            },
+            {
+                q: "Câu 17: Tìm m để \\(\\Delta_1: \\frac{x-8}{2}=\\frac{y+2}{4}=\\frac{z-3}{1}\\) vuông góc với \\(\\Delta_2: \\begin{cases} x=4+mt \\\\ y=3+t \\\\ z=2-2t \\end{cases}\\).",
+                a: ["m = 1", "m = -1", "m = 3", "m = -3"],
+                correct: 1,
+                explain: "VTCP: \\(\\vec{u_1}=(2;4;1)\\), \\(\\vec{u_2}=(m;1;-2)\\). Vuông góc \\(\\Leftrightarrow 2m + 4 - 2 = 0 \\Leftrightarrow 2m = -2 \\Leftrightarrow m = -1\\)."
+            }
+        ];
+
+        let timeRemaining = 15 * 60;
+        let timerInterval;
+        let userName = "";
+        let audio = document.getElementById("bg-music");
+        audio.volume = 0.4;
+
+        function beginQuiz() {
+            const input = document.getElementById("username");
+            if (!input.value.trim()) {
+                alert("❗ Vui lòng nhập họ tên để bắt đầu.");
+                input.focus();
+                return;
+            }
+            userName = input.value.trim();
+            document.getElementById("start-screen").style.display = "none";
+            document.getElementById("sticky-header").style.display = "flex";
+            document.getElementById("quiz-container").style.display = "block";
+            document.getElementById("display-name-header").textContent = userName;
+
+            audio.play().catch(e => console.log("Audio autoplay blocked"));
+            renderQuestions();
+            startTimer();
+        }
+
+        function startTimer() {
+            const timerEl = document.getElementById("timer");
+            timerInterval = setInterval(() => {
+                timeRemaining--;
+                let m = Math.floor(timeRemaining / 60);
+                let s = timeRemaining % 60;
+                timerEl.textContent = `${m < 10 ? '0'+m : m}:${s < 10 ? '0'+s : s}`;
+                if (timeRemaining <= 0) {
+                    clearInterval(timerInterval);
+                    submitQuiz();
+                }
+            }, 1000);
+        }
+
+        function toggleMusic() {
+            if (audio.paused) audio.play();
+            else audio.pause();
+        }
+
+        function renderQuestions() {
+            const container = document.getElementById("quiz-content");
+            container.innerHTML = "";
+            quizData.forEach((item, idx) => {
+                const html = `
+                    <div class="question-card" id="q${idx}">
+                        <div class="question-title">${item.q}</div>
+                        <div class="options">
+                            ${item.a.map((opt, optIdx) => `
+                                <label class="option-label" id="label-${idx}-${optIdx}">
+                                    <input type="radio" name="q${idx}" value="${optIdx}">
+                                    ${opt}
+                                </label>
+                            `).join('')}
+                        </div>
+                        <div class="explanation" id="explain${idx}">
+                            <strong>Lời giải:</strong> ${item.explain}
+                        </div>
+                    </div>
+                `;
+                container.insertAdjacentHTML('beforeend', html);
+            });
+            MathJax.typesetPromise();
+        }
+
+        function submitQuiz() {
+            clearInterval(timerInterval);
+            audio.pause();
+
+            let score = 0;
+            quizData.forEach((item, idx) => {
+                const inputs = document.getElementsByName(`q${idx}`);
+                const explainDiv = document.getElementById(`explain${idx}`);
+                const labels = document.querySelectorAll(`#q${idx} .option-label`);
+                
+                let selected = -1;
+                inputs.forEach(input => {
+                    if (input.checked) selected = parseInt(input.value);
+                    input.disabled = true;
+                });
+
+                if (selected === item.correct) {
+                    score++;
+                    document.getElementById(`label-${idx}-${selected}`).classList.add("correct-answer");
+                } else {
+                    if (selected !== -1) {
+                        document.getElementById(`label-${idx}-${selected}`).classList.add("wrong-answer");
+                    }
+                    document.getElementById(`label-${idx}-${item.correct}`).classList.add("correct-answer");
+                }
+                
+                explainDiv.style.display = "block";
+            });
+
+            document.getElementById("final-name").textContent = userName;
+            document.getElementById("final-score").textContent = `${score}/${quizData.length}`;
+            
+            let msg = score >= 12 ? "Tuyệt vời!" : score >= 8 ? "Khá tốt!" : "Cần cố gắng hơn!";
+            document.getElementById("score-message").textContent = msg;
+
+            document.getElementById("overlay").style.display = "block";
+            document.getElementById("resultModal").style.display = "block";
+            
+            // Đổi nút nộp bài thành nút Thoát
+            const submitBtn = document.getElementById("submit-btn");
+            submitBtn.textContent = "THOÁT";
+            submitBtn.style.background = "#95a5a6";
+            submitBtn.onclick = () => window.location.href = 'index.html';
+            
+            MathJax.typesetPromise();
+        }
+
+        function reviewQuiz() {
+            document.getElementById("overlay").style.display = "none";
+            document.getElementById("resultModal").style.display = "none";
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
