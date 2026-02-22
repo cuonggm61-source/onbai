@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trắc Nghiệm: Phương Trình Mặt Cầu</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f0f2f5; color: #333; max-width: 900px; margin: 0 auto; padding: 20px; padding-bottom: 100px; }
+        .home-link { position: absolute; top: 20px; left: 20px; text-decoration: none; color: #7f8c8d; font-weight: bold; font-size: 1em; display: flex; align-items: center; gap: 5px; cursor: pointer; z-index: 10; }
+        .home-link:hover { color: #3498db; }
+        #start-screen { background: white; padding: 40px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-align: center; margin-top: 50px; position: relative; }
+        .name-input { width: 80%; max-width: 400px; padding: 15px; margin: 25px auto; border: 2px solid #3498db; border-radius: 8px; font-size: 1.2em; outline: none; display: block; }
+        .name-input:focus { box-shadow: 0 0 10px rgba(52, 152, 219, 0.3); }
+        .start-btn { background-color: #2980b9; color: white; border: none; padding: 15px 50px; border-radius: 30px; font-size: 1.3em; font-weight: bold; cursor: pointer; transition: transform 0.2s, background 0.2s; }
+        .start-btn:hover { background-color: #3498db; transform: scale(1.05); }
+        .sticky-header { display: none; position: fixed; top: 0; left: 0; width: 100%; background: #2c3e50; color: white; padding: 15px 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.2); justify-content: center; align-items: center; gap: 20px; }
+        .timer-box { font-size: 1.5em; font-weight: bold; color: #f1c40f; }
+        .submit-btn { background-color: #e74c3c; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-size: 1em; font-weight: bold; }
+        .music-control { cursor: pointer; font-size: 1.5em; background: none; border: none; color: white; }
+        .quiz-container { display: none; background: white; padding: 30px; border-radius: 8px; margin-top: 80px; }
+        .question-card { margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 20px; }
+        .question-title { font-weight: 600; font-size: 1.1em; margin-bottom: 15px; color: #2980b9; line-height: 1.5; }
+        .options { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+        .option-label { display: block; padding: 10px 15px; border: 1px solid #ddd; border-radius: 5px; cursor: pointer; transition: 0.2s; }
+        .option-label:hover { background-color: #f8f9fa; }
+        .result-modal { display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 30px rgba(0,0,0,0.3); text-align: center; z-index: 2000; width: 90%; max-width: 450px; }
+        .overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 1500; }
+        .student-name-final { color: #e67e22; font-weight: bold; font-size: 1.4em; margin-bottom: 10px; display: block; }
+        .score-display { font-size: 3em; color: #2c3e50; font-weight: bold; margin: 10px 0; display: block; }
+        .correct-answer { background-color: #d4edda !important; border-color: #28a745 !important; color: #155724; font-weight: bold; }
+        .wrong-answer { background-color: #f8d7da !important; border-color: #dc3545 !important; color: #721c24; opacity: 0.7; }
+        .explanation { display: none; margin-top: 15px; padding: 15px; background: #e8f4fd; border-left: 5px solid #3498db; border-radius: 5px; line-height: 1.5; }
+        .modal-btn { width: 100%; padding: 12px; margin-top: 10px; border: none; border-radius: 5px; font-weight: bold; cursor: pointer; font-size: 1em; transition: 0.2s; }
+        .btn-review { background-color: #f1c40f; color: #333; }
+        .btn-restart { background-color: #3498db; color: white; }
+        .btn-home { background-color: #95a5a6; color: white; } 
+        .btn-restart:hover { background-color: #2980b9; }
+        .btn-review:hover { background-color: #f39c12; }
+        .btn-home:hover { background-color: #7f8c8d; }
+    </style>
+</head>
+<body>
+
+    <audio id="bg-music" loop>
+        <source src="asset/Close to You - YouTube.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="start-screen">
+        <a href="index.html" class="home-link">⬅ Quay về Trang Chủ</a>
+
+        <h1 style="color: #2c3e50;">CHỦ ĐỀ: PHƯƠNG TRÌNH MẶT CẦU</h1>
+        <div style="text-align: left; max-width: 500px; margin: 0 auto; line-height: 1.6;">
+            <p>📝 <strong>Số câu:</strong> 28 câu hỏi trắc nghiệm</p>
+            <p>⏱️ <strong>Thời gian:</strong> 30 phút</p>
+        </div>
+
+        <input type="text" id="username" class="name-input" placeholder="Nhập Họ và Tên của bạn..." autocomplete="off">
+        <button class="start-btn" onclick="beginQuiz()">BẮT ĐẦU LÀM BÀI</button>
+    </div>
+
+    <div class="sticky-header" id="sticky-header">
+        <div id="display-name-header" style="font-weight: bold; color: #bdc3c7;"></div>
+        <button class="music-control" onclick="toggleMusic()" title="Bật/Tắt nhạc">🔊</button>
+        <div> | <span id="timer" class="timer-box">30:00</span></div>
+        <button class="submit-btn" id="submit-btn" style="margin-left: 20px;" onclick="submitQuiz()">NỘP BÀI</button>
+    </div>
+
+    <div class="quiz-container" id="quiz-container">
+        <h2 style="text-align: center; color: #2c3e50;">ĐỀ BÀI TỔNG HỢP</h2>
+        <div id="quiz-content"></div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+    <div class="result-modal" id="resultModal">
+        <h2>KẾT QUẢ BÀI THI</h2>
+        <div>Thí sinh: <span class="student-name-final" id="final-name"></span></div>
+        <span class="score-display" id="final-score">0/28</span>
+        <p id="score-message"></p>
+        
+        <button class="modal-btn btn-review" id="review-btn" onclick="reviewQuiz()">🔍 Xem lại bài làm (Câu sai)</button>
+        <button class="modal-btn btn-restart" onclick="location.reload()">↻ Làm lại bài thi</button>
+        <button class="modal-btn btn-home" onclick="window.location.href='index.html'">🏠 Chọn đề khác</button>
+    </div>
+
+    <script>
+        // ==========================================
+        // DÁN LINK GOOGLE APPS SCRIPT CỦA BẠN VÀO ĐÂY
+        // ==========================================
+        const scriptURL = "https://script.google.com/macros/s/AKfycbzHsdXCSB8_eIfFzqyA-PMjz77FezLBhsoI-KmJGD9GQOgSQsdZarL_7U8YGgVi0DW9gQ/exec"; 
+        
+        const quizData = [
+            // PHẦN I
+            { q: "Câu 1: Cho phương trình mặt cầu \\(x^2 + y^2 + z^2 = 16\\), bán kính R của mặt cầu là:", a: ["R = 4", "R = 16", "R = 0", "R = 2"], correct: 0, explain: "Phương trình có dạng \\(x^2 + y^2 + z^2 = R^2\\). Do đó \\(R^2 = 16 \\Rightarrow R = 4\\)." },
+            { q: "Câu 2: Cho mặt cầu \\((S): (x-3)^2 + (y+1)^2 + (z-2)^2 = 4\\). Xác định toạ độ tâm I và bán kính R.", a: ["I(3; -1; 2), R = 2", "I(-3; 1; -2), R = 2", "I(-3; 1; -2), R = 4", "I(3; -1; 2), R = 4"], correct: 0, explain: "Dựa vào phương trình \\((x-a)^2+(y-b)^2+(z-c)^2=R^2\\), ta có I(3; -1; 2) và R=2." },
+            { q: "Câu 3: Cho mặt cầu \\((S): x^2 + y^2 + z^2 - 2x - 4y + 2z - 2 = 0\\). Xác định tâm I và bán kính R.", a: ["I(1; 2; -1), R = 2\\(\\sqrt{2}\\)", "I(-1; -2; 1), R = 2\\(\\sqrt{2}\\)", "I(2; 4; -2), R = \\(\\sqrt{2}\\)", "I(2; 4; 2), R = 8"], correct: 0, explain: "Tâm I(1; 2; -1). Bán kính \\(R = \\sqrt{1^2 + 2^2 + (-1)^2 - (-2)} = \\sqrt{8} = 2\\sqrt{2}\\)." },
+            { q: "Câu 4: Tọa độ tâm I và bán kính R của mặt cầu \\((S): (x-1)^2 + (y-2)^2 + (z+3)^2 = 9\\) là:", a: ["I(-1; 2; -3), R = 3", "I(1; 2; -3), R = 9", "I(1; -2; 3), R = 9", "I(1; 2; -3), R = 3"], correct: 3, explain: "Đổi dấu trong ngoặc ta được tâm I(1; 2; -3) và lấy căn vế phải ta được R = 3." },
+            { q: "Câu 5: Phương trình nào trong các phương trình sau là phương trình của một mặt cầu?", a: ["\\(x^2 + y^2 - z^2 - 4x + 2y + 2z - 3 = 0\\)", "\\(x^2 + 2y^2 + z^2 - 4x + 2y + 2z - 10 = 0\\)", "\\(x^2 + y^2 + z^2 - 4x + 2y + 2z + 2 = 0\\)", "\\(x^2 + y^2 + z^2 - 4x + 2y + 2z + 8 = 0\\)"], correct: 2, explain: "Phương trình C có hệ số bậc 2 bằng nhau, và \\(R^2 = a^2+b^2+c^2-d = 2^2+(-1)^2+(-1)^2-2 = 4 > 0\\)." },
+            { q: "Câu 6: Phương trình \\(x^2 + y^2 + z^2 - 4x + 2z - 6y - 2 = 0\\) là phương trình mặt cầu có tâm I là:", a: ["I(2; -1; 3)", "I(2; 3; -1)", "I(2; -3; 1)", "I(2; 1; -3)"], correct: 1, explain: "Hệ số của x, y, z chia cho -2 ta được tâm I(2; 3; -1)." },
+            { q: "Câu 7: Cho phương trình mặt cầu \\((S): (x-2)^2 + (y-2)^2 + (z+1)^2 = 1\\). Tọa độ tâm I là:", a: ["I(2; 2; -1)", "I(-2; -2; 1)", "I(-2; 2; -1)", "I(4; 4; -2)"], correct: 0, explain: "Lấy số đối trong các ngoặc, ta được tọa độ tâm I(2; 2; -1)." },
+            { q: "Câu 8: Mặt cầu \\((S)\\) có phương trình \\(x^2 + y^2 + z^2 - \\sqrt{2}x + y - z - 1 = 0\\). Bán kính R là:", a: ["R = 3", "R = 2", "R = \\(\\sqrt{2}\\)", "R = \\(\\sqrt{3}\\)"], correct: 2, explain: "Tâm \\(I(\\frac{\\sqrt{2}}{2}; -\\frac{1}{2}; \\frac{1}{2})\\). \\(R = \\sqrt{(\\frac{\\sqrt{2}}{2})^2 + (-\\frac{1}{2})^2 + (\\frac{1}{2})^2 - (-1)} = \\sqrt{2}\\)." },
+            { q: "Câu 9: Mặt cầu \\((S): (x-a)^2 + y^2 + (z-c)^2 = 16\\) đi qua gốc O và điểm M(1;0;1). Tính tổng a + c.", a: ["4", "16", "1", "0"], correct: 2, explain: "Do (S) qua O(0;0;0) nên \\(a^2+c^2=16\\). Do (S) qua M(1;0;1) nên \\((1-a)^2+(1-c)^2=16\\). Giải hệ ta được a+c=1." },
+            { q: "Câu 10: Phương trình nào dưới đây là phương trình của mặt cầu?", a: ["\\(x^2 + y^2 + z^2 - 2x + 4z - 1 = 0\\)", "\\(x^2 + z^2 + 3x - 2y + 4z - 1 = 0\\)", "\\(x^2 + y^2 + z^2 + 2xy - 4y + 4z - 1 = 0\\)", "\\(x^2 + y^2 + z^2 - 2x + 2y - 4z + 8 = 0\\)"], correct: 0, explain: "Đáp án A thỏa mãn điều kiện \\(a^2+b^2+c^2-d = 1^2+0^2+(-2)^2-(-1) = 6 > 0\\)." },
+            { q: "Câu 11: Phương trình nào KHÔNG phải là phương trình mặt cầu?", a: ["\\(x^2 + y^2 + z^2 + x - 2y + 4z - 3 = 0\\)", "\\(2x^2 + 2y^2 + 2z^2 - x - y - z = 0\\)", "\\(2x^2 + 2y^2 + 2z^2 + 4x + 8y + 6z + 3 = 0\\)", "\\(x^2 + y^2 + z^2 - 2x + 4y - 4z + 10 = 0\\)"], correct: 3, explain: "Ở phương trình D, ta có \\(a^2+b^2+c^2-d = 1^2+(-2)^2+2^2-10 = -1 < 0\\) nên không là mặt cầu." },
+            { q: "Câu 12: Phương trình nào KHÔNG phải là phương trình mặt cầu?", a: ["\\(x^2 + 2y^2 + 2z^2 - 2x + 4z - 1 = 0\\)", "\\(x^2 + y^2 + z^2 + 3x - 2y + 4z - 1 = 0\\)", "\\(x^2 + y^2 + z^2 + 2x - 4y + 4z - 1 = 0\\)", "\\(x^2 + y^2 + z^2 - 2x + 2y - 4z - 8 = 0\\)"], correct: 0, explain: "Phương trình A có hệ số trước \\(x^2, y^2, z^2\\) không bằng nhau (1, 2, 2)." },
+            { q: "Câu 13: Mặt cầu nào sau đây có bán kính R = 2?", a: ["\\(x^2+y^2+z^2-4x+2y+2z-3=0\\)", "\\(x^2+y^2+z^2-4x+2y+2z-10=0\\)", "\\(x^2+y^2+z^2-4x+2y+2z+2=0\\)", "\\(x^2+y^2+z^2-4x+2y+2z+5=0\\)"], correct: 2, explain: "Phương trình C có R = \\(\\sqrt{2^2+(-1)^2+(-1)^2-2} = \\sqrt{4} = 2\\)." },
+            { q: "Câu 14: Phương trình nào là phương trình mặt cầu?", a: ["\\(2x^2 + 2y^2 + 2z^2 + 4x + 8y = 0\\)", "\\(x^2 + 2y^2 + z^2 - 2x + 4y - 2z - 1 = 0\\)", "\\(x^2 + y^2 + z^2 - 2x + 2y + 3 = 0\\)", "\\(x^2 + y^2 - z^2 - 2x + 2y - 4z + 8 = 0\\)"], correct: 0, explain: "Rút gọn A cho 2 ta được mặt cầu có \\(R^2 = 1^2+2^2-0=5 > 0\\)." },
+            { q: "Câu 15: Phương trình nào sau đây là phương trình mặt cầu?", a: ["\\(x^2+y^2+z^2-x+6z+16=0\\)", "\\(x^2+y^2+z^2+4x-6y+8z-1=0\\)", "\\(x^2+y^2+z^2+2x-4y+4z+13=0\\)", "\\(x^2+y^2+z^2-2x+2y-4z+9=0\\)"], correct: 1, explain: "Ở phương trình B, \\(a^2+b^2+c^2-d = (-2)^2+3^2+(-4)^2-(-1) = 30 > 0\\)." },
+            { q: "Câu 16: Phương trình nào là phương trình mặt cầu?", a: ["\\(x^2+y^2-z^2-2x+4y+4z+5=0\\)", "\\(x^2+y^2+z^2-2x+2y-4z-2=0\\)", "\\(x^2+y^2+z^2+x-2y+3=0\\)", "\\(x^2-y^2+z^2-2x+6y-8z+1=0\\)"], correct: 1, explain: "Phương trình B có hệ số \\(x^2, y^2, z^2\\) bằng nhau và \\(R^2 > 0\\)." },
+            { q: "Câu 17: Phương trình nào KHÔNG phải là phương trình mặt cầu?", a: ["\\(x^2+y^2+z^2-2x+4y+6z-2=0\\)", "\\(x^2+y^2+z^2-2x+2y-2z=6\\)", "\\(x^2+y^2+z^2+2x-4y-6z+5=0\\)", "\\(x^2+y^2+z^2-2y+4xz+2=0\\)"], correct: 3, explain: "Phương trình D chứa số hạng tích \\(4xz\\) nên không phải là phương trình mặt cầu." },
+            { q: "Câu 18: Cho M(6;5;4) và mặt cầu (S) qua M, tiếp xúc với mặt phẳng (Oxy). Giá trị nhỏ nhất của bán kính R là:", a: ["3", "\\(\\sqrt{61}\\)", "4", "2"], correct: 3, explain: "Khoảng cách từ M đến (Oxy) là \\(d=4\\). Đường kính \\(2R \\ge d \\Rightarrow 2R \\ge 4 \\Rightarrow R \\ge 2\\). Vậy Min R = 2." },
+            
+            // PHẦN II 
+            { q: "Câu 19: Cho mặt cầu \\((S): (x+2)^2+(y-1)^2+z^2=4\\). Khẳng định nào sau đây ĐÚNG?", a: ["Đường kính mặt cầu bằng 8.", "Mặt cầu (S) đi qua điểm A(-1;3;0).", "Khoảng cách từ tâm I đến (Oyz) bằng 2.", "Mặt phẳng \\(x+2y-2z-2=0\\) tiếp xúc với (S)."], correct: 2, explain: "Tâm I(-2;1;0). Khoảng cách đến (Oyz) (phương trình x=0) là \\(|-2|=2\\)." },
+            { q: "Câu 20: Mặt cầu (S) đi qua A(3;1;2), B(1;0;3) và tâm I thuộc Ox. Khẳng định nào sau đây SAI?", a: ["Tâm I có tọa độ dạng (a;0;0).", "Bán kính mặt cầu là R = 9.", "Phương trình (S) là \\((x-1)^2+y^2+z^2=9\\).", "Điểm \\(M(0;1/3;5/3)\\) thuộc (Oyz) làm \\(MA^2+MB^2+MI^2\\) đạt GTNN."], correct: 1, explain: "Bán kính là R = 3 (vì R² = 9), do đó khẳng định 'Bán kính bằng 9' là Sai." },
+            
+            // PHẦN III 
+            { q: "Câu 21: Tính bán kính mặt cầu tâm I(0;2;3) và tiếp xúc với trục Oy.", a: ["R = 2", "R = 3", "R = 4", "R = 9"], correct: 1, explain: "Hình chiếu của I lên Oy là H(0;2;0). Bán kính \\(R = IH = \\sqrt{0^2+0^2+3^2} = 3\\)." },
+            { q: "Câu 22: Mặt cầu (S) qua A(3;-1;2), B(1;1;-2) và tâm I thuộc Oz. Giá trị \\(R^2\\) bằng:", a: ["9", "10", "11", "12"], correct: 2, explain: "I(0;0;c). \\(IA=IB \\Rightarrow 9+1+(c-2)^2 = 1+1+(c+2)^2 \\Rightarrow c=1\\). Vậy \\(R^2 = 3^2+(-1)^2+1^2 = 11\\)." },
+            { q: "Câu 23: Cho A(1;0;-3), B(-3;-2;-5). Tập hợp các điểm M thỏa mãn \\(AM^2+BM^2=30\\) là mặt cầu (S). Tìm bán kính R.", a: ["R = 2", "R = 3", "R = 4", "R = 9"], correct: 1, explain: "Gọi M(x,y,z). Khai triển giả thiết ta được mặt cầu có phương trình \\((x+1)^2+(y+1)^2+(z+4)^2 = 9\\), suy ra R = 3." },
+            { q: "Câu 24: Cho hai điểm A, B cố định có độ dài AB = 4. Tập hợp điểm M sao cho MA = 3MB là một mặt cầu. Bán kính mặt cầu đó bằng:", a: ["1.5", "2", "2.5", "3"], correct: 0, explain: "Bình phương hai vế \\(MA^2 = 9MB^2\\). Gọi I là điểm thỏa mãn \\(\\vec{IA}-9\\vec{IB}=\\vec{0}\\). Tính ra R = 1.5." },
+            { q: "Câu 25: Mặt cầu (S) có tâm là I(1;2;-3) và đi qua điểm B(3;-2;1). Điểm M(1;b;-3) thuộc (S) với b>0. Giá trị của b là:", a: ["4", "6", "8", "10"], correct: 2, explain: "Bán kính R = IB = 6. Phương trình \\((x-1)^2+(y-2)^2+(z+3)^2 = 36\\). Thay M vào ta có \\((b-2)^2=36 \\Rightarrow b=8\\)." },
+            { q: "Câu 26: Mặt cầu (S) có tâm I(2;-4;3) và tiếp xúc với trục Ox. Bán kính mặt cầu bằng:", a: ["3", "4", "5", "6"], correct: 2, explain: "Hình chiếu của I lên Ox là H(2;0;0). \\(R = IH = \\sqrt{0^2+(-4)^2+3^2} = \\sqrt{16+9} = 5\\)." },
+            { q: "Câu 27: Mặt cầu (S) có R = 2, tiếp xúc mặt phẳng (Oyz) và tâm I nằm trên tia Ox. Hoành độ của tâm I là:", a: ["1", "2", "3", "4"], correct: 1, explain: "Tâm I(a;0;0) với a>0. Do tiếp xúc (Oyz) nên khoảng cách d(I, Oyz) = |a| = R = 2. Vậy a = 2." },
+            { q: "Câu 28: Mặt cầu (S) có tâm I(-1;2;3) và có đúng 1 điểm chung với (Oxy). Gọi A(a;b;c) (c>1) là giao điểm của (S) với trục Oz. Tính a+b+c.", a: ["3", "4", "5", "6"], correct: 2, explain: "Do (S) tiếp xúc (Oxy) nên R = |z_I| = 3. PT: \\((x+1)^2+(y-2)^2+(z-3)^2 = 9\\). Cho x=y=0 ta được \\(z=5\\) hoặc \\(z=1\\). Do c>1 nên A(0;0;5). Tổng = 5." }
+        ];
+
+        let timeRemaining = 30 * 60; // 30 phút
+        let timerInterval;
+        let userName = "";
+        let audio = document.getElementById("bg-music");
+        audio.volume = 0.4;
+
+        function beginQuiz() {
+            const input = document.getElementById("username");
+            if (!input.value.trim()) {
+                alert("❗ Vui lòng nhập họ tên để bắt đầu.");
+                input.focus();
+                return;
+            }
+            userName = input.value.trim();
+            document.getElementById("start-screen").style.display = "none";
+            document.getElementById("sticky-header").style.display = "flex";
+            document.getElementById("quiz-container").style.display = "block";
+            document.getElementById("display-name-header").textContent = userName;
+
+            audio.play().catch(e => console.log("Audio autoplay blocked"));
+            renderQuestions();
+            startTimer();
+        }
+
+        function startTimer() {
+            const timerEl = document.getElementById("timer");
+            timerInterval = setInterval(() => {
+                timeRemaining--;
+                let m = Math.floor(timeRemaining / 60);
+                let s = timeRemaining % 60;
+                timerEl.textContent = `${m < 10 ? '0'+m : m}:${s < 10 ? '0'+s : s}`;
+                if (timeRemaining <= 0) {
+                    clearInterval(timerInterval);
+                    submitQuiz();
+                }
+            }, 1000);
+        }
+
+        function toggleMusic() {
+            if (audio.paused) audio.play();
+            else audio.pause();
+        }
+
+        function renderQuestions() {
+            const container = document.getElementById("quiz-content");
+            container.innerHTML = "";
+            quizData.forEach((item, idx) => {
+                const html = `
+                    <div class="question-card" id="q${idx}">
+                        <div class="question-title">${item.q}</div>
+                        <div class="options">
+                            ${item.a.map((opt, optIdx) => `
+                                <label class="option-label" id="label-${idx}-${optIdx}">
+                                    <input type="radio" name="q${idx}" value="${optIdx}">
+                                    ${opt}
+                                </label>
+                            `).join('')}
+                        </div>
+                        <div class="explanation" id="explain${idx}">
+                            <strong>Lời giải:</strong> ${item.explain}
+                        </div>
+                    </div>
+                `;
+                container.insertAdjacentHTML('beforeend', html);
+            });
+            MathJax.typesetPromise();
+        }
+
+        function submitQuiz() {
+            clearInterval(timerInterval);
+            audio.pause();
+
+            let score = 0;
+            quizData.forEach((item, idx) => {
+                const inputs = document.getElementsByName(`q${idx}`);
+                const explainDiv = document.getElementById(`explain${idx}`);
+                
+                let selected = -1;
+                inputs.forEach(input => {
+                    if (input.checked) selected = parseInt(input.value);
+                    input.disabled = true; 
+                });
+
+                const correctLabel = document.getElementById(`label-${idx}-${item.correct}`);
+                if (correctLabel) correctLabel.classList.add("correct-answer");
+
+                if (selected !== -1) {
+                    if (selected === item.correct) {
+                        score++;
+                    } else {
+                        const wrongLabel = document.getElementById(`label-${idx}-${selected}`);
+                        if (wrongLabel) wrongLabel.classList.add("wrong-answer");
+                    }
+                }
+                
+                explainDiv.style.display = "block";
+            });
+
+            // --- GỬI ĐIỂM VỀ GOOGLE SHEETS ---
+            // Đổi text nút thành Đang xử lý để hs biết
+            document.getElementById("review-btn").textContent = "Đang lưu điểm...";
+            document.getElementById("review-btn").disabled = true;
+
+            let formData = new FormData();
+            formData.append("name", userName);
+            formData.append("score", score);
+            formData.append("total", quizData.length);
+
+            // Fetch tới Google Script (sử dụng no-cors để không bị chặn)
+            if(scriptURL && scriptURL !== "DÁN_LINK_CỦA_BẠN_VÀO_ĐÂY") {
+                fetch(scriptURL, {
+                    method: "POST",
+                    mode: "no-cors",
+                    body: formData
+                }).then(() => {
+                    document.getElementById("review-btn").textContent = "🔍 Xem lại bài làm (Câu sai)";
+                    document.getElementById("review-btn").disabled = false;
+                }).catch(err => {
+                    console.error("Lỗi khi gửi kết quả", err);
+                    document.getElementById("review-btn").textContent = "🔍 Xem lại bài làm (Câu sai)";
+                    document.getElementById("review-btn").disabled = false;
+                });
+            } else {
+                document.getElementById("review-btn").textContent = "🔍 Xem lại bài làm (Câu sai)";
+                document.getElementById("review-btn").disabled = false;
+            }
+            // ------------------------------------
+
+            document.getElementById("final-name").textContent = userName;
+            document.getElementById("final-score").textContent = `${score}/${quizData.length}`;
+            
+            let msg = score >= 23 ? "Cực kỳ xuất sắc!" : score >= 15 ? "Khá tốt, hãy cố gắng phát huy!" : "Hãy ôn tập lại lý thuyết nhé!";
+            document.getElementById("score-message").textContent = msg;
+
+            document.getElementById("overlay").style.display = "block";
+            document.getElementById("resultModal").style.display = "block";
+
+            const submitBtn = document.getElementById("submit-btn");
+            submitBtn.textContent = "THOÁT";
+            submitBtn.style.background = "#95a5a6";
+            submitBtn.onclick = () => window.location.href = 'index.html';
+            
+            MathJax.typesetPromise();
+        }
+
+        function reviewQuiz() {
+            document.getElementById("overlay").style.display = "none";
+            document.getElementById("resultModal").style.display = "none";
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
