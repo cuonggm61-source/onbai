@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trắc Nghiệm Ôn Thi</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="css/shared.css">
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const quizId = params.get('id');
+        if (!quizId) {
+            window.location.replace("index.html");
+        } else {
+            // Load file JS cố định của đề thi trước, sau đó là shared.js chung
+            document.write(`<script src="js/${quizId}.js"><\/script>`);
+            document.write(`<script src="js/shared.js"><\/script>`);
+        }
+    </script>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <audio id="bg-music" loop></audio>
+
+    <div id="start-screen">
+        <a href="index.html" class="home-link">⬅ Quay về Trang Chủ</a>
+        
+        <div id="quiz-info-container">
+            <!-- Nội dung tiêu đề, mô tả sẽ tự động nạp từ file js qua biến quizInfoHTML -->
+        </div>
+
+        <input type="text" id="username" class="name-input" placeholder="Nhập Họ và Tên của bạn..." autocomplete="off">
+        <button class="start-btn" onclick="beginQuiz()">BẮT ĐẦU LÀM BÀI</button>
+    </div>
+
+    <div class="sticky-header" id="sticky-header">
+        <div id="display-name-header" style="font-weight: bold; color: #bdc3c7;"></div>
+        <button class="music-control" onclick="toggleMusic()" title="Bật/Tắt nhạc">🔊</button>
+        <div> | <span id="timer" class="timer-box">00:00</span></div>
+        <button class="submit-btn" id="submit-btn" style="margin-left: 20px;" onclick="submitQuiz()">NỘP BÀI</button>
+    </div>
+
+    <div class="quiz-container" id="quiz-container">
+        <h2 style="text-align: center; color: #2c3e50;">ĐỀ BÀI</h2>
+        <div id="quiz-content"></div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+    <div class="result-modal" id="resultModal">
+        <h2>KẾT QUẢ BÀI THI</h2>
+        <div>Thí sinh: <span class="student-name-final" id="final-name"></span></div>
+        <span class="score-display" id="final-score">0/0</span>
+        
+        <img id="result-image" src="" alt="Kết quả">
+        
+        <p id="score-message" style="font-weight: bold; font-size: 1.1em; margin-top: 0;"></p>
+        
+        <button class="modal-btn btn-review" onclick="reviewQuiz()">🔍 Xem lại bài làm (Câu sai)</button>
+        <button class="modal-btn btn-restart" onclick="location.reload()">↻ Làm lại bài này</button>
+        <button class="modal-btn btn-home" onclick="window.location.href='index.html'">🏠 Chọn đề khác</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/particles-config.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+const quizAudioSrc = "asset/Close to You - YouTube.mp3";
+const quizInfoHTML = `<h1 style="color: #2c3e50;">CHỦ ĐỀ: PHƯƠNG TRÌNH MẶT CẦU</h1>
+        <div style="text-align: left; max-width: 500px; margin: 0 auto; line-height: 1.6;">
+            <p>📝 <strong>Số câu:</strong> 28 câu hỏi trắc nghiệm</p>
+            <p>⏱️ <strong>Thời gian:</strong> 30 phút</p>
+        </div>`;
+
+// ==========================================
+        // DÁN LINK GOOGLE APPS SCRIPT CỦA BẠN VÀO ĐÂY
+        // ==========================================
+        const scriptURL = "https://script.google.com/macros/s/AKfycbzHsdXCSB8_eIfFzqyA-PMjz77FezLBhsoI-KmJGD9GQOgSQsdZarL_7U8YGgVi0DW9gQ/exec"; 
+        
+        const quizData = [
+            // PHẦN I
+            { q: "Câu 1: Cho phương trình mặt cầu \\(x^2 + y^2 + z^2 = 16\\), bán kính R của mặt cầu là:", a: ["R = 4", "R = 16", "R = 0", "R = 2"], correct: 0, explain: "Phương trình có dạng \\(x^2 + y^2 + z^2 = R^2\\). Do đó \\(R^2 = 16 \\Rightarrow R = 4\\)." },
+            { q: "Câu 2: Cho mặt cầu \\((S): (x-3)^2 + (y+1)^2 + (z-2)^2 = 4\\). Xác định toạ độ tâm I và bán kính R.", a: ["I(3; -1; 2), R = 2", "I(-3; 1; -2), R = 2", "I(-3; 1; -2), R = 4", "I(3; -1; 2), R = 4"], correct: 0, explain: "Dựa vào phương trình \\((x-a)^2+(y-b)^2+(z-c)^2=R^2\\), ta có I(3; -1; 2) và R=2." },
+            { q: "Câu 3: Cho mặt cầu \\((S): x^2 + y^2 + z^2 - 2x - 4y + 2z - 2 = 0\\). Xác định tâm I và bán kính R.", a: ["I(1; 2; -1), R = 2\\(\\sqrt{2}\\)", "I(-1; -2; 1), R = 2\\(\\sqrt{2}\\)", "I(2; 4; -2), R = \\(\\sqrt{2}\\)", "I(2; 4; 2), R = 8"], correct: 0, explain: "Tâm I(1; 2; -1). Bán kính \\(R = \\sqrt{1^2 + 2^2 + (-1)^2 - (-2)} = \\sqrt{8} = 2\\sqrt{2}\\)." },
+            { q: "Câu 4: Tọa độ tâm I và bán kính R của mặt cầu \\((S): (x-1)^2 + (y-2)^2 + (z+3)^2 = 9\\) là:", a: ["I(-1; 2; -3), R = 3", "I(1; 2; -3), R = 9", "I(1; -2; 3), R = 9", "I(1; 2; -3), R = 3"], correct: 3, explain: "Đổi dấu trong ngoặc ta được tâm I(1; 2; -3) và lấy căn vế phải ta được R = 3." },
+            { q: "Câu 5: Phương trình nào trong các phương trình sau là phương trình của một mặt cầu?", a: ["\\(x^2 + y^2 - z^2 - 4x + 2y + 2z - 3 = 0\\)", "\\(x^2 + 2y^2 + z^2 - 4x + 2y + 2z - 10 = 0\\)", "\\(x^2 + y^2 + z^2 - 4x + 2y + 2z + 2 = 0\\)", "\\(x^2 + y^2 + z^2 - 4x + 2y + 2z + 8 = 0\\)"], correct: 2, explain: "Phương trình C có hệ số bậc 2 bằng nhau, và \\(R^2 = a^2+b^2+c^2-d = 2^2+(-1)^2+(-1)^2-2 = 4 > 0\\)." },
+            { q: "Câu 6: Phương trình \\(x^2 + y^2 + z^2 - 4x + 2z - 6y - 2 = 0\\) là phương trình mặt cầu có tâm I là:", a: ["I(2; -1; 3)", "I(2; 3; -1)", "I(2; -3; 1)", "I(2; 1; -3)"], correct: 1, explain: "Hệ số của x, y, z chia cho -2 ta được tâm I(2; 3; -1)." },
+            { q: "Câu 7: Cho phương trình mặt cầu \\((S): (x-2)^2 + (y-2)^2 + (z+1)^2 = 1\\). Tọa độ tâm I là:", a: ["I(2; 2; -1)", "I(-2; -2; 1)", "I(-2; 2; -1)", "I(4; 4; -2)"], correct: 0, explain: "Lấy số đối trong các ngoặc, ta được tọa độ tâm I(2; 2; -1)." },
+            { q: "Câu 8: Mặt cầu \\((S)\\) có phương trình \\(x^2 + y^2 + z^2 - \\sqrt{2}x + y - z - 1 = 0\\). Bán kính R là:", a: ["R = 3", "R = 2", "R = \\(\\sqrt{2}\\)", "R = \\(\\sqrt{3}\\)"], correct: 2, explain: "Tâm \\(I(\\frac{\\sqrt{2}}{2}; -\\frac{1}{2}; \\frac{1}{2})\\). \\(R = \\sqrt{(\\frac{\\sqrt{2}}{2})^2 + (-\\frac{1}{2})^2 + (\\frac{1}{2})^2 - (-1)} = \\sqrt{2}\\)." },
+            { q: "Câu 9: Mặt cầu \\((S): (x-a)^2 + y^2 + (z-c)^2 = 16\\) đi qua gốc O và điểm M(1;0;1). Tính tổng a + c.", a: ["4", "16", "1", "0"], correct: 2, explain: "Do (S) qua O(0;0;0) nên \\(a^2+c^2=16\\). Do (S) qua M(1;0;1) nên \\((1-a)^2+(1-c)^2=16\\). Giải hệ ta được a+c=1." },
+            { q: "Câu 10: Phương trình nào dưới đây là phương trình của mặt cầu?", a: ["\\(x^2 + y^2 + z^2 - 2x + 4z - 1 = 0\\)", "\\(x^2 + z^2 + 3x - 2y + 4z - 1 = 0\\)", "\\(x^2 + y^2 + z^2 + 2xy - 4y + 4z - 1 = 0\\)", "\\(x^2 + y^2 + z^2 - 2x + 2y - 4z + 8 = 0\\)"], correct: 0, explain: "Đáp án A thỏa mãn điều kiện \\(a^2+b^2+c^2-d = 1^2+0^2+(-2)^2-(-1) = 6 > 0\\)." },
+            { q: "Câu 11: Phương trình nào KHÔNG phải là phương trình mặt cầu?", a: ["\\(x^2 + y^2 + z^2 + x - 2y + 4z - 3 = 0\\)", "\\(2x^2 + 2y^2 + 2z^2 - x - y - z = 0\\)", "\\(2x^2 + 2y^2 + 2z^2 + 4x + 8y + 6z + 3 = 0\\)", "\\(x^2 + y^2 + z^2 - 2x + 4y - 4z + 10 = 0\\)"], correct: 3, explain: "Ở phương trình D, ta có \\(a^2+b^2+c^2-d = 1^2+(-2)^2+2^2-10 = -1 < 0\\) nên không là mặt cầu." },
+            { q: "Câu 12: Phương trình nào KHÔNG phải là phương trình mặt cầu?", a: ["\\(x^2 + 2y^2 + 2z^2 - 2x + 4z - 1 = 0\\)", "\\(x^2 + y^2 + z^2 + 3x - 2y + 4z - 1 = 0\\)", "\\(x^2 + y^2 + z^2 + 2x - 4y + 4z - 1 = 0\\)", "\\(x^2 + y^2 + z^2 - 2x + 2y - 4z - 8 = 0\\)"], correct: 0, explain: "Phương trình A có hệ số trước \\(x^2, y^2, z^2\\) không bằng nhau (1, 2, 2)." },
+            { q: "Câu 13: Mặt cầu nào sau đây có bán kính R = 2?", a: ["\\(x^2+y^2+z^2-4x+2y+2z-3=0\\)", "\\(x^2+y^2+z^2-4x+2y+2z-10=0\\)", "\\(x^2+y^2+z^2-4x+2y+2z+2=0\\)", "\\(x^2+y^2+z^2-4x+2y+2z+5=0\\)"], correct: 2, explain: "Phương trình C có R = \\(\\sqrt{2^2+(-1)^2+(-1)^2-2} = \\sqrt{4} = 2\\)." },
+            { q: "Câu 14: Phương trình nào là phương trình mặt cầu?", a: ["\\(2x^2 + 2y^2 + 2z^2 + 4x + 8y = 0\\)", "\\(x^2 + 2y^2 + z^2 - 2x + 4y - 2z - 1 = 0\\)", "\\(x^2 + y^2 + z^2 - 2x + 2y + 3 = 0\\)", "\\(x^2 + y^2 - z^2 - 2x + 2y - 4z + 8 = 0\\)"], correct: 0, explain: "Rút gọn A cho 2 ta được mặt cầu có \\(R^2 = 1^2+2^2-0=5 > 0\\)." },
+            { q: "Câu 15: Phương trình nào sau đây là phương trình mặt cầu?", a: ["\\(x^2+y^2+z^2-x+6z+16=0\\)", "\\(x^2+y^2+z^2+4x-6y+8z-1=0\\)", "\\(x^2+y^2+z^2+2x-4y+4z+13=0\\)", "\\(x^2+y^2+z^2-2x+2y-4z+9=0\\)"], correct: 1, explain: "Ở phương trình B, \\(a^2+b^2+c^2-d = (-2)^2+3^2+(-4)^2-(-1) = 30 > 0\\)." },
+            { q: "Câu 16: Phương trình nào là phương trình mặt cầu?", a: ["\\(x^2+y^2-z^2-2x+4y+4z+5=0\\)", "\\(x^2+y^2+z^2-2x+2y-4z-2=0\\)", "\\(x^2+y^2+z^2+x-2y+3=0\\)", "\\(x^2-y^2+z^2-2x+6y-8z+1=0\\)"], correct: 1, explain: "Phương trình B có hệ số \\(x^2, y^2, z^2\\) bằng nhau và \\(R^2 > 0\\)." },
+            { q: "Câu 17: Phương trình nào KHÔNG phải là phương trình mặt cầu?", a: ["\\(x^2+y^2+z^2-2x+4y+6z-2=0\\)", "\\(x^2+y^2+z^2-2x+2y-2z=6\\)", "\\(x^2+y^2+z^2+2x-4y-6z+5=0\\)", "\\(x^2+y^2+z^2-2y+4xz+2=0\\)"], correct: 3, explain: "Phương trình D chứa số hạng tích \\(4xz\\) nên không phải là phương trình mặt cầu." },
+            { q: "Câu 18: Cho M(6;5;4) và mặt cầu (S) qua M, tiếp xúc với mặt phẳng (Oxy). Giá trị nhỏ nhất của bán kính R là:", a: ["3", "\\(\\sqrt{61}\\)", "4", "2"], correct: 3, explain: "Khoảng cách từ M đến (Oxy) là \\(d=4\\). Đường kính \\(2R \\ge d \\Rightarrow 2R \\ge 4 \\Rightarrow R \\ge 2\\). Vậy Min R = 2." },
+            
+            // PHẦN II 
+            { q: "Câu 19: Cho mặt cầu \\((S): (x+2)^2+(y-1)^2+z^2=4\\). Khẳng định nào sau đây ĐÚNG?", a: ["Đường kính mặt cầu bằng 8.", "Mặt cầu (S) đi qua điểm A(-1;3;0).", "Khoảng cách từ tâm I đến (Oyz) bằng 2.", "Mặt phẳng \\(x+2y-2z-2=0\\) tiếp xúc với (S)."], correct: 2, explain: "Tâm I(-2;1;0). Khoảng cách đến (Oyz) (phương trình x=0) là \\(|-2|=2\\)." },
+            { q: "Câu 20: Mặt cầu (S) đi qua A(3;1;2), B(1;0;3) và tâm I thuộc Ox. Khẳng định nào sau đây SAI?", a: ["Tâm I có tọa độ dạng (a;0;0).", "Bán kính mặt cầu là R = 9.", "Phương trình (S) là \\((x-1)^2+y^2+z^2=9\\).", "Điểm \\(M(0;1/3;5/3)\\) thuộc (Oyz) làm \\(MA^2+MB^2+MI^2\\) đạt GTNN."], correct: 1, explain: "Bán kính là R = 3 (vì R² = 9), do đó khẳng định 'Bán kính bằng 9' là Sai." },
+            
+            // PHẦN III 
+            { q: "Câu 21: Tính bán kính mặt cầu tâm I(0;2;3) và tiếp xúc với trục Oy.", a: ["R = 2", "R = 3", "R = 4", "R = 9"], correct: 1, explain: "Hình chiếu của I lên Oy là H(0;2;0). Bán kính \\(R = IH = \\sqrt{0^2+0^2+3^2} = 3\\)." },
+            { q: "Câu 22: Mặt cầu (S) qua A(3;-1;2), B(1;1;-2) và tâm I thuộc Oz. Giá trị \\(R^2\\) bằng:", a: ["9", "10", "11", "12"], correct: 2, explain: "I(0;0;c). \\(IA=IB \\Rightarrow 9+1+(c-2)^2 = 1+1+(c+2)^2 \\Rightarrow c=1\\). Vậy \\(R^2 = 3^2+(-1)^2+1^2 = 11\\)." },
+            { q: "Câu 23: Cho A(1;0;-3), B(-3;-2;-5). Tập hợp các điểm M thỏa mãn \\(AM^2+BM^2=30\\) là mặt cầu (S). Tìm bán kính R.", a: ["R = 2", "R = 3", "R = 4", "R = 9"], correct: 1, explain: "Gọi M(x,y,z). Khai triển giả thiết ta được mặt cầu có phương trình \\((x+1)^2+(y+1)^2+(z+4)^2 = 9\\), suy ra R = 3." },
+            { q: "Câu 24: Cho hai điểm A, B cố định có độ dài AB = 4. Tập hợp điểm M sao cho MA = 3MB là một mặt cầu. Bán kính mặt cầu đó bằng:", a: ["1.5", "2", "2.5", "3"], correct: 0, explain: "Bình phương hai vế \\(MA^2 = 9MB^2\\). Gọi I là điểm thỏa mãn \\(\\vec{IA}-9\\vec{IB}=\\vec{0}\\). Tính ra R = 1.5." },
+            { q: "Câu 25: Mặt cầu (S) có tâm là I(1;2;-3) và đi qua điểm B(3;-2;1). Điểm M(1;b;-3) thuộc (S) với b>0. Giá trị của b là:", a: ["4", "6", "8", "10"], correct: 2, explain: "Bán kính R = IB = 6. Phương trình \\((x-1)^2+(y-2)^2+(z+3)^2 = 36\\). Thay M vào ta có \\((b-2)^2=36 \\Rightarrow b=8\\)." },
+            { q: "Câu 26: Mặt cầu (S) có tâm I(2;-4;3) và tiếp xúc với trục Ox. Bán kính mặt cầu bằng:", a: ["3", "4", "5", "6"], correct: 2, explain: "Hình chiếu của I lên Ox là H(2;0;0). \\(R = IH = \\sqrt{0^2+(-4)^2+3^2} = \\sqrt{16+9} = 5\\)." },
+            { q: "Câu 27: Mặt cầu (S) có R = 2, tiếp xúc mặt phẳng (Oyz) và tâm I nằm trên tia Ox. Hoành độ của tâm I là:", a: ["1", "2", "3", "4"], correct: 1, explain: "Tâm I(a;0;0) với a>0. Do tiếp xúc (Oyz) nên khoảng cách d(I, Oyz) = |a| = R = 2. Vậy a = 2." },
+            { q: "Câu 28: Mặt cầu (S) có tâm I(-1;2;3) và có đúng 1 điểm chung với (Oxy). Gọi A(a;b;c) (c>1) là giao điểm của (S) với trục Oz. Tính a+b+c.", a: ["3", "4", "5", "6"], correct: 2, explain: "Do (S) tiếp xúc (Oxy) nên R = |z_I| = 3. PT: \\((x+1)^2+(y-2)^2+(z-3)^2 = 9\\). Cho x=y=0 ta được \\(z=5\\) hoặc \\(z=1\\). Do c>1 nên A(0;0;5). Tổng = 5." }
+        ];
+
+        let timeRemaining = 30 * 60; // 30 phút
+        let timerInterval;
+        let userName = "";
