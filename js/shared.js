@@ -235,6 +235,25 @@ if (typeof quizInfoHTML !== 'undefined') {
     }
 }
 
+// Render lý thuyết động
+if (typeof theoryHTML !== 'undefined' && theoryHTML.trim() !== "") {
+    let theoryBtn = document.getElementById("toggle-theory-btn");
+    let theoryContainer = document.getElementById("quiz-theory-container");
+    if (theoryBtn && theoryContainer) {
+        theoryBtn.style.display = "inline-block";
+        theoryContainer.innerHTML = theoryHTML;
+    }
+}
+
+function toggleTheory() {
+    let container = document.getElementById("quiz-theory-container");
+    if (container.style.display === "none") {
+        container.style.display = "block";
+    } else {
+        container.style.display = "none";
+    }
+}
+
 // ====== HIỆU ỨNG ÁNH SÁNG THEO CHUỘT (CURSOR GLOW) ======
 const updateGlow = (x, y) => {
     document.body.style.setProperty("--mouse-x", `${x}px`);

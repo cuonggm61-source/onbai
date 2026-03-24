@@ -32,6 +32,11 @@
             <!-- Nội dung tiêu đề, mô tả sẽ tự động nạp từ file js qua biến quizInfoHTML -->
         </div>
 
+        <button id="toggle-theory-btn" class="modal-btn" style="margin-bottom: 20px; display: none; background: #3498db; color: white; cursor: pointer; border: none; padding: 10px 20px; border-radius: 5px; font-weight: bold;" onclick="toggleTheory()">📖 Xem Lý Thuyết & Phương Pháp Giải</button>
+        <div id="quiz-theory-container" style="display: none; text-align: left; max-width: 800px; margin: 0 auto 20px auto; background: rgba(255,255,255,0.95); padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); color: #333; line-height: 1.6;">
+            <!-- Nội dung lý thuyết sẽ được nạp từ biến theoryHTML -->
+        </div>
+
         <input type="text" id="username" class="name-input" placeholder="Nhập Họ và Tên của bạn..." autocomplete="off">
         <button class="start-btn" onclick="beginQuiz()">BẮT ĐẦU LÀM BÀI</button>
     </div>
