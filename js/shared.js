@@ -245,6 +245,10 @@ document.addEventListener("DOMContentLoaded", () => {
             theoryContainer.innerHTML = theoryHTML;
         }
     }
+
+    if (typeof MathJax !== 'undefined') {
+        MathJax.typesetPromise().catch(err => console.error(err));
+    }
 });
 
 function toggleTheory() {
