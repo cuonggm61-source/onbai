@@ -58,7 +58,7 @@ function renderQuestions() {
     quizData.forEach((item, idx) => {
         const html = `
             <div class="question-card" id="q${idx}">
-                <div class="question-title">Câu ${idx + 1}: ${item.q}</div>
+                <div class="question-title"><strong>Câu ${idx + 1}:</strong> ${item.q.replace(/^Câu\s*\d+[\.\:]?\s*/i, '')}</div>
                 <div class="options">
                     ${item.a.map((opt, optIdx) => `
                         <label class="option-label" id="label-${idx}-${optIdx}">
