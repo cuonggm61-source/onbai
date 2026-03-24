@@ -227,23 +227,25 @@ function reviewQuiz() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-// Render thông tin chuyên đề động
-if (typeof quizInfoHTML !== 'undefined') {
-    let quizInfoContainer = document.getElementById("quiz-info-container");
-    if (quizInfoContainer) {
-        quizInfoContainer.innerHTML = quizInfoHTML;
+document.addEventListener("DOMContentLoaded", () => {
+    // Render thông tin chuyên đề động
+    if (typeof quizInfoHTML !== 'undefined') {
+        let quizInfoContainer = document.getElementById("quiz-info-container");
+        if (quizInfoContainer) {
+            quizInfoContainer.innerHTML = quizInfoHTML;
+        }
     }
-}
 
-// Render lý thuyết động
-if (typeof theoryHTML !== 'undefined' && theoryHTML.trim() !== "") {
-    let theoryBtn = document.getElementById("toggle-theory-btn");
-    let theoryContainer = document.getElementById("quiz-theory-container");
-    if (theoryBtn && theoryContainer) {
-        theoryBtn.style.display = "inline-block";
-        theoryContainer.innerHTML = theoryHTML;
+    // Render lý thuyết động
+    if (typeof theoryHTML !== 'undefined' && theoryHTML.trim() !== "") {
+        let theoryBtn = document.getElementById("toggle-theory-btn");
+        let theoryContainer = document.getElementById("quiz-theory-container");
+        if (theoryBtn && theoryContainer) {
+            theoryBtn.style.display = "inline-block";
+            theoryContainer.innerHTML = theoryHTML;
+        }
     }
-}
+});
 
 function toggleTheory() {
     let container = document.getElementById("quiz-theory-container");
