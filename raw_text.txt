@@ -1,0 +1,478 @@
+Cho hai biến cố  và  với . Khi đó công thức:
+gọi là công thức xác suất toàn phần.
+Chú ý 1: Công thức xác suất từng phần cũng đúng với biến cố  bất kì.
+Giả sử  và  là hai biến có ngẫu nhiên thỏa mãn  và . Khi đó công thức:
+gọi là công thức Bayes.
+Chú ý:
+Công thức Bayes vẫn đúng với biến cố  bất kì.
+Với , công thức  cũng được gọi là công thức Bayes.
+Các công thức cần nhớ:
+Chú ý 2: Công thức xác suất toàn phần và Công thức Bayes được áp dụng trong các trường hợp sự việc bài toán đề cập đến gồm nhiều giai đoạn có sự liên đới nhau trong quá trình xảy ra.
+Bài tập 1: Hộp thứ nhất có 3 viên bi xanh và 6 viên bi đỏ. Hộp thứ hai có 3 viên bi xanh và 7 viên bi đỏ. Các viên bi có cùng kích thước và khối lượng. Lấy ra ngẫu nhiên 1 viên bi từ hộp thứ nhất chuyển sang hộp thứ hai. Sau đó lại lấy ra ngẫu nhiên đồng thời 2 viên bi từ hộp thứ hai. Tính xác suất để hai viên bi lấy ra từ hộp thứ hai là bi đỏ.
+Lời giải
+Gọi  là biến cố “ lấy được một viên bi màu xanh ở hộp thứ nhất “ và  là biến cố “ lấy được hai viên bi màu đỏ ở hộp thứ hai”
+Khi đó ta có , .
+Suy ra ; .
+Áp dụng công thức xác suất toàn phần ta có 
+.
+Bài tập 2: Trong một trường học, tỉ lệ học sinh nữ là . Tỉ lệ học sinh nữ và tỉ lệ học sinh nam tham gia câu lạc bộ nghệ thuật lần lượt là  và . Chọn ngẫu nhiên một học sinh của trường. Tính xác suất học sinh được chọn có tham gia câu lạc bộ nghệ thuật.
+Lời giải
+Gọi  là biến cố “ học sinh được chọn là học sinh nữ “ và  là biến cố “ Học sinh được chọn tham gia câu lạc bộ nghệ thuật”
+Khi đó ta có , , 
+Suy ra .
+Áp dụng công thức xác suất toàn phần ta có 
+.
+Bài tập 3: Tỉ lệ người dân đã tiêm vắc xin phòng bệnh  ở một địa phương là . Trong số những người đã tiêm phòng, tỉ lệ mắc bệnh  là ; trong số những người chưa tiêm, tỉ lệ mắc bệnh  là . Chọn ngẫu nhiên một người ở địa phương đó. Tính xác suất người được chọn mắc bệnh .
+Lời giải
+Gọi  là biến cố “Người dân được tiêm phòng bệnh ”
+ là biến cố “Người dân mắc bệnh ”. Ta có .
+Tỉ lệ mắc bệnh khi tiêm phòng là: .
+Tỉ lệ mắc bệnh khi chưa tiêm phòng là .
+a) Xác suất người này mắc bệnh  là:
+Bài tập 4: Ở một khu rừng nọ có 7 chú lùn, trong đó có 4 chú luôn nói thật, 3 chú còn lại luôn tự nhận mình nói thật nhưng xác suất để mỗi chú này nói thật là . Bạn Tuyết gặp ngẫu nhiên một chú lùn. Gọi  là biến cố “Chú lùn đó luôn nói thật” và  là biến cố “Chú lùn đó tự nhận mình luôn nói thật”. Tính xác suất của các biến cố  và .
+Lời giải
+a) Ta có, trong 7 chú lùn thì có 4 chú lùn luôn nói thật, nên 
+Vì 4 chú lùn luôn nói thật nên .
+3 chú lùn còn lại nói thật với xác suất là  nên ta có: .
+Do đó .
+Bài tập 5: Tan giờ học buổi chiều một sinh viên có  về nhà ngay, nhưng do giờ cao điểm nên có  ngày (số ngày về nhà ngay) bị tắc đường nên bị về nhà muộn. Còn  số ngày sinh viên đó vào quán Internet để chơi game, những ngày này xác suất về muộn là . Còn lại những ngày khác sinh viên đó đi chơi với bạn bè và những ngày này có xác suất về muộn là . Xác suất sinh viên đó về muộn là bao nhiêu?
+Lời giải
+Gọi biến cố :“sinh viên đó đi học về muộn”. 
+Biến cố :“sinh viên đó tan học về nhà ngay”.
+Biến cố :“sinh viên đó tan học đi chơi game”. 
+Biến cố :“sinh viên đó tan học đi chơi với bạn bè”.
+Ta có: ; ; Theo công thức xác suất toàn phần, ta có:
+.
+Bài tập 6: Có hai cái hộp. Hộp thứ nhất có 4 bi trắng và 5 bi đen. Hộp thứ hai có 5 bi trắng và 4 bi đen. Chọn ngẫu nhiên 3 viên bi ở hộp thứ nhất bỏ vào hộp thứ hai rồi sau đó chọn ngẫu nhiên 1 viên bi ở hộp thứ hai. Khi đó xác suất để lấy được bi trắng là bao nhiêu?
+Lời giải
+Gọi biến cố :“lấy ra được  viên bi trắng từ hộp thứ nhất” trong đó .
+Biến cố :“lấy được viên bi trắng từ hộp thứ hai”. Khi đó:
+Xác suất lấy ra được  viên bi trắng từ hộp thứ nhất là .
+Xác suất lấy ra được  viên bi trắng từ hộp thứ nhất là .
+Xác suất lấy ra được  viên bi trắng từ hộp thứ nhất là .
+Xác suất lấy ra được  viên bi trắng từ hộp thứ nhất là .
+Xác suất lấy được 1 bi trắng từ hộp thứ hai với điều kiện lấy được  bi trắng từ hộp thứ nhất là 
+.
+Xác suất lấy được 1 bi trắng từ hộp thứ hai với điều kiện lấy được  bi trắng từ hộp thứ nhất là 
+.
+Xác suất lấy được 1 bi trắng từ hộp thứ hai với điều kiện lấy được  bi trắng từ hộp thứ nhất là 
+.
+Xác suất lấy được 1 bi trắng từ hộp thứ hai với điều kiện lấy được  bi trắng từ hộp thứ nhất là 
+.
+Theo công thức xác suất toàn phần, ta có
+.
+Vậy xác suất để lấy được bi trắng từ hộp thứ hai theo đề bài trên là .
+Bài tập 7: Một chiếc hộp có 80 viên bi, trong đó có 50 viên bi màu đỏ và 30 viên bi màu vàng; các viên bi có kích thước và khối lượng như nhau. Sau khi kiểm tra, người ta thấy có 60% số viên bi màu đỏ đánh số và 50% số viên bi màu vàng có đánh số, những viên bi còn lại không đánh số. Lấy ra ngẫu nhiên một viên bi trong hộp. Tính xác suất để viên bi được lấy ra có đánh số.
+Lời giải
+Gọi  là biến cố “viên bi được lấy ra có đánh số”;  là biến cố “viên bi được lấy ra có màu đỏ”, suy ra   là biến cố “viên bi được lấy ra có màu vàng”.
+Xác suất để viên bi được lấy ra có đánh số là .
+Ta có .
+Do đó .
+Bài tập 8: Một công ty một ngày sản xuất được  sản phẩm trong đó có  sản phẩm không đạt chất lượng. Lần lượt lấy ra ngẫu nhiên không hoàn lại  sản phẩm để kiểm tra. Xác suất để sản phẩm thứ hai không đạt chất lượng là 
+Lời giải
+Gọi  lần lượt là các biến cố sản phẩm thứ nhất, sản phẩm thứ hai không đạt chất lượng. 
+Nếu sản phẩm thứ nhất không đạt chất lượng thì còn  sản phẩm không đạt chất lượng trong tổng số  sản phẩm nên . 
+Ta có  và 
+Xác suất để sản phẩm thứ hai không đạt chất lượng là
+.
+Bài tập 9: Trong trò chơi hái hoa có thưởng của lớp 10A, cô giáo treo 10 bông hoa trên cành cây, trong đó có 5 bông hoa chứa phiếu có thưởng. Bạn Việt hái một bông hoa đầu tiên sau đó bạn Nam hái bông hoa thứ hai. Tính xác suất bạn Nam hái được bông hoa chứa phiếu có thưởng.
+Lời giải
+Gọi   là biến cố “Bông hoa bạn Nam hái được chứa phiếu có thưởng”,  là biến cố “Bông hoa bạn Việt hái được chứa phiếu có thưởng”. 
+Ta có .
+Xác suất bạn Nam hái được bông hoa chứa phiếu có thưởng là
+.
+Bài tập 10: Vào mỗi buổi sáng ở tuyến phố X, xác suất xảy ra tắc đường khi trời mưa và không mưa lần lượt là và . Xác suất có mưa vào một buổi sáng là . Tính xác suất để sáng đó tuyến phố H bị tắc đường.
+Lời giải
+Gọi  là biến cố “Tuyến phố X bị tắc đường” và  là biến cố “Buổi sáng đó có mưa”
+Theo đề ta có:;;  suy ra .
+Áp dụng công thức xác suất toàn phần ta có:
+.
+PHẦN I. Câu trắc nghiệm nhiều phương án lựa chọn. Mỗi câu hỏi thí sinh chỉ chọn một phương án.
+Cho 2 biến cố  và . Tìm  biết  ; .
+A. .	B. .	C. .	D. .
+Lời giải
+Ta có .
+Theo công thức xác suất toàn phần:
+.
+Cho hai biến cố  và  biết   . Khi đó xác suất xảy ra biến cố  là bao nhiêu?
+A. .	B. .	C. .	D. .
+Lời giải
+Ta có: .
+.
+Theo công thức xác suất toàn phần:
+.
+Cho hai biến cố  và  với . Khẳng định nào sau đây là đúng?
+A. .	B. .
+C. .	D. .
+Lời giải
+Theo công thức xác suất toàn phần, ta có: .
+Cho hai biến cố  và . Biết ; ; . Khi đó  bằng
+A. .	B. .	C. .	D. .
+Lời giải
+Ta có: .
+Theo công thức xác suất toàn phần, ta có:
+.
+Cho hai biến cố  và  với , , . Tính .
+A. .	B. .	C. .	D. .
+Lời giải
+Ta có: .
+Công thức xác suất toàn phần:
+.
+Cho ,  là hai biến cố. Biết . Nếu không xảy ra thì thỉ lệ xảy ra là . Nếu  xảy ra thì tỉ lệ  xảy ra . Xác suất của biến cố là bao nhiêu?
+A. .	B. .	C. .	D. .
+Lời giải
+Ta có: .
+Vì  xảy ra thì tỉ lệ  sảy ra  nên .
+Tương tự ta cũng có . Theo công thức xác suất toàn phần ta có:
+.
+Cho hai biến cố  thỏa mãn . Khi đó,  bằng
+A. .	B. .	C. .	D. .
+Lời giải
+Ta có: .
+Theo công thức xác suất toàn phần, ta có:
+.
+Cho hai biến cố  thỏa mãn . Khi đó,  bằng
+A. .	B. .	C. .	D. .
+Lời giải
+Đặt  suy ra .
+Theo công thức xác suất toàn phần, ta có:
+Vậy .
+Cho hai biến cố  với ,  và . Khi đó,  bằng
+A. .	B. .	C. .	D. .
+Lời giải
+Ta có: .
+Theo công thức xác suất toàn phần:
+.
+Hai máy tự động sản xuất cùng một loại chi tiết, trong đó máy I sản xuất máy II sản xuất tổng sản lượng. Tỉ lệ phế phẩm của các máy lần lượt là và Chọn ngẫu nhiên  sản phẩm từ kho. Tính xác suất để chọn được phế phẩm?
+A. .	B. .	C. .	D. .
+Lời giải
+Gọi là biến cố “Sản phẩm được chọn do máy I sản xuất”
+ là biến cố “Sản phẩm được chọn do máy II sản xuất”
+B là biến cố “Sản phẩm được chọn là phế phẩm”
+Ta có , , , 
+Có 2 xạ thủ loại I và 8 xạ thủ loại II, xác suất bắn trúng đích của các loại xạ thủ loại I là 0,9 và loại II là 0,7. Chọn ngẫu nhiên ra một xạ thủ và xạ thủ đó bắn một viên đạn. Tìm xác suất để viên đạn đó trúng đích.
+A. .	B. .	C. .	D. .
+Lời giải
+Gọi  là biến cố “Viên đạn trúng đích”;  là biến cố “Chọn xạ thủ loại I bắn”.
+; 
+Theo công thức xác suất thành phần ta có
+.
+Hộp thứ nhất có  viên bi xanh và  viên bi đỏ. Hộp thứ hai có  viên bi xanh và  viên bi đỏ. Các viên bi có cùng kích thước và khối lượng. Lấy ra ngẫu nhiên  viên bi từ hộp thứ nhất chuyển sang hộp thứ hai. Sau đó lại lấy ra ngẫu nhiên đồng thời  viên bi từ hộp thứ hai. Xác suất để lấy ra hai viên bi đỏ ở hộp thứ hai là
+A. .	B. .	C. .	D. .
+Lời giải
+Gọi  là biến cố “Lấy được 1 viên bi màu xanh ở hộp thứ nhất” và  là biến cố “Lấy được 2 viên bi màu đỏ ở hộp thứ hai”.
+Khi đó ta có ;  (vì hộp thứ hai có 4 bi xanh và 7 bi đỏ).
+Suy ra ; (vì hộp thứ hai có 3 bi xanh và 8 bi đỏ).
+Áp dụng công thức xác suất toàn phần:
+.
+Một công ty may có hai chi nhánh cùng sản xuất một loại áo, trong đó có áo ở chi nhánh I và  áo ở chi nhánh II. Tại chi nhánh I có  áo chất lượng cao và tại chi nhánh II có  áo chất lượng cao ( kích thước và hình dáng bề ngoài của các áo là như nhau). Chọn ngẫu nhiên  áo. Xác suất chọn được áo chất lượng cao là (làm tròn đến chữ số thập phân thứ hai)
+A. .	B. .	C. .	D. .
+Lời giải
+Gọi  là biến cố áo được chọn là áo chất lượng cao.  là biến cố áo được chọn ở chi nhánh  và  là biến cố áo được chọn ở chi nhánh .
+Từ giải thiết ta có , , , .
+Theo công thức xác suất toàn phần ta có:
+.
+Vậy xác suất chọn được áo chất lượng cao là .
+Người ta khảo sát khả năng chơi nhạc cụ của một nhóm học sinh tại trường X. Nhóm này có  học sinh là nam. Kết quả khảo sát cho thấy có  học sinh nam và  học sinh nữ biết chơi ít nhất một nhạc cụ. Chọn ngẫu nhiên một học sinh trong nhóm này. Tính xác suất để chọn được học sinh biết chơi ít nhất một nhạc cụ.
+A. .	B. .	C. .	D. .
+Lời giải
+Xét phép thử chọn ngẫu nhiên một học sinh trong nhóm.
+Gọi  là biến cố "Chọn được một học sinh biết chơi ít nhất một nhạc cụ" và  lần lượt là các biến cố "Chọn được một học sinh nam" và "Chọn được một học sinh nữ".
+Theo đề bài: 
+Áp dụng công thức xác suất toàn phần, ta có:
+Vậy xác suất để chọn được một học sinh biết chơi nhạc cụ là .
+Một trạm chỉ phát hai tín hiệu  và  với xác suất tương ứng 0,85 và 0,15 do có nhiễu trên đường truyền nên  tín hiệu  bị méo và thu được như tín hiệu ; còn  tín hiệu  bị méo thành và thu được như. Xác suất thu được tín hiệu  là
+A. .	B. .	C. .	D. .
+Lời giải
+Gọi  là biến cố “Phát tín hiệu ”
+Gọi  là biến cố “Phát tín hiệu ”
+Gọi  là biến cố “Phát được tín hiệu ”
+Gọi  là biến cố “Phát được tín hiệu ”
+Với 
+Ta có: 
+Do đó .
+PHẦN II. Câu trắc nghiệm đúng sai. Trong mỗi ý a), b), c), d) ở mỗi câu, thí sinh chọn đúng hoặc sai.
+Cho sơ đồ hình cây như hình bên. Xét tính đúng sai của các khẳng định sau:
+a) 
+b) .
+c) .
+d) .
+Lời giải
+a) Đúng: Công thức xác xuất toàn phần .
+b) Sai: Dựa vào sơ đồ cây ta có .
+c) Đúng: Xác suất của biến cố  là .
+d) Sai: Ta có .
+Cho  và  là hai biến cố của cùng phép thử, biết rằng ;  và. Xét tính đúng sai của các khẳng định sau:
+a) .
+b) Công thức xác suất đầy đủ là .
+c) Công thức xác suất đầy đủ là .
+d) .
+Lời giải
+a) Sai: .
+b) Đúng: Theo công thức được nêu trong sách giáo khoa.
+c) Sai: Công thức 
+d) Đúng: .
+Hình dạng hạt của đậu Hà Lan có hai kiểu hình: hạt trơn và hạt nhăn, có hai gene ứng với hai kiểu hình này là gene trội B và gene lặn b. Khi cho lai hai cây đậu Hà Lan, cây con lấy ngẫu nhiên một cách độc lập một gene từ cây bố và một gene từ cây mẹ để hình thành một cặp gene. Giả sử cây bố và cây mẹ được chọn ngẫu nhiên từ một quần thể các cây đậu Hà Lan, ở đó tỉ lệ cây mang kiểu gene bb, Bb tương ứng là  và . Xét tính đúng sai của các khẳng định sau:
+a) Xác suất để cây con lấy gene b từ cây bố với điều kiện cây bố có kiểu gene bb là .
+b) Xác suất để cây con lấy gene b từ cây bố với điều kiện cây bố có kiểu gene Bb là .
+c) Xác suất để cây con lấy gene b từ cây bố là .
+d) Xác suất để cây con có kiểu gene bb là .
+Lời giải
+Gọi  là biến cố: “Cây bố có kiểu gene bb”;  là biến cố: “Cây con lấy gene b từ cây bố”;
+ là biến cố: “Cây con lấy gene b từ cây mẹ”;  là biến cố: “Cây con có kiểu gene bb”.
+Theo giả thiết  và  độc lập nên .
+Ta áp dụng công thức xác suất toàn phần .
+Ta có .
+a) Sai:  là xác suất để cây con lấy gene b từ cây bố với điều kiện cây bố có kiểu gene bb. Do đó .
+b) Đúng:  là xác suất để cây con lấy gene b từ cây bố với điều kiện cây bố có kiểu gene Bb. Do đó .
+c) Sai: Thay vào  ta được: .
+d) Đúng: Tương tự tính được . Vậy .
+Từ kết quả trên suy ra trong một quần thể các cây đậu Hà Lan, ở đó tỉ lệ cây bố và cây mẹ mang kiểu gene bb, Bb tương ứng là  và , thì tỉ lệ cây con có kiểu gene bb là khoảng 
+Hộp thứ nhất chứa  viên bi vàng,  viên bi xanh. Hộp thứ hai chứa  viên bi vàng,  viên bị xanh và  viên bi đỏ. Lấy ngẫu nhiên  viên bi từ hộp thứ nhất bỏ vào hộp thứ hai, sau đó lấy ra  viên bi bất kỳ từ hộp thứ hai. Xét tính đúng sai của các khẳng định sau:
+a) Xác suất để lấy được bi xanh từ hộp thứ nhất là .
+b) Xác suất để lấy được bi vàng từ hộp thứ nhất là .
+c) Biết rằng lấy được bi màu xanh từ hộp thứ nhất. Xác suất để lấy được 2 viên bi khác màu từ hộp thứ hai là .
+d) Xác suất để lấy được 2 bi vàng từ hộp thứ hai là .
+Lời giải
+Gọi  là biến cố lấy được bi xanh từ hộp thứ nhất
+a) Đúng: Ta có: .
+b) Sai: Ta có  là biến cố lấy được bi vàng từ hộp thứ nhất, ta có: .
+c) Đúng: Gọi  là biến cố lấy được 2 bi khác màu từ hộp thứ hai. 
+Ta có: .
+d) Sai: Gọi  là biến cố lấy được 2 bi vàng từ hộp thứ hai. 
+Ta có: 
+Điểm kiểm tra cuối kì môn Toán của một học sinh phụ thuộc vào việc học sinh đó có chăm chỉ làm bài tập về nhà hay không. Nếu bạn An chăm chỉ làm bài tập về nhà môn Toán thì xác suất đạt điểm tốt kiểm tra cuối kì là . Còn nếu bạn An không chăm chỉ làm bài tập về nhà thì xác suất đạt điểm không tốt kiểm tra cuối kì là . Xác suất An chăm chỉ làm bài tập về nhà môn Toán là . Xét tính đúng sai của các khẳng định sau:
+a) Nếu An chăm chỉ làm bài tập về nhà môn Toán thì xác suất An được điểm không tốt kiểm tra cuối kì là .
+b) Nếu An không chăm chỉ làm bài tập về nhà môn Toán thì xác suất An được điểm tốt kiểm tra cuối kì là .
+c) Xác suất để An đạt điểm không tốt kiểm tra cuối kì là .
+d) Xác suất để An đạt điểm tốt kiểm tra cuối kì là .
+Lời giải
+Gọi  là biến cố ‘An chăm chỉ làm bài tập về nhà môn Toán” và  là biến cố ‘An đạt điểm tốt kiểm tra cuối kì”. Ta có: , .
+a) Đúng: Vì theo giả thiết, nếu bạn An chăm chỉ làm bài tập về nhà môn Toán thì xác suất đạt điểm tốt kiểm tra cuối kì là . Vậy, nếu An chăm chỉ làm bài tập về nhà môn Toán thì xác suất An được điểm không tốt kiểm tra cuối kì là .
+b) Sai: Vì theo giả thiết, nếu bạn An không chăm chỉ làm bài tập về nhà môn Toán thì xác suất đạt điểm không tốt kiểm tra cuối kì là . Vậy, nếu An không chăm chỉ làm bài tập về nhà môn Toán thì xác suất An được điểm tốt kiểm tra cuối kì là .
+c) Sai: Theo công thức tính xác suất toàn phần, xác suất để An đạt điểm không tốt kiểm tra cuối kì là
+.
+d) Đúng: Theo công thức tính xác suất toàn phần, xác suất để An đạt điểm tốt kiểm tra cuối kì là
+.
+Hoặc .
+Có hai chiếc hộp. Hộp thứ nhất có  viên bi xanh và  viên bi đỏ. Hộp thứ hai có  viên bi xanh và  viên bi đỏ. Các viên bi có cùng kích thước và khối lượng. Lấy ra ngẫu nhiên  viên bi từ hộp thứ nhất chuyển sang hộp thứ hai. Sau đó lại lấy ra ngẫu nhiên đồng thời  viên bi từ hộp thứ hai. Gọi  là biến cố “Lấy được 1 viên bi màu xanh ở hộp thứ nhất” và  là biến cố “Lấy được 2 viên bi màu đỏ ở hộp thứ hai”. Xét tính đúng sai của các khẳng định sau:
+a) .
+b) .
+c) .
+d) .
+Lời giải
+Đáp án: a) S b) S c) Đ d) Đ
+a) Sai: Ta có: .
+b) Sai: Nếu  xảy ra thì khi đó hộp hai chứa  bi xanh và  bi đỏ.
+Chọn hai bi bất kì tự hộp hai có  cách. Chọn hai bi đỏ từ hộp hai có  cách.
+Suy ra: .
+c) Đúng: Nếu  không xảy ra thì khi đó hộp hai chứa  bi xanh và  bi đỏ.
+Chọn hai bi bất kì tự hộp hai có  cách. Chọn hai bi đỏ từ hộp hai có  cách.
+Suy ra: .
+d) Đúng: Áp dụng công thức xác suất toàn phần:
+.
+Bạn Ngọc phải thực hiện hai thí nghiệm liên tiếp. Thí nghiệm thứ nhất có xác suất thành công là . Nếu thí nghiệm thứ nhất thành công thì xác suất thành công của thí nghiệm thứ hai là . Nếu thí nghiệm thứ nhất không thành công thì xác suất thành công của thí nghiệm thứ hai chỉ là . Xét các biến cố sau:
+Gọi  là biến cố “Thí nghiệm thứ nhất thành công”.
+Gọi  là biến cố “Thí nghiệm thứ hai thành công”.
+Xét tính đúng sai của các khẳng định sau:
+a) .
+b) .
+c) .
+d) .
+Lời giải
+a) Đúng:  là xác suất thí nghiệm thứ 2 thành công nếu thí nghiệm thứ nhất thành công do đó .
+b) Sai: .
+c) Đúng: .
+d) Đúng:  là biến cố “Cả hai thí nghiệm đều không thành công”.
+Theo giả thiết,  và .
+Vậy xác suất để cả hai thí nghiệm không thành công là
+.
+Có 2 xạ thủ loại I và 8 xạ thủ loại II, xác suất bắn trúng đích của các xạ thủ loại I là 0,9 và loại II là 0,7. Xét tính đúng sai của các khẳng định sau: 
+a) Chọn ngẫu nhiên 1 xạ thủ bắn và xạ thủ đó bắn một viên đạn. Gọi A là biến cố “Viên đạn trúng đích”. B là biến cố “ Xạ thủ loại I bắn”. C là biến cố “ Xạ thủ loại II bắn”. Khi đó ta có xác suất để viên đạn trúng đích được tính theo công thức công thức:
+b) Chọn ngẫu nhiên một xạ thủ bắn và xạ thủ đó bắn một viên đạn. Xác suất để viên đạn đó trúng đích là .
+c) Chọn ngẫu nhiên ra hai xạ thủ và cả hai xạ thủ đều bắn một viên đạn. Gọi E là biến cố “ Cả hai viên đạn đều bắn trúng đích”  là biến cố chọn được i xạ thủ loại I. Khi đó ta có công thức tính xác xuất để cả hai xạ thủ đều bắn trúng là
+.
+d) Chọn ngẫu nhiên hai xạ thủ, mỗi người bắn một viên đạn. Xác suất để cả hai viên đạn đó trúng đích là 
+Lời giải
+a) Sai: B và C tạo thành họ đầy đủ các biến cố nên 
+b) Đúng: Gọi A là biến cố “Viên đạn trúng đích”.
+B là biến cố “ Xạ thủ loại I bắn”; C là biến cố “ Xạ thủ loại II bắn”.
+Ta có: 
+B và C tạo thành họ đầy đủ các biến cố nên 
+c) Sai:  tạo thành họ đầy đủ các biến cố nên
+d) Sai: Gọi E là biến cố “ Cả hai viên đạn đều bắn trúng đích”  là biến cố “chọn được i xạ thủ loại I”
+Ta có: 
+; 
+Vì  tạo thành họ đầy đủ các biến cố nên ta có Xác suất để cả hai viên đạn đó trúng đích là:
+.
+Hai đội bóng thực hiện các lượt sút luân lưu, trong mỗi lượt sút luân lưu. Trong loạt sút thứ nhất, đội bóng thứ nhất thực hiện trước với xác suất thành công là 0,8, đội bóng thứ hai thực hiện sau. Nếu cầu thủ của đội bóng thứ nhất thực hiện thành công quả đá đầu tiên thì cầu thủ của đội bóng thứ hai có xác suất thực hiện thành công là 0,7; nếu đội bóng thứ nhất thực hiện không thành công thì xác suất để đội bóng thứ hai thực hiện thành công là 0,9. Xét các biến cố sau:
+Gọi  là biến cố “Cầu thủ của đội bóng thứ nhất thành công”.
+Gọi  là biến cố “Cầu thủ của đội bóng thứ hai thành công”.
+Xét tính đúng sai của các khẳng định sau: 
+a) .
+b) .
+c) .
+d) .
+Lời giải
+a) Sai:  là xác suất cầu thủ của đội bóng thứ thành công nếu cầu thủ của đội bóng thứ thứ nhất thành công do đó .
+b) Đúng: .
+c) Đúng: .
+d) Đúng:  là biến cố “Cầu thủ của đội bóng thứ hai thực hiện thành công”.
+Một cửa hàng chỉ bán hai loại điện thoại là Samsung và Iphone. Tỷ lệ khách hàng mua điện thoại Samsung là . Trong số các khách hàng mua điện thoại Samsung thì có  mua kèm ốp điện thoại. Tỷ lệ khách hàng mua điện thoại Iphone kèm ốp điện thoại trong số những khách hàng mua điện thoại Iphone là Xét tính đúng sai của các khẳng định sau:
+a) Xác suất một khách hàng mua điện thoại Samsung là .
+b) Xác suất để một khách hàng mua điện thoại Iphone là .
+c) Xác suất để một khách hàng mua ốp điện thoại biết rằng khách hàng đó đã mua điện thoại Samsung là , xác suất để một khách hàng mua ốp điện thoại biết rằng khách hàng đó đã mua Iphone là .
+d) Xác suất một khách hàng mua điện thoại kèm ốp là .
+Lời giải
+Gọi  là biến cố một khách hàng mua điện thoại kèm ốp,  là biến cố một khách hàng mua điện thoại Samsung
+a) Đúng: .
+b) Sai: Xác suất để một khách hàng mua điện thoại Iphone là .
+c) Đúng: .
+d) Đúng: .
+Trong năm học vừa qua, ở trường đại học X, tỉ lệ sinh viên thi trượt môn Toán là , thi trượt môn Tâm lý là . Trong số các sinh viên trượt môn Toán có sinh viên trượt môn Tâm lý. Gặp ngẫu nhiên một sinh viên trường X. Sử dụng sơ đồ hình cây để tính xác suất. Xét tính đúng sai của các khẳng định sau:
+a) Xác suất gặp sinh viên trượt cả hai môn Toán và Tâm lý là .
+b) Xác suất gặp sinh viên đậu cả hai môn Toán và Tâm lý là .
+c) Xác suất gặp sinh viên đậu môn Toán biết rằng sinh viên này trượt môn Tâm lý là .
+d) Xác suất gặp sinh viên đậu môn Tâm lý là .
+Lời giải
+Giả sử  là biến cố “ Gặp sinh viên thi trượt môn Toán”, có .
+ là biến cố “Gặp sinh viên thi trượt môn Tâm lý”, có . Khi đó .
+Sơ đồ hình cây:
+a) Sai. Vì xác suất gặp sinh viên thi trượt cả môn Toán và Tâm Lý là:
+.
+b) Đúng. Xác suất gặp sinh viên đậu cả môn Toán và Tâm lý là
+.
+c) Sai. Xác suất gặp sinh viên đậu môn Toán, biết rằng sinh viên này trượt môn Tâm lý là
+.
+d) Đúng. Theo công thức tính xác suất toàn phần, xác suất gặp sinh viên đậu môn Tâm lý là
+.
+PHẦN III. Câu trắc nghiệm trả lời ngắn
+Một hộp chứa 10 viên bi, trong đó có 6 viên bi màu đỏ và 4 viên bi màu xanh. Hai bạn An và Bình lần lượt lấy ra một viên bi từ hộp một cách ngẫu nhiên, bi được lấy ra không bỏ lại hộp. Tính xác suất bạn Bình lấy được một viên bi xanh (làm tròn kết quả đến hàng phần trăm).
+Lời giải
+Xét hai biến cố A: “ Bạn Bình lấy được một viên bi xanh”;
+B: “ Bạn An lấy được một viên bi xanh”.
+Khi đó, ta có 
+Áp dụng công thức toàn phần, ta có
+Số khán giả đến xem buổi biểu diễn âm nhạc ngoài trời phụ thuộc vào thời tiết. Giả sử, nếu trời không mưa thì xác suất để bán hết vé là 0,85; còn nếu trời mưa thì xác suất để bán hết vé là 0,45. Dự báo thời tiết cho thấy nếu xác suất để trời mưa vào buổi biểu diễn là 0,6. Tính xác suất để nhà tổ chức sự kiện bán hết vé.
+Lời giải
+Xét hai biến cố A: “ Nhà tổ chức sự kiện bán hết vé”;
+B: “Trời mưa vào buổi biểu diễn”.
+Khi đó, ta có .
+Áp dụng công thức toàn phần, ta có
+.
+Tại một địa phương có  người cao tuổi, bao gồm 260 nam và 240 nữ. Trong đó nhóm người cao tuổi nam và nữ lần lượt có  và  bị bệnh tiểu đường. Chọn ngẫu nhiên một người. Xác suất để chọn được một người không bị bệnh tiểu đường là bao nhiêu?(làm tròn kết quả đến chữ số hàng phần trăm)
+Lời giải
+Xét các biến cố:
+: “ Chọn được người không bị tiểu đường’’
+: “ Chọn được người cao tuổi là nam”
+: “ Chọn được người cao tuổi là nữ ”
+Từ giải thuyết ta có ; ;
+; 
+Theo công thức xác suất toàn phần, ta có
+ .
+Có hai hộp đựng bi. Hộp thứ nhất có  viên bi màu xanh,  viên bi màu đỏ, hộp thứ hai có  viên bi màu xanh,  viên bi màu đỏ. Chọn ngẫu nhiên một hộp, từ đó lấy ngẫu nhiên ra một viên bi. Tính xác suất lấy được viên bi màu đỏ.
+Lời giải
+Gọi  là biến cố: “Lấy được viên bi màu đỏ”
+Gọi  là biến cố: “Lấy được hộp thứ  ”
+Nhận xét:  nên 
+Áp dụng xác suất toàn phần ta có xác suất lấy được viên bi màu đỏ là 
+Một hộp có 80 viên bi, trong đó có 50 viên bi màu đỏ và 30 viên bi màu vàng; các viên bi có kích thước và khối lượng như nhau. Sau khi kiểm tra, người ta thấy có 90% số viên bi màu đỏ được đánh số và 50% số viên bi màu vàng được đánh số, những viên bi còn lại không đánh số. Lấy ra ngẫu nhiên một viên bi trong hộp. Tính xác suất để viên bi được lấy ra có đánh số (kết quả để dưới dạng số thập phân và làm tròn đến hàng phần trăm).
+Lời giải
+Gọi là biến cố: “ Viên bi được lấy ra có đánh số”
+Gọi  là biến cố: “ Viên bi được lấy ra có màu đỏ”, suy ra là biến cố: “ Viên bi được lấy ra có màu vàng”.
+Khi đó, ta có: ; .
+Áp dụng công thức xác suất toàn phần, ta có:
+.
+Một lô linh kiện có chứa 40% linh kiện do nhà máy I sản xuất và 60% linh kiện do nhà máy II sản xuất. Biết tỉ lệ phế phẩm của nhà máy I, II lần lượt là 3%, 4%. Một khách hàng lấy ngẫu nhiên một linh kiện từ lô hàng đó. Tính xác suất để linh kiện được lấy ra là linh kiện tốt ( kết quả để dưới dạng số thập phân và làm tròn đến hàng phần trăm).
+Lời giải
+Gọi  là biến cố: “ linh kiện được lấy ra là linh kiện tốt”
+Gọi  là biến cố: “ linh kiện được lấy ra do nhà máy I sản xuất ”, suy ra là biến cố: “ linh kiện được lấy ra do nhà máy II sản xuất”.
+Khi đó, ta có: ;
+.
+Áp dụng công thức xác suất toàn phần, ta có:
+.
+Tại một địa phương có 500 người cao tuổi, bao gồm 260 nam và 240 nữ. Trong nhóm người cao tuổi nam và nữ lần lượt có  và  bị bệnh tiểu đường. Chọn ngẫu nhiên một người. Xác suất để chọn được một người không bị bệnh tiểu đường là bao nhiêu? (kết quả làm tròn đến hàng phần trăm)
+Lời giải
+Xét các biến cố:
+: "Chọn được người không bị bệnh tiểu đường";
+: "Chọn được người cao tuổi là nam";
+: "Chọn được người cao tuổi là nữ".
+Từ giả thiết, ta có: ; ;
+; .
+Theo công thức xác suất toàn phần, ta có:
+.
+Vậy xác suất để chọn được một người không bị bệnh tiểu đường là .
+Có hai hộp bóng bàn, các quả bóng bàn có kích thước và hình dạng như nhau. Hộp thứ nhất có 3 quả bóng bàn màu trắng và 2 quả bóng bàn màu vàng. Hộp thứ hai có 6 quả bóng bàn màu trắng và 4 quả bóng bàn màu vàng. Lấy ngẫu nhiên 4 quả bóng bàn ở hộp thứ nhất bỏ vào hộp thứ hai rồi lấy ngẫu nhiên 1 quả bóng bàn ở hộp thứ hai ra. Tính xác suất để lấy được quả bóng bàn màu vàng từ hộp thứ hai.
+Lời giải
+Vì hộp thứ nhất có 3 quả bóng bàn màu trắng và 2 quả bóng bàn màu vàng nên khi lấy 4 quả bóng bàn ở hộp thứ nhất thì có hai khả năng: khả năng thứ nhất là lấy được 3 quả bóng bàn màu trắng và 1 quả bóng bàn màu vàng; khả năng thứ hai là lấy được 2 quả bóng bàn màu trắng và 2 quả bóng bàn màu vàng.
+Xét các biến cố:
+A: "Lấy được quả bóng bàn màu vàng từ hộp thứ hai";
+: "Lấy được 4 quả bóng bàn ở hộp thứ nhất, trong đó có 1 quả bóng bàn màu vàng";
+: "Lấy được 4 quả bóng bàn ở hộp thứ nhất, trong đó có 2 quả bóng bàn màu vàng".
+Trường hợp 1: Số cách lấy 4 quả bóng bàn từ hộp thứ nhất là , có 1 cách lấy 3 quả bóng bàn màu trắng và 2 cách lấy 1 quả bóng bàn màu vàng, suy ra .
+Vi khi đó hộp thứ hai có 9 quả bóng bàn màu trắng và 5 quả bóng bàn màu vàng nên .
+Trường hợp 2: Số cách lấy 4 quả bóng bàn từ hộp thứ nhất là , có  cách lấy 2 quả bóng bàn màu trắng và 1 cách lấy 2 quả bóng bàn màu vàng, suy ra .
+Vì khi đó hộp thứ hai có 8 quả bóng bàn màu trắng và 6 quả bóng bàn màu vàng nên 
+.
+Theo công thức xác suất toàn phần, ta có:
+.
+Vậy xác suất để lấy được quả bóng bàn màu vàng từ hộp thứ hai là .
+Một nhà máy sản xuất bóng đèn có tỉ lệ bóng đèn đạt tiêu chuẩn là 80%. Trước khi xuất ra thị trường, mỗi bóng đèn đều được kiểm tra chất lượng. Vì sự kiểm tra không thể tuyệt đối hoàn hảo nên tỉ lệ công nhận một bóng đèn đạt tiêu chuẩn là 0,9 và tỉ lệ loại bỏ một bóng hỏng là 0,95. Hãy tính tỉ lệ bóng đạt tiêu chuẩn sau khi qua khâu kiểm tra chất lượng.
+Lời giải
+Gọi  là biến cố “bóng đạt chuẩn sau khi qua kiểm tra chất lượng”
+ là biến cố “sản phẩm đạt tiêu chuẩn”.
+Theo bài ra ta có: ; 
+Do tỉ lệ công nhận một bóng đèn đạt tiêu chuẩn là 0,9 nên .
+Tỉ lệ loại bỏ một bóng hỏng là 0,95 nên .
+Theo công thức xác suất toàn phần ta có: 
+.
+Một đội tuyển thi bắn súng có  xạ thủ, bao gồm  xạ thủ hạng I và  xạ thủ hạng II. Xác suất bắn trúng mục tiêu của xạ thủ hạng I và hạng II lần lượt là  và . Chọn ngẫu nhiên một xạ thủ và xạ thủ đó chỉ bắn một viên đạn. Gọi  là biến cố “Chọn được xạ thủ hạng I” và  là biến cố “Viên đạn trúng mục tiêu”. Sử dụng sơ đồ hình cây (tham khảo hình vẽ), tính xác suất để viên đạn đó trúng mục tiêu.
+Lời giải
+Ta có .
+Theo công thức xác suất toàn phần ta có
+.
+Vậy xác suất để viên đạn trúng mục tiêu là .
+Một cái hộp có chứa  quả cầu màu đỏ và  quả cầu màu vàng; các quả cầu có kích thước và khối lượng như nhau. Sau khi thống kê người ta thấy số lượng các quả cầu được cho trong bảng sau:
+Người ta lấy ngẫu nhiên một quả cầu trong hộp, xét hai biến cố sau:
+: “Quả cầu lấy ra có đánh số”.
+: “Quả cầu lấy ra có màu đỏ”
+Sử dụng công thức xác suất toàn phần tính xác suất để quả cầu lấy ra được đánh số.
+Lời giải
+Ta có: ; ; ; .
+Theo công thức tính xác suất toàn phần ta có xác suất để lấy ra được viên bi được đánh số là 
+.
+Tỉ lệ bị bệnh cúm tại một địa phương bằng . Khi thực hiện xét nghiệm chẩn đoán, nếu người có bệnh cúm thì khả năng phản ứng dương tính là , nếu người không bị bệnh cúm thì khả năng phàn ứng dương tính . Chọn ngẫu nhiên 1 người tại địa phương đó. Xác suất người được chọn có phản ứng dương tính là bao nhiêu?
+Lời giải
+Xét các biến cố : "Chọn được người bi bệnh cúm";
+: "Chọn được người có phản ứng dương tính".
+Khi đó .
+Theo công thức xác suất toàn phần, xác suất của biến cố  là:
+.
+Giả sử tỉ lệ người dân của một tỉnh nghiện thuốc lá là 25%; tỉ lệ người mắc bệnh phổi trong số người nghiện thuốc lá là 72%, tỉ lệ người không mắc bệnh phổi trong số người không nghiện thuốc lá là 86%. Ta gặp ngẫu nhiên một người dân của tỉnh đó, tính xác suất người đó mắc bệnh phổi?
+Lời giải
+Gọi  là biến cố “người đó nghiện thuốc lá”, suy ra  là biến cố “người đó không nghiện thuốc lá”.
+Gọi  là biến cố “người đó mắc bệnh phổi”.
+Nếu người ta gặp mắc bệnh phổi thì người đó có thể nghiện thuốc lá hoặc không nghiện thuốc lá.
+Với .
+Ta có: 
+Vậy 
+Do đó, xác suất để người dân của tỉnh đó mắc bệnh phổi là .
+Thống kê hồ sơ 250 học sinh khối 10 trong đó có 150 học sinh nữ và 100 học sinh nam. Sau khi thống kê, kết quả có  học sinh nữ là đoàn viên,  học sinh nam là đoàn viên; những học sinh còn lại không là đoàn viên. Chọn ngẫu nhiên một học sinh trong 250 học sinh khối 10. Tính xác suất để học sinh được chọn là đoàn viên.
+Lời giải
+Số học sinh nữ là đoàn viên là  (học sinh).
+Số học sinh nam là đoàn viên là  (học sinh).
+Xét biến cố:  là biến cố “Chọn được học sinh là đoàn viên”.
+ là biến cố “ Chọn được học sinh nam”. Khi đó:
+; .
+; .
+Áp dụng công thức xác suất toàn phần ta có:
+.
+Có 1 kho bia kém chất lượng chứa các thùng giống nhau (24 lon/thùng) gồm 3 loại: loại I để lẫn mỗi thùng 3 lon quá hạn sử dụng, loại II để lẫn mỗi thùng 2 lon quá hạn và loại III để lẫn mỗi thùng có 4 lon quá hạn. Biết số lượng thùng loại I gấp 2 lần số lượng thùng loại II và số thùng loại II gấp 3 lần thùng loại III. Chọn ngẫu nhiên 1 thùng từ trong kho, từ đó chọn ngẫu nhiên 10 lon. Tính xác suất để lấy được 2 lon quá hạn sử dụng (làm tròn đến kết quả phần chục).
+Lời giải
+Gọi  là biến cố chọn được thùng loại  ()
+ là biến cố chọn được 10 sản phẩm trong đó có 2 lon quá hạn từ thùng được chọn ra.
+Gọi số thùng loại III là  thùng ( ).
+Do đó số thùng loại I và loại II lần lượt là 
+Từ đó, ta có 
+Xác suất để chọn được 2 lon quá hạn là:
+-----------------HẾT-----------------

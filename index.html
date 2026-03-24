@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
     <div id="particles-js"></div>
 
@@ -16,77 +18,266 @@
             <p>Chọn chủ đề bạn muốn thử sức hôm nay</p>
         </div>
 
-        <div class="exam-grid">
-            
-            <div class="exam-card">
-                <div>
-                    <div class="exam-title">Đề 01: Phương Trình Mặt Phẳng</div>
-                    <div class="exam-desc">Các bài tập về vectơ pháp tuyến, viết phương trình mặt phẳng đoạn chắn, vị trí tương đối.</div>
-                    <div class="exam-meta">⏱️ 20 phút | 📝 30 câu </div>
-                </div>
-                <a href="quiz.html?id=matphang" class="start-btn">Vào Thi Ngay ➔</a>
+        <!-- BẢNG THEO DÕI HOẠT ĐỘNG -->
+        <div class="heatmap-section">
+            <h3 class="heatmap-title">🔥 Hoạt Động Ôn Tập Gần Đây</h3>
+            <div class="heatmap-stats">
+                <span>Số ngày luyện tập: <strong id="total-days">0</strong></span>
+                <span>Chuỗi dài nhất: <strong id="max-streak">0</strong> ngày</span>
+                <span>Chuỗi hiện tại: <strong id="current-streak">0</strong> ngày</span>
             </div>
-
-            <div class="exam-card">
-                <div>
-                    <div class="exam-title">Đề 02: Phương Trình Đường Thẳng</div>
-                    <div class="exam-desc">Ôn tập về vectơ chỉ phương, phương trình tham số, chính tắc và góc giữa hai đường thẳng.</div>
-                    <div class="exam-meta">⏱️ 15 phút | 📝 17 câu</div>
-                </div>
-                <a href="quiz.html?id=duongthang" class="start-btn">Vào Thi Ngay ➔</a>
+            <div class="heatmap-container">
+                <div class="heatmap-months" id="heatmap-months"></div>
+                <div class="heatmap-grid" id="heatmap-grid"></div>
             </div>
-
-             <div class="exam-card">
-                <div>
-                    <div class="exam-title">Đề 03: Nguyên Hàm</div>
-                    <div class="exam-desc">Ôn tập về nguyên hàm lũy thừa và lượng giác.</div>
-                    <div class="exam-meta">⏱️ 20 phút | 📝 20 câu</div>
-                </div>
-                <a href="quiz.html?id=nguyen-ham" class="start-btn">Vào Thi Ngay ➔</a>
+            <div class="heatmap-legend">
+                <span>Ít</span>
+                <div class="legend-box color-empty"></div>
+                <div class="legend-box color-scale-1"></div>
+                <div class="legend-box color-scale-2"></div>
+                <div class="legend-box color-scale-3"></div>
+                <div class="legend-box color-scale-4"></div>
+                <span>Nhiều</span>
             </div>
-            <div class="exam-card">
-                <div>
-                    <div class="exam-title">Đề 04: Nguyên Hàm hii </div>
-                    <div class="exam-desc">Ôn tập về nguyên hàm lũy thừa và lượng giác.</div>
-                    <div class="exam-meta">⏱️ 20 phút | 📝 20 câu</div>
-                </div>
-                <a href="quiz.html?id=nguyen-ham1" class="start-btn">Vào Thi Ngay ➔</a>
-            </div>
-            <div class="exam-card">
-                <div>
-                    <div class="exam-title">Đề 5: Nguyên Hàm Hàm SỐ MŨ </div>
-                    <div class="exam-desc">Ôn tập về nguyên hàm hàm số mũ và logarit.</div>
-                    <div class="exam-meta">⏱️ 20 phút | 📝 20 câu</div>
-                </div>
-                <a href="quiz.html?id=nguyenham_hamsomu" class="start-btn">Vào Thi Ngay ➔</a>
-            </div>
-
-
-            <div class="exam-card" style="border-top-color: #27ae60;">
-            <div>
-                <div class="exam-title">Đề 6: Phương Trình Mặt Cầu</div>
-                <div class="exam-desc">Xác định tâm, bán kính, nhận dạng phương trình mặt cầu và các điều kiện tiếp xúc.</div>
-                <div class="exam-meta">⏱️ 30 phút | 📝 28 câu</div>
-            </div>
-            <a href="quiz.html?id=mat-cau" class="start-btn" style="background-color: #27ae60;">Vào Thi Ngay ➔</a>
         </div>
 
-
-
-
-        
-        <div class="exam-card" style="border-top-color: #27ae60;">
-            <div>
-                <div class="exam-title">Đề 7: Phương Trình Mặt Cầu</div>
-                <div class="exam-desc">viết mặt cầu.</div>
-                <div class="exam-meta">⏱️ 20 phút | 📝 16 câu</div>
+        <div class="category-section active">
+            <div class="category-header" onclick="toggleCategory(this)" style="border-left-color: #f39c12;">
+                <h2>🎲 CHUYÊN ĐỀ XÁC SUẤT (TOÁN 12 MỚI)</h2>
+                <span class="toggle-icon">▼</span>
             </div>
-            <a href="quiz.html?id=viet-pt-mat-cau" class="start-btn" style="background-color: #27ae60;">Vào Thi Ngay ➔</a>
+            <div class="category-content">
+                <div class="exam-grid">
+                    <div class="exam-card" style="border-top-color: #f39c12;">
+                        <div>
+                            <div class="exam-title">Đề 01: XS Toàn Phần dễ</div>
+                            <div class="exam-desc">Bộ 15 câu hỏi trắc nghiệm rèn luyện tư duy tính xác suất có điều kiện
+                                và vận dụng công thức Bayes.</div>
+                            <div class="exam-meta">⏱️ 25 phút | 📝 15 câu</div>
+                        </div>
+                        <a href="quiz.html?id=xac-suat" class="start-btn" style="background-color: #f39c12;">Vào Thi
+                            Ngay ➔</a>
+                    </div>
+                    <div class="exam-card" style="border-top-color: #f39c12;">
+                        <div>
+                            <div class="exam-title">Đề 02: Ứng dụng Công Thức Bayes</div>
+                            <div class="exam-desc">Bộ 24 câu trắc nghiệm bài tập tình huống thực tế giải quyết các bài
+                                toán xét nghiệm y khoa, kiểm tra chất lượng...</div>
+                            <div class="exam-meta">⏱️ 45 phút | 📝 24 câu</div>
+                        </div>
+                        <a href="quiz.html?id=bayes" class="start-btn" style="background-color: #f39c12;">Vào Thi
+                            Ngay ➔</a>
+                    </div>
+                </div>
+            </div>
         </div>
+
+        <div class="category-section">
+            <div class="category-header" onclick="toggleCategory(this)">
+                <h2>📘 CHUYÊN ĐỀ NGUYÊN HÀM</h2>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="category-content">
+                <div class="exam-grid">
+                    <div class="exam-card">
+                        <div>
+                            <div class="exam-title">Đề 01: Nguyên Hàm Cơ Bản</div>
+                            <div class="exam-desc">Ôn tập về nguyên hàm lũy thừa và lượng giác.</div>
+                            <div class="exam-meta">⏱️ 20 phút | 📝 20 câu</div>
+                        </div>
+                        <a href="quiz.html?id=nguyen-ham" class="start-btn">Vào Thi Ngay ➔</a>
+                    </div>
+                    <div class="exam-card">
+                        <div>
+                            <div class="exam-title">Đề 02: Nguyên Hàm Nâng Cao</div>
+                            <div class="exam-desc">Ôn tập về nguyên hàm lũy thừa và lượng giác nâng cao.</div>
+                            <div class="exam-meta">⏱️ 20 phút | 📝 20 câu</div>
+                        </div>
+                        <a href="quiz.html?id=nguyen-ham1" class="start-btn">Vào Thi Ngay ➔</a>
+                    </div>
+                    <div class="exam-card">
+                        <div>
+                            <div class="exam-title">Đề 03: Nguyên Hàm Hàm Số Mũ</div>
+                            <div class="exam-desc">Ôn tập về nguyên hàm hàm số mũ và logarit.</div>
+                            <div class="exam-meta">⏱️ 20 phút | 📝 20 câu</div>
+                        </div>
+                        <a href="quiz.html?id=nguyenham_hamsomu" class="start-btn">Vào Thi Ngay ➔</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="category-section">
+            <div class="category-header oxyz" onclick="toggleCategory(this)">
+                <h2>📐 CHUYÊN ĐỀ TỌA ĐỘ KHÔNG GIAN (OXYZ)</h2>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="category-content">
+                <div class="exam-grid">
+                    <div class="exam-card" style="border-top-color: #27ae60;">
+                        <div>
+                            <div class="exam-title">Đề 01: Phương Trình Mặt Phẳng</div>
+                            <div class="exam-desc">Các bài tập về vectơ pháp tuyến, viết phương trình mặt phẳng đoạn
+                                chắn, vị trí tương đối.</div>
+                            <div class="exam-meta">⏱️ 20 phút | 📝 30 câu </div>
+                        </div>
+                        <a href="quiz.html?id=matphang" class="start-btn" style="background-color: #27ae60;">Vào Thi
+                            Ngay ➔</a>
+                    </div>
+                    <div class="exam-card" style="border-top-color: #27ae60;">
+                        <div>
+                            <div class="exam-title">Đề 02: Phương Trình Đường Thẳng</div>
+                            <div class="exam-desc">Ôn tập về vectơ chỉ phương, phương trình tham số, chính tắc và góc
+                                giữa hai đường thẳng.</div>
+                            <div class="exam-meta">⏱️ 15 phút | 📝 17 câu</div>
+                        </div>
+                        <a href="quiz.html?id=duongthang" class="start-btn" style="background-color: #27ae60;">Vào Thi
+                            Ngay ➔</a>
+                    </div>
+                    <div class="exam-card" style="border-top-color: #27ae60;">
+                        <div>
+                            <div class="exam-title">Đề 03: Mở đầu phương trình Mặt Cầu</div>
+                            <div class="exam-desc">Xác định tâm, bán kính, nhận dạng phương trình mặt cầu và các điều
+                                kiện tiếp xúc.</div>
+                            <div class="exam-meta">⏱️ 30 phút | 📝 28 câu</div>
+                        </div>
+                        <a href="quiz.html?id=mat-cau" class="start-btn" style="background-color: #27ae60;">Vào Thi Ngay
+                            ➔</a>
+                    </div>
+                    <div class="exam-card" style="border-top-color: #27ae60;">
+                        <div>
+                            <div class="exam-title">Đề 04: Phương Trình Mặt Cầu Nâng cao</div>
+                            <div class="exam-desc">Viết phương trình mặt cầu với các dữ kiện nâng cao.</div>
+                            <div class="exam-meta">⏱️ 20 phút | 📝 16 câu</div>
+                        </div>
+                        <a href="quiz.html?id=viet-pt-mat-cau" class="start-btn" style="background-color: #27ae60;">Vào
+                            Thi Ngay ➔</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
     <script>
+        // ======= HEATMAP RENDER LOGIC =======
+        function renderHeatmap() {
+            const grid = document.getElementById('heatmap-grid');
+            const monthsContainer = document.getElementById('heatmap-months');
+            if (!grid) return;
+
+            grid.innerHTML = '';
+            if (monthsContainer) monthsContainer.innerHTML = '';
+
+            const activityData = JSON.parse(localStorage.getItem('quiz_activity') || '{}');
+            const today = new Date();
+            const daysCount = 365;
+
+            let startDate = new Date(today);
+            startDate.setDate(today.getDate() - daysCount + 1);
+
+            // Pad start to align weekday
+            const startDayOfWeek = startDate.getDay();
+            for (let i = 0; i < startDayOfWeek; i++) {
+                const square = document.createElement('div');
+                square.className = 'heatmap-cell';
+                square.style.visibility = 'hidden';
+                grid.appendChild(square);
+            }
+
+            let totalDays = 0;
+            let currentStreak = 0;
+            let maxStreak = 0;
+            let currentStreakCounter = 0;
+            let lastActiveDate = null;
+
+            let colIndex = 0;
+            let currentDayOfWeek = startDayOfWeek;
+            let lastMonth = -1;
+            const monthNames = ["Thg 1", "Thg 2", "Thg 3", "Thg 4", "Thg 5", "Thg 6", "Thg 7", "Thg 8", "Thg 9", "Thg 10", "Thg 11", "Thg 12"];
+
+            for (let i = daysCount - 1; i >= 0; i--) {
+                let d = new Date();
+                d.setDate(today.getDate() - i);
+
+                if (d.getMonth() !== lastMonth) {
+                    if (monthsContainer) {
+                        let label = document.createElement('div');
+                        label.className = 'heatmap-month-label';
+                        label.textContent = monthNames[d.getMonth()];
+                        label.style.left = `${colIndex * 17}px`;
+                        monthsContainer.appendChild(label);
+                    }
+                    lastMonth = d.getMonth();
+                }
+
+                // Get local ISO string YYYY-MM-DD
+                const tzoffset = d.getTimezoneOffset() * 60000;
+                const dateString = (new Date(d.getTime() - tzoffset)).toISOString().split('T')[0];
+
+                const count = activityData[dateString] || 0;
+
+                // Stats calculation
+                if (count > 0) {
+                    totalDays++;
+                    if (!lastActiveDate) {
+                        currentStreakCounter = 1;
+                    } else {
+                        let diff = Math.round((d - lastActiveDate) / (1000 * 60 * 60 * 24));
+                        if (diff === 1) {
+                            currentStreakCounter++;
+                        } else if (diff > 1) {
+                            currentStreakCounter = 1; // broken streak
+                        }
+                    }
+                    if (currentStreakCounter > maxStreak) maxStreak = currentStreakCounter;
+                    lastActiveDate = new Date(d); // clone
+                }
+
+                const square = document.createElement('div');
+                square.className = 'heatmap-cell';
+                if (count === 0) square.classList.add('color-empty');
+                else if (count === 1) square.classList.add('color-scale-1');
+                else if (count <= 3) square.classList.add('color-scale-2');
+                else if (count <= 5) square.classList.add('color-scale-3');
+                else square.classList.add('color-scale-4');
+
+                const tooltipText = count === 0 ? `Chưa làm bài nào vào ${dateString}` : `${count} bài tập vào ${dateString}`;
+                square.setAttribute('title', tooltipText);
+
+                grid.appendChild(square);
+
+                currentDayOfWeek++;
+                if (currentDayOfWeek === 7) {
+                    currentDayOfWeek = 0;
+                    colIndex++;
+                }
+            }
+
+            if (lastActiveDate) {
+                let diffToToday = Math.round((today - lastActiveDate) / (1000 * 60 * 60 * 24));
+                if (diffToToday <= 1) {
+                    currentStreak = currentStreakCounter;
+                }
+            }
+
+            document.getElementById('total-days').textContent = totalDays;
+            document.getElementById('current-streak').textContent = currentStreak;
+            document.getElementById('max-streak').textContent = maxStreak;
+
+            // Auto scroll container so today is visible
+            const container = document.querySelector('.heatmap-container');
+            if (container) {
+                container.scrollLeft = container.scrollWidth;
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", renderHeatmap);
+
+        function toggleCategory(element) {
+            const section = element.parentElement;
+            section.classList.toggle('active');
+        }
+
         // Hiệu ứng ánh sáng đi theo chuột (Cursor Glow Effect)
         const updateGlow = (x, y) => {
             document.body.style.setProperty("--mouse-x", `${x}px`);
@@ -102,4 +293,5 @@
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="js/particles-config.js"></script>
 </body>
+
 </html>

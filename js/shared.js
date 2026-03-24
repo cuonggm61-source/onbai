@@ -149,6 +149,17 @@ function submitQuiz() {
     let finalScore = document.getElementById("final-score");
     if (finalScore) finalScore.textContent = `${score}/${quizData.length}`;
     
+    // ===== LƯU LỊCH SỬ HOẠT ĐỘNG (HEATMAP) =====
+    try {
+        const tzoffset = (new Date()).getTimezoneOffset() * 60000;
+        const localISOTime = (new Date(Date.now() - tzoffset)).toISOString().split('T')[0];
+        let activityData = JSON.parse(localStorage.getItem('quiz_activity') || '{}');
+        activityData[localISOTime] = (activityData[localISOTime] || 0) + 1;
+        localStorage.setItem('quiz_activity', JSON.stringify(activityData));
+    } catch (e) {
+        console.error("Could not save activity", e);
+    }
+
     // ====== PHẦN MỚI: HIỂN THỊ ẢNH VÀ PHÁT ÂM THANH DỰA VÀO ĐIỂM SỐ ======
     let msg = "";
     let imgUrl = "";

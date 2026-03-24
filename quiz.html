@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,13 +20,14 @@
         }
     </script>
 </head>
+
 <body>
     <div id="particles-js"></div>
     <audio id="bg-music" loop></audio>
 
     <div id="start-screen">
         <a href="index.html" class="home-link">⬅ Quay về Trang Chủ</a>
-        
+
         <div id="quiz-info-container">
             <!-- Nội dung tiêu đề, mô tả sẽ tự động nạp từ file js qua biến quizInfoHTML -->
         </div>
@@ -51,11 +53,11 @@
         <h2>KẾT QUẢ BÀI THI</h2>
         <div>Thí sinh: <span class="student-name-final" id="final-name"></span></div>
         <span class="score-display" id="final-score">0/0</span>
-        
+
         <img id="result-image" src="" alt="Kết quả">
-        
+
         <p id="score-message" style="font-weight: bold; font-size: 1.1em; margin-top: 0;"></p>
-        
+
         <button class="modal-btn btn-review" onclick="reviewQuiz()">🔍 Xem lại bài làm (Câu sai)</button>
         <button class="modal-btn btn-restart" onclick="location.reload()">↻ Làm lại bài này</button>
         <button class="modal-btn btn-home" onclick="window.location.href='index.html'">🏠 Chọn đề khác</button>
@@ -64,4 +66,5 @@
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="js/particles-config.js"></script>
 </body>
+
 </html>
