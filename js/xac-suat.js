@@ -1,10 +1,18 @@
-const quizAudioSrc = "asset/Close to You - YouTube.mp3";
+const quizAudioSrc = "asset/angvan.mp3";
 const quizInfoHTML = `<h1 style="color: #2c3e50;">CHUYÊN ĐỀ: XÁC SUẤT TOÀN PHẦN </h1>
         <div style="text-align: left; max-width: 500px; margin: 0 auto; line-height: 1.6;">
             <p>📝 <strong>Số câu:</strong> 15 câu hỏi trắc nghiệm</p>
             <p>⏱️ <strong>Thời gian:</strong> 25 phút</p>
             <p>📚 <strong>Nội dung:</strong> 15 câu</p>
-        </div>`;
+        </div>
+        <div style="margin-top: 18px; padding: 14px 20px; background: linear-gradient(135deg, #fff8e1, #fff3cd); border-radius: 16px; border-left: 5px solid #f39c12; display: flex; align-items: center; gap: 16px; max-width: 500px; margin-left: auto; margin-right: auto;">
+            <img src="asset/colennn .jpg" alt="Cổ vũ" style="width: 140px; height: 140px; object-fit: cover; border-radius: 50%; border: 3px solid #f39c12; flex-shrink: 0;" />
+            <div style="text-align: left;">
+                <p style="margin: 0; font-size: 1.05em; font-weight: bold; color: #c0392b;">🌟 Cố lên, hành trình không còn dài!</p>
+                <p style="margin: 6px 0 0; font-size: 0.92em; color: #7f4f24;">Anh tin em làm được :>> 💪✨</p>
+            </div>
+        </div>
+        <div style="display:none">`;
 
 const theoryHTML = `<h3>📖 LÝ THUYẾT: XÁC SUẤT TOÀN PHẦN VÀ CÔNG THỨC BAYES</h3>
 <p><strong>1. Công thức Xác suất Toàn phần:</strong></p>
