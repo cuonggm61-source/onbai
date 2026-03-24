@@ -1,9 +1,9 @@
 const quizAudioSrc = "asset/Close to You - YouTube.mp3";
-const quizInfoHTML = `<h1 style="color: #2c3e50;">CHUYÊN ĐỀ: XÁC SUẤT TOÀN PHẦN VÀ CÔNG THỨC BAYES</h1>
+const quizInfoHTML = `<h1 style="color: #2c3e50;">CHUYÊN ĐỀ: XÁC SUẤT TOÀN PHẦN </h1>
         <div style="text-align: left; max-width: 500px; margin: 0 auto; line-height: 1.6;">
             <p>📝 <strong>Số câu:</strong> 15 câu hỏi trắc nghiệm</p>
             <p>⏱️ <strong>Thời gian:</strong> 25 phút</p>
-            <p>📚 <strong>Nội dung:</strong> Đề bài được bọc lại sát theo đúng tài liệu (15 câu) của học sinh.</p>
+            <p>📚 <strong>Nội dung:</strong> 15 câu</p>
         </div>`;
 
 const theoryHTML = `<h3>📖 LÝ THUYẾT: XÁC SUẤT TOÀN PHẦN VÀ CÔNG THỨC BAYES</h3>
@@ -19,8 +19,8 @@ const theoryHTML = `<h3>📖 LÝ THUYẾT: XÁC SUẤT TOÀN PHẦN VÀ CÔNG TH
 </ul>`;
 
 // Link Google Apps Script
-const scriptURL = "https://script.google.com/macros/s/AKfycbzHsdXCSB8_eIfFzqyA-PMjz77FezLBhsoI-KmJGD9GQOgSQsdZarL_7U8YGgVi0DW9gQ/exec"; 
-        
+const scriptURL = "https://script.google.com/macros/s/AKfycbzHsdXCSB8_eIfFzqyA-PMjz77FezLBhsoI-KmJGD9GQOgSQsdZarL_7U8YGgVi0DW9gQ/exec";
+
 const quizData = [
     {
         q: "Câu 1: Cho 2 biến cố \\(A\\) và \\(B\\). Tìm \\(P(B|A)\\) biết \\(P(A) = 0.4\\); \\(P(A \\cap B) = 0.1\\).",
