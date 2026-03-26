@@ -53,6 +53,27 @@
         <div id="quiz-content"></div>
     </div>
 
+    <!-- PANEL ĐIỀU HƯỚNG CÂU HỎI -->
+    <div id="nav-panel" style="display:none;">
+        <div class="nav-panel-stats">
+            <div class="nav-stat-item">
+                <div class="nav-stat-label">Số câu đã làm</div>
+                <div class="nav-stat-value" id="nav-answered">0/<span id="nav-total">0</span></div>
+            </div>
+            <div class="nav-stat-item">
+                <div class="nav-stat-label">Thời gian còn lại</div>
+                <div class="nav-stat-value nav-timer" id="nav-timer">00:00</div>
+            </div>
+        </div>
+        <div class="nav-grid" id="nav-grid"></div>
+        <button class="nav-submit-btn" onclick="submitQuiz()">NỘP BÀI</button>
+        <div class="nav-legend">
+            <div class="nav-legend-item"><span class="nav-dot nav-dot-done"></span>Câu đã làm</div>
+            <div class="nav-legend-item"><span class="nav-dot nav-dot-empty"></span>Câu chưa làm</div>
+            <div class="nav-legend-item"><span class="nav-dot nav-dot-review"></span>Câu cần kiểm tra lại</div>
+        </div>
+    </div>
+
     <div class="overlay" id="overlay"></div>
     <div class="result-modal" id="resultModal">
         <h2>KẾT QUẢ BÀI THI</h2>

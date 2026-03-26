@@ -1,0 +1,5256 @@
+Total pages: 30
+=== TRANG 1 ===
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+▶BÀI . ÔN TẬP CHƯƠNG 6  
+ 
+ 
+ 
+☀. Đề kiểm tra rèn luyện    
+ 
+⬩Đề ❶:  
+☞Phần 1. Câu hỏi trắc nghiệm nhiều phương án lựa chọn. Thí sinh trả lời từ câu 1 đến câu 12. Mỗi 
+câu hỏi, thí sinh chỉ chọn 1 phương án. 
+Câu 1. Cho hai biến cố A và B  bất kì với ( )
+0
+P B 
+. Khẳng định nào dưới đây đúng? 
+A. 
+(
+)
+(
+)
+|
+( )
+P A
+B
+P A B
+P A
+
+=
+. 
+B. 
+(
+)
+( )
+|
+(
+)
+P A
+P A B
+P A
+B
+=
+
+.  
+C. 
+(
+)
+( )
+|
+(
+)
+P B
+P A B
+P A
+B
+=
+
+. 
+D. 
+(
+)
+(
+)
+|
+( )
+P A
+B
+P A B
+P B
+
+=
+. 
+Lời giải 
+Với hai biến cố A và B  bất kì với ( )
+0
+P B 
+. Ta có
+(
+)
+(
+)
+|
+( )
+P A
+B
+P A B
+P B
+
+=
+. 
+Câu 2. 
+Cho hai biến cố A và B . Chọn mệnh đề đúng? 
+A. (
+)
+( )
+(
+)
+.
+|
+P A
+B
+P B P B A
+
+=
+. 
+B. (
+)
+(
+)
+|
+|
+P A B
+P A B
+=
+.  
+C. ( )
+(
+)
+|
+P B
+P B A
+=
+. 
+ 
+D. (
+)
+( )
+(
+)
+.
+|
+P A
+B
+P A P B A
+
+=
+. 
+Lời giải 
+Ta có: (
+)
+( )
+(
+)
+( )
+(
+)
+.
+|
+.
+|
+P A
+B
+P A P B A
+P B P A B
+
+=
+=
+. 
+Câu 3. 
+Cho hai biến cố A và B , công thức tính xác suất toàn phần là  
+A. 
+( )
+( ) (
+)
+( )
+(
+)
+.
+|
+.
+|
+P A
+P B P A B
+P B P A B
+=
++
+.  
+B. 
+( )
+( ) (
+)
+( )
+(
+)
+.
+|
+.
+|
+P B
+P A P A B
+P A P A B
+=
++
+.  
+C. ( )
+( )
+(
+)
+( )
+(
+)
+.
+|
+.
+|
+P A
+P B P A B
+P B P A B
+=
++
+. 
+D. 
+( )
+( ) (
+)
+( )
+(
+)
+.
+|
+.
+|
+P B
+P A P A B
+P A P A B
+=
++
+. 
+Lời giải 
+Ta có: ( )
+( )
+(
+)
+( )
+(
+)
+.
+|
+.
+|
+P A
+P B P A B
+P B P A B
+=
++
+ 
+Câu 4. 
+Cho hai biến cố A và B là hai biến cố ngẫu nhiên mà
+( )
+0
+P A 
+, ( )
+0
+P B 
+, công thức Bayes là  
+A. 
+(
+)
+( )
+(
+)
+( )
+.
+|
+|
+P B P A B
+P B A
+P A
+=
+. 
+B. 
+(
+)
+( )
+(
+)
+( )
+.
+|
+|
+P A P A B
+P B A
+P B
+=
+.  
+C. 
+(
+)
+( )
+(
+)
+( )
+.
+|
+|
+P B P B A
+P B A
+P A
+=
+. 
+D. 
+(
+)
+( )
+(
+)
+( )
+.
+|
+|
+P A P B A
+P B A
+P B
+=
+. 
+
+=== TRANG 2 ===
+ 
+ 
+Lời giải 
+Ta có: 
+(
+)
+( )
+(
+)
+( )
+.
+|
+|
+P B P A B
+P B A
+P A
+=
+. 
+Câu 5. 
+Cho hai biến cố 
+,
+A B  có P( )
+0,8;P(
+)
+0,1
+B
+A
+B
+=
+
+=
+. Kết quả của xác suất sau P(
+)
+A B
+∣
+ bằng 
+bao nhiêu? 
+A. 1
+6 . 
+B. 3
+7 . 
+C. 3
+5 . 
+D. 1
+8 . 
+Lời giải 
+Ta có: 
+( )
+P(
+)
+0,1
+1
+P(
+)
+.P(
+)
+P(
+)
+.
+P( )
+0,8
+8
+A
+B
+A
+B
+P B
+A B
+A B
+B
+
+
+=
+
+=
+=
+=
+∣
+∣
+ 
+Câu 6. 
+Cho hai biến cố ,
+A B  có 
+7
+23
+P( )
+;P(
+)
+15
+145
+A
+AB
+=
+=
+. Kết quả của xác suất sau P(
+)
+B A
+∣
+ bằng bao 
+nhiêu? 
+A. 69
+203 . 
+B. 19
+135 . 
+C. 9
+23 . 
+D. 41
+105 . 
+Lời giải 
+Ta có: 
+( )
+P(
+)
+23
+7
+69
+P(
+)
+.P(
+)
+P(
+)
+:
+.
+P( )
+145 15
+203
+AB
+AB
+P A
+B A
+B A
+A
+=
+
+=
+=
+=
+∣
+∣
+ 
+Câu 7. 
+Một trường trung học phổ thông có 600 học sinh, trong đó có 245 học sinh nam và 355 học 
+sinh nữ. Tổng kết học kỳ I, có 170 học sinh đạt danh hiệu học sinh giỏi, trong đó có 80 học 
+sinh nam và 90 học sinh nữ. Chọn ra ngẫu nhiên một học sinh trong số 600 học sinh đó. Tính 
+xác suất để học sinh được chọn có danh hiệu học sinh giỏi và là nam (làm tròn kết quả đến 
+hàng phần trăm). 
+A. 5
+19 . 
+B. 12
+31 . 
+C. 11
+45 . 
+D. 16
+49 . 
+Lời giải 
+Xét hai biến cố sau: 
+A: "Học sinh được chọn ra đạt điểm giỏi"; 
+B : "Học sinh được chọn ra là học sinh nam". 
+Khi đó, xác suất để học sinh được chọn ra đạt danh hiệu học sinh giỏi và là nam, chính là xác 
+suất của A với điểu kiện B . 
+2
+P(
+)
+. 
+600
+1
+80
+5
+A
+B
+
+=
+=
+ 
+Do có 245 học sinh nam nên 
+49
+P( )
+6
+0
+24
+00
+5
+12
+B =
+=
+. Vì thế, ta có; 
+P(
+)
+16
+P(
+)
+.
+)
+2
+15
+9
+P
+1
+49
+20
+(
+4
+A
+B
+A B
+B
+
+=
+=
+=
+∣
+ 
+
+=== TRANG 3 ===
+ 
+ 
+Vậy xác suất để học sinh được chọn ra đạt danh hiệu học sinh giỏi và là nam bằng 16
+49 . 
+Câu 8. 
+Trong một hộp kín có 10 viên bi vàng và 6 viên bi đỏ, các viên bi có cùng kích thước và khối 
+lượng. Bạn Phong lấy ngẫu nhiên một viên bi từ trong hộp, không trả lại. Sau đó bạn Trung 
+lấy ngẫu nhiên một trong 15 viên bi còn lại. Tính xác suất để Phong lấy được viên bi đỏ và 
+Trung lấy được viên bi vàng. 
+A. 3
+17 . 
+B. 1
+2 . 
+C. 1
+4 . 
+D. 2
+5 . 
+Lời giải 
+Gọi A là biến cố: "Bạn Phong lấy được viên bi đỏ "; 
+B  là biến cố: "Bạn Trung lấy được viên bi vàng ". 
+Vì ( )
+6
+n A =
+ nên 
+( )
+8
+6
+1
+3
+6
+P A =
+=
+. 
+Nếu A xảy ra tức là bạn Phong lấy được viên bi đỏ thì trong hộp có 15 viên bi với 10 viên bi 
+vàng.  
+Vậy 
+(
+)
+3
+10
+1
+2
+5
+P B A =
+=
+∣
+. 
+Theo công thức nhân xác suất: (
+)
+( )
+(
+)
+3 2
+1
+8 3
+4
+P AB
+P A
+P B A
+=
+
+=
+
+=
+∣
+. 
+Vậy xác suất để Phong lấy được viên bi đỏ và Trung lấy được viên bi vàng bằng 1 .
+4  
+Câu 9. 
+Một nhóm học sinh có 20 học sinh, trong đó có 12 em thích học môn Toán, 10 em thích học 
+môn Văn, 2 em không thích học cả hai môn Toán và Văn. Chọn ngẫu nhiên 1 học sinh, xác 
+xuất để học sinh đó thích học môn Toán biết rằng học sinh đó thích học môn Văn là 
+A. 1
+5 . 
+B. 3
+10 . 
+C. 3
+5 . 
+D. 2
+5 . 
+Lời giải 
+Gọi A là biến cố “học sinh đó thích học môn Toán”,  
+B  là biến cố “học sinh đó thích học môn Văn” 
+Xác suất để học sinh được chọn thích học môn Toán, biết học sinh đó thích học môn Văn chính 
+là (
+)
+|
+P A B .  
+Ta có 
+( )
+12
+3
+20
+5
+=
+=
+P A
+, 
+( )
+10
+1
+20
+2
+=
+=
+P B
+, (
+)
+2
+1
+20
+10
+=
+=
+P AB
+ 
+(
+)
+(
+)
+1
+9
+1
+1 10
+10
+
+= −
+= −
+=
+P A
+B
+P AB
+ 
+Ta có 
+(
+)
+( )
+( )
+(
+)
+3
+1
+9
+1
+5
+2
+10
+5
+=
++
+−
+
+=
++
+−
+=
+P AB
+P A
+P B
+P A
+B
+ 
+
+=== TRANG 4 ===
+ 
+ 
+(
+)
+(
+)
+( )
+1 1
+2
+|
+:
+5 2
+5
+=
+=
+=
+P AB
+P A B
+P B
+ 
+Câu 10. Một hộp gồm một số viên bi cùng loại, chỉ khác màu, trong đó có 6 bi xanh, còn lại là bi màu 
+đỏ. Minh lấy ngẫu nhiên 1 viên bi trong hộp (không bỏ lại), sau đó Minh lại lấy ngẫu nhiên 
+tiếp 1 viên bi trong hộp. Biết xác suất để Minh lấy được cả hai viên bi màu xanh là…..Hỏi ban 
+đầu trong túi có số viên bi đỏ là bao nhiêu? 
+A. 1. 
+B. 2. 
+C. 3. 
+D. 4. 
+Lời giải 
+Gọi A là biến cố “Lần 1 Minh lấy được bi màu xanh”, 
+B  là biến cố “Lần 2 Minh lấy được bi có màu xanh” 
+Khi đó AB  là biến cố “Cả hai lần Minh lấy được bi màu xanh”. Ta có 
+(
+)
+5
+7
+=
+P AB
+ 
+Gọi x  là số kẹo ban đầu trong túi (
+)
+0
+
+x
+ 
+Ta có 
+( )
+6
+=
+P A
+n , 
+(
+)
+5
+|
+1
+=
+−
+P B A
+n
+. 
+Theo công thức nhân xác suất, ta có (
+)
+( )
+(
+)
+.
+|
+=
+P AB
+P A P B A  
+Hay 6
+5
+5
+1
+7
+
+=
+−
+n n
+7
+
+=
+n
+. 
+Vậy số bi đỏ trong túi ban đầu là 7
+6
+1
+−
+=  bi 
+Câu 11. Bạn Tuấn hằng ngày ăn sáng bằng xôi hoặc bún. Nếu hôm nay bạn ăn sáng bằng xôi thì xác 
+suất để hôm sau bạn ăn sáng bằng bún là 0,7 . Xét một tuần mà thứ ba bạn ăn sáng bằng xôi. 
+Biết xác suất để thứ năm tuần đó, bạn Tuấn ăn sáng bằng bún là 0,63. Hỏi nếu hôm nay bạn 
+ăn sáng bằng bún thì xác suất để hôm sau bạn ăn sáng bằng xôi là  
+A. 0,1. 
+B. 0,2 . 
+C. 0,3. 
+D. 0,4 . 
+Lời giải 
+Giả sử nếu hôm nay bạn ăn sáng bằng bún thì xác suất để hôm sau bạn ăn sáng bằng xôi là x  
+(
+)1
+
+x
+. 
+Gọi A là biến cố “Thứ tư, bạn Tuấn ăn sáng bằng bún”, 
+B  là biến cố “Thứ năm, bạn Tuấn ăn sáng bằng bún”, khi đó ( )
+0,63
+=
+P B
+ 
+Ta cần tính (
+)
+\
+P B A  
+Ta có thứ ba bạn Tuấn ăn sáng bằng xôi nên ( )
+0,7
+=
+P A
+, ( )
+1 0,7
+0,3
+= −
+=
+P A
+ 
+Vì nếu hôm nay bạn ăn sáng bằng bún thì xác suất để hôm sau bạn ăn sáng bằng xôi là x  và 
+ăn sáng bằng bún là 1−x  hay (
+)
+|
+1
+= −
+P B A
+x . 
+Ta có (
+)
+|
+0,7
+=
+P B A
+ 
+Theo công thức xác suất toàn phần: 
+( )
+( )
+(
+)
+( ) (
+)
+.
+|
+.
+\
+=
++
+P B
+P A P B A
+P A P B A  
+
+=== TRANG 5 ===
+ 
+ 
+(
+)
+0,63
+0,7. 1
+0,3.0,7
+
+=
+−
++
+x
+ 
+0,4
+
+=
+x
+ 
+Vậy nếu hôm nay bạn ăn sáng bằng bún thì xác suất để hôm sau bạn ăn sáng bằng xôi là 0,4 . 
+Câu 12. Giả sử có một loại bệnh mà tỉ lệ người mắc bệnh là 0,1% . Giả sử có một loại xét nghiệm, mà 
+ai mắc bệnh khi xét nghiệm thì có 95% phản ứng dương tính, nhưng tỉ lệ phản ứng dương tính 
+giả là 8% (tức là trong số những người không bị bệnh có 8% số người xét nghiệm lại có phản 
+ứng dương tính). Biết khi một người xét nghiệm có phản ứng dương tính thì khả năng mắc 
+bệnh của người đó là 
+%
+a
+. Hỏi a  gần số nào nhất trong các số sau? 
+A. 1,07 . 
+B. 1,12. 
+C. 1,17 . 
+D. 1,22 . 
+Lời giải 
+Gọi A là biến cố “Người được chọn ra không mắc bệnh”, khi đó 
+( )
+1 0,1%
+0,999
+= −
+=
+P A
+, 
+( )
+0,001
+=
+P A
+. 
+B  là biến cố “Người được chọn ra có phản ứng dương tính”, khi đó (
+)
+|
+8%
+0,08
+=
+=
+P B A
+ và 
+(
+)
+|
+0,95
+=
+P B A
+ 
+Khả năng mắc bệnh của một người xét nghiệm có phản ứng dương tính là (
+)
+|
+P A B  
+Theo 
+công 
+thức 
+Bayes, 
+ta 
+có 
+(
+)
+( ) (
+)
+( ) (
+)
+( )
+(
+)
+.
+|
+0,001.0,95
+95
+|
+1,17%
+0,001.0,95
+0,999.0,08
+8087
+.
+|
+.
+|
+=
+=
+=
+
++
++
+P A P B A
+P A B
+P A P B A
+P A P B A
+ 
+Vậy khả năng mắc bệnh của một người xét nghiệm có phản ứng dương tính là 1,17% . 
+ 
+☞Phần 2. Trắc nghiệm lựa chọn đúng sai. Thí sinh trả lời từ câu 1 đến câu 4. Trong mỗi ý a), b), 
+c), d) ở mỗi câu, thí sinh chọn đúng hoặc sai. 
+Câu 1: 
+Cho hai biến cố Avà B là hai biến cố độc lập, với ( )
+0,4
+P A =
+ và ( )
+0,7
+P B =
+. 
+a) ( )
+0,6
+P A =
+. 
+b) (
+)
+0,7
+P A B =
+. 
+c) (
+)
+0,4
+P AB =
+. 
+d) (
+)
+0,6
+P B A =
+. 
+Lời giải 
+a) Đ Vì ( )
+0,4
+P A =
+nên ( )
+( )
+1
+1 0,4
+0,6
+P A
+P A
+= −
+= −
+=
+. 
+
+=== TRANG 6 ===
+ 
+ 
+b) S Vì A và B  độc lập nên A và B  độc lập. 
+Do đó, (
+)
+( )
+( )
+1
+1 0,6
+0,4
+0,7
+P A B
+P A
+P A
+=
+= −
+= −
+=
+
+. 
+c) Đ Vì A và B  độc lập nên B  và A  độc lập. 
+Do đó, (
+)
+( )
+0,4
+P AB
+P A
+=
+=
+. 
+d) S Vì A và B  độc lập nên B  và A  độc lập. 
+Do đó, (
+)
+( )
+0,7
+0,6.
+P B A
+P B
+=
+=
+
+ 
+Câu 2: 
+Một hộp có 10 bi xanh và 8bi đen, các viên bi đều có cùng hình dáng, kích thước và khối 
+lượng. Bạn Nam lấy ngẫu nhiên một viên trong hộp, không trả lại. Sau đó Bạn Lan lấy ngẫu 
+nhiên một trong 17  viên bi còn lại. Gọi A là biến cố bạn Nam lấy được một viên bi xanh và 
+B là biến cố bạn Lan lấy được một viên bi đen. 
+a) ( )
+10
+n A =
+. 
+b) 
+( )
+5
+9
+P A =
+ 
+c) (
+)
+4
+9
+P B A =
+. 
+d) 
+(
+)
+.
+0,8
+P AB =
+. 
+Lời giải 
+Giải chi tiết( giải thích) 
+a) Đ Vì hộp có 10 bi xanh nên số phần tử của biến cố Alà ( )
+10
+n A =
+. 
+b) Đ Vì bạn Nam lấy ngẫu nhiên 1 viên bi từ hộp chứa 10 bi xanh và 8 bi đen nên ( )
+18
+n =
+ 
+Do đó, 
+( )
+( )
+( )
+10
+5
+18
+9
+n A
+P A
+n
+=
+=
+=
+
+. 
+c) S Nếu A xảy ra tức là bạn Nam lấy được bi xanh thì trong hộp có 17 viên bi với 8bi đen 
+Do đó, (
+)
+8
+4
+17
+9
+P B A =
+
+. 
+d) S Áp dụng công thức nhân xác suất, ta có: 
+(
+)
+( )
+(
+)
+5 8
+40
+.
+.
+.
+0,3
+0,8.
+9 17
+153
+P A B
+P A P B A
+=
+=
+=
+
+
+ 
+Câu 3: 
+Một cửa hàng bán hai loại bóng đèn, trong đó có 65%  bóng đèn là màu trắng và 35% bóng 
+đèn là màu đỏ, các bóng đèn có kích thước như nhau. Các bóng đèn màu trắng có tỉ lệ hỏng 
+
+=== TRANG 7 ===
+ 
+ 
+là 2% và các bóng đèn màu xanh có tỉ lệ hỏng là 3%. Một khách hàng chọn mua ngẫu nhiên 
+1 bóng đèn từ cửa hàng đó. Xét các biến cố: 
+:
+A “Khách hàng chọn được bóng màu trắng”; 
+:
+B “Khách hàng chọn được bóng không hỏng”; 
+Khi đó: 
+a) ( )
+0,65
+P A =
+. 
+b) (
+)
+|
+0,02
+P B A =
+. 
+c) (
+)
+|
+0,3
+P B A =
+. 
+d) 
+( )
+0,9765
+P B =
+. 
+Lời giải 
+a) S Ta có 
+( )
+0,65
+P A =
+ nên ( )
+0,35
+P A =
+. 
+b) S Vì các bóng đèn màu trắng có tỉ lệ hỏng là 2% nên (
+)
+|
+0,02
+P B A =
+, suy ra 
+(
+)
+(
+)
+|
+1
+|
+1 0,02
+0,98
+P B A
+P B A
+= −
+= −
+=
+. 
+c) S Vì các bóng đèn màu xanh có tỉ lệ hỏng là 3% nên (
+)
+|
+0,03
+P B A =
+, suy ra 
+(
+)
+(
+)
+|
+1
+|
+1 0,03
+0,97
+P B A
+P B A
+= −
+= −
+=
+. 
+d) Đ Theo công thức xác suất toàn phần ta có: 
+( )
+( )
+(
+)
+( ) (
+)
+.
+|
+.
+|
+0,65.0,98
+0,35.0,97
+0,9765
+P B
+P A P B A
+P A P B A
+=
++
+=
++
+=
+. 
+Câu 4: 
+Một kho hàng chứa 85% sản phẩm loại I và 15%  sản phẩm loại II, trong đó có 1%  sản 
+phẩm loại I bị hỏng, 4% sản phẩm loại II bị hỏng. Các sản phẩm có kích thước và hình dạng 
+như nhau. Một khách hàng chọn ngẫu nhiên 1 sản phẩm. Xét các biến cố: 
+:
+A “Khách hàng chọn được sản phẩm loại I”; 
+:
+B “Khách hàng chọn được sản phẩm không bị hỏng”; 
+Khi đó: 
+a) ( )
+0,85
+P A =
+. 
+b) (
+)
+|
+0,99
+P B A =
+. 
+c) 
+( )
+0,9855
+P B =
+. 
+
+=== TRANG 8 ===
+ 
+ 
+d) (
+)
+|
+0,95
+P A B =
+. 
+Lời giải 
+a) Đ Ta có ( )
+0,85
+P A =
+ và ( )
+0,15
+P A =
+. 
+b) Đ Vì có 1%  sản phẩm loại I bị hỏng nên (
+)
+|
+0,01
+P B A =
+, suy ra
+(
+)
+(
+)
+|
+1
+|
+1 0,01
+0,99
+P B A
+P B A
+= −
+= −
+=
+. 
+c) Đ Vì có 
+4% sản phẩm loại II bị hỏng nên 
+(
+)
+|
+0,04
+P B A =
+, suy ra 
+(
+)
+(
+)
+|
+1
+|
+1 0,04
+0,96
+P B A
+P B A
+= −
+= −
+=
+. 
+Theo công thức xác suất toàn phần ta có 
+( )
+( )
+(
+)
+( ) (
+)
+.
+|
+.
+|
+0,85.0,99
+0,15.0,96
+0,9855
+P B
+P A P B A
+P A P B A
+=
++
+=
++
+=
+. 
+d) S Theo công thức Bayes ta có 
+(
+)
+( )
+(
+)
+( )
+.
+|
+0,85.0,99
+|
+0,854
+0,9855
+P A P B A
+P A B
+P B
+=
+=
+
+. 
+☞Phần 3. Câu hỏi trắc nghiệm trả lời ngắn. Thí sinh trả lời từ câu 1 đến câu 6 
+Câu 1. 
+Cho hai biến cố 
+,A B  thỏa mãn 
+( )
+( )
+(
+)
+0,21;
+0,52;
+|
+0,6
+P A
+P B
+P B A
+=
+=
+=
+. Khi đó 
+(
+)
+|
+a
+P A B
+b
+=
+ với a
+b  là phân số tối giản, giá trị của D
+a
+b
+=
++
+ là bao nhiêu? 
+Lời giải 
+Đáp án: 323 
+Ta có: 
+(
+)
+( )
+(
+)
+.
+|
+0,21.0,6
+0,126
+P AB
+P A P B A
+=
+=
+=
+. 
+(
+)
+( )
+(
+)
+(
+)
+(
+)
+( )
+0,126
+63
+.
+|
+|
+0,52
+260
+P AB
+P AB
+P B P A B
+P A B
+P B
+=
+
+=
+=
+=
+. 
+Suy ra: 
+63
+a =
+ và 
+260
+b =
+. 
+Vậy 
+63 260
+323
+D
+a
+b
+=
++
+=
++
+=
+. 
+Câu 2. 
+Một hộp có 20  viên bi trắng và 10 viên bi đen, các viên bi có cùng kích thước và khối lượng. 
+Bạn Bình lấy ngẫu nhiên một viên bi trong hộp, không trả lại. Sau đó bạn An lấy ngẫu nhiên 
+một viên bi trong hộp đó. Gọi A là biến cố: “An lấy được viên bi trắng”; B  là biến cố: “Bình 
+lấy được viên bi trắng”. Khi đó 
+(
+)
+|
+a
+P A B
+b
+=
+, với phân số a
+b  là tối giản. Tính giá trị của 
+C
+a b
+=
+−. 
+Lời giải 
+Đáp án: −9 
+Bình có 30 cách chọn, An có 29  cách chọn một viên bi trong hộp. 
+Do đó, ( )
+30.29
+n =
+. 
+
+=== TRANG 9 ===
+ 
+ 
+Bình có 10 cách chọn một viên bi đen, An có 29  cách chọn từ 29  viên bi còn lại. 
+Do đó, ( )
+10.29
+n B =
+ và ( )
+( )
+( )
+n B
+P B
+n
+=
+. 
+Bình có 10 cách chọn một viên bi đen, An có 20  cách chọn một viên bi trắng trong 20  viên 
+bi trắng còn lại. 
+Do đó (
+)
+10.20
+n AB =
+ và (
+)
+(
+)
+( )
+n AB
+P AB
+n
+=
+
+. 
+Khi đó, (
+)
+(
+)
+( )
+(
+)
+( )
+10.20
+20
+|
+10.29
+29
+P AB
+n AB
+P A B
+P B
+n B
+=
+=
+=
+=
+. 
+Suy ra 
+20
+a =
+ và 
+29
+b =
+.  
+Vậy 
+20
+29
+9
+C
+a
+b
+=
+−=
+−
+= −. 
+Câu 3. 
+Lớp 11A1 của một trường THPT A có 20% học sinh tham gia Câu lạc bộ Tiếng Anh của trường, 
+trong số đó có 85% học sinh có chứng chỉ IELTS từ 5.5 điểm trở lên. Ngoài ra trong lớp có 
+10% học sinh không tham gia Câu lạc bộ Tiếng Anh cũng có chứng chỉ IELTS từ 5.5 trở lên. 
+Chọn ngẫu nhiên một học sinh của lớp 11A1. Tính xác suất để chọn được một học sinh có 
+chứng chỉ IELTS từ 5.5 trở lên. 
+Lời giải 
+Đáp án: 0,25. 
+Xét các biến cố: A: "Chọn được học sinh thuộc Câu lạc bộ Tiếng Anh ở lớp 11A1"; 
+B : “Chọn được học sinh trong lớp 11A1 có chứng chỉ IELTS từ 5.5 trở lên”. 
+Khi đó, 
+( )
+( )
+(
+)
+(
+)
+0,2;
+0,8;
+|
+0,85;
+|
+0,1
+P A
+P A
+P B A
+P B A
+=
+=
+=
+=
+. 
+Theo công thức xác suất toàn phần ta có: 
+( )
+( )
+(
+)
+( ) (
+)
+.
+|
+.
+|
+0,2.0,85
+0,8.0,1
+0,25
+P B
+P A P B A
+P A P B A
+=
++
+=
++
+=
+. 
+Câu 4. 
+Một kho hàng có 85% sản phẩm loại I và 15% sản phẩm loại II, trong đó có 99%sản phẩm 
+loại I chất lượng tốt, 96%sản phẩm loại II chất lượng tốt. Các sản phẩm có kích thước và hình 
+dạng như nhau. Một khách hàng chọn ngẫu nhiên 1 sản phẩm. Tính xác suất để khách hàng 
+chọn được sản phẩm loại I và có chất lượng tốt (làm tròn kết quả đến hàng phần trăm). 
+Lời giải 
+Đáp án: 0,85. 
+Xét các biến cố A: "Khách hàng chọn được sản phẩm loại I "; 
+B : "Khách hàng chọn được sản phẩm chất lượng tốt". 
+Ta có: 
+( )
+0,85;
+P A =
+ ( )
+(
+)
+0,15;
+|
+0,99
+P A
+P B A
+=
+=
+; (
+)
+|
+0,96.
+P B A =
+ 
+Theo công thức xác suất toàn phần, ta có: 
+
+=== TRANG 10 ===
+ 
+ 
+( )
+( ) (
+)
+( ) (
+)
+|
+|
+0,85.0,99
+0,15.0,96
+0,9855
+P B
+P A P B A
+P A P B A
+=
++
+=
++
+=
+ 
+Theo công thức Bayes, ta có: 
+(
+)
+( )
+(
+)
+( )
+.
+|
+0,85.0,99
+|
+0,85
+0,9855
+P A P B A
+P A B
+P B
+=
+=
+
+. 
+Câu 5. 
+Trong một kì thi Tốt nghiệp trung học phổ thông, một trường X  có 60%  học sinh lựa chọn 
+tổ hợp
+00
+D
+ (gồm các môn Toán, Văn, Ngoại ngữ). Biết rằng, nếu một học sinh chọn tổ hợp 
+00
+D
+ thì xác suất để học sinh đó đỗ Đại học là 0,7 ; còn nếu một học sinh không chọn tổ hợp 
+00
+D
+ thì xác suất để học sinh đó đỗ Đại học là 0,5. Chọn ngẫu nhiên một học sinh của trường 
+X  đã Tốt nghiệp trung học phố thông trong kì thi trên. Biết rằng học sinh này đã đỗ Đại học. 
+Tính xác suất để học sinh đó chọn tổ hợp 
+00
+D
+ (làm tròn kết quả đến hàng phần trăm). 
+Lời giải 
+Đáp án: 0,68 
+Phần giải chi tiết 
+Gọi A là biến cố: "Học sinh đó chọn tổ hợp 
+00
+D
+ "; B  là biến cố: "Học sinh đó đỗ Đại học". 
+Ta cần tính (
+)
+P A B
+∣
+. Theo công thức Bayes, ta cần biết: 
+( )
+( )
+(
+)
+,
+,
+P
+P A
+A
+P B A
+∣
+ và (
+)
+P B A
+∣
+. Ta có: 
+( )
+( )
+( )
+0,6;
+1
+1 0,6
+0,4
+P
+P
+A
+A
+P
+A
+=
+= −
+= −
+=
+. 
+(
+)
+P B A
+∣
+ là xác suất đế một học sinh đỗ đại học với điều kiện học sinh đó chọn tổ hợp 
+00
+D
+ 
+(
+)
+0,7
+P B A
+
+=
+∣
+ 
+(
+)
+P B A
+∣
+ là xác suất để một học sinh đỗ đại học với điều kiện học sinh đó không chọn tổ hợp 
+00
+D
+là (
+)
+0,5
+P B A =
+∣
+ 
+Thay vào công thức Bayes ta được: 
+(
+)
+( )
+(
+)
+( )
+(
+)
+( )
+(
+)
+0,6 0,7
+0,68.
+0,6 0,7
+0,4 0,5
+P A
+P B A
+P A B
+P A
+P B A
+P
+P B A
+A
+
+
+=
+=
+
+
++
+
+
++
+
+∣
+∣
+∣
+∣
+ 
+Câu 6. 
+Một cuộc thi có 36 bộ câu hỏi, trong đó có 16 bộ câu hỏi về chủ đề tự nhiên và 20  bộ câu 
+hỏi về chủ đề xã hội. Bạn Hạnh lấy ngẫu nhiên 1 bộ câu hỏi (lấy không hoàn lại), sau đó bạn 
+Phúc lấy ngẫu nhiên 1 bộ câu hỏi. Xác suất bạn Phúc lấy được bộ câu hỏi về chủ đề tự nhiên 
+bằng a
+b  với a
+b  là phân số tối giản. Giá trị 100
+99
+a
+b
+−
+ bằng bao nhiêu? 
+Lời giải 
+Đáp án: -491 
+Phần giải chi tiết 
+Xét các biến cố: 
+A: "Bạn Hạnh lấy được bộ câu hỏi về chủ đề xã hội"; 
+
+=== TRANG 11 ===
+ 
+ 
+B: "Bạn Phúc lấy được bộ câu hỏi về chủ đề tự nhiên". 
+Khi đó, ( )
+( )
+( )
+20
+5
+5
+4
+P
+;P
+1 P
+1
+36
+9
+9
+9
+A
+A
+A
+=
+=
+= −
+= −
+=
+. 
+Nếu bạn Hạnh chọn được một bộ câu hỏi về chủ đề xã hội thì sau đó còn 35 bộ câu hỏi, trong 
+đó có 16 bộ câu hỏi về chủ đề tự nhiên, suy ra (
+)
+16
+P
+35
+B A =
+∣
+. 
+Nếu bạn Hạnh chọn được một bộ câu hỏi về chủ đề tự nhiên thì sau đó còn 35 bộ câu hỏi, trong 
+đó có 15 bộ câu hỏi về chủ đề tự nhiên, suy ra (
+)
+15
+P
+35
+A
+B
+=
+∣
+. 
+Theo công thức xác suất toàn phần, xác suất bạn Phúc lấy được bộ câu hỏi về chủ đề 
+tự nhiên là: ( )
+( )
+(
+)
+( ) (
+)
+5 16
+4 15
+4
+P
+P
+.P
+P
+.P
+9 35
+9 35
+9
+B
+A
+B A
+A
+B A
+=
++
+=
+
++
+
+=
+∣
+∣
+. 
+Suy ra 
+4,
+9
+a
+b
+=
+=
+ và 100
+99
+491
+a
+b
+−
+= −
+. 
+⬩Đề ❷:  
+☞Phần 1. Câu hỏi trắc nghiệm nhiều phương án lựa chọn. Thí sinh trả lời từ câu 1 đến câu 12. Mỗi 
+câu hỏi, thí sinh chỉ chọn 1 phương án. 
+Câu 1. Nếu
+,
+A B là hai biến cố bất kì thì 
+A. (
+)
+( ). ( )
+P A
+B
+P A P B
+
+=
+. 
+B. (
+)
+( ). ( |
+)
+P A
+B
+P A P B A
+
+=
+. 
+C. (
+)
+( ). ( |
+)
+P A
+B
+P B P B A
+
+=
+. 
+D. (
+)
+( ).(
+|
+)
+P A
+B
+P A
+PA B
+
+=
+. 
+Lời giải 
+Chọn B 
+Câu 2. 
+Cho hai biến cố 
+,
+A B với 
+( )
+0,6
+P A =
+; 
+( )
+0,8
+P B =
+và 
+(
+)
+0,4
+P A
+B
+
+=
+. Tính xác suất của 
+(
+|
+)
+P A B .  
+A. 0,475 . 
+B. 0,5. 
+C. 0,52. 
+D. 0,425 . 
+Lời giải 
+(
+)
+0,4
+(
+|
+)
+0,5
+( )
+0,8
+P A
+B
+P A B
+P B
+
+=
+=
+=
+. 
+Chọn B 
+Câu 3. 
+Chọn khẳng định đúng. 
+A. Với hai biến cố 
+,
+A B , ta có 
+( ). (
+|
+)
+(
+|
+)
+( )
+P B P A B
+P B A
+P A
+=
+. 
+B. Với hai biến cố 
+,
+A B , ta có 
+( ). (
+|
+)
+(
+|
+)
+( )
+P A P A B
+P B A
+P B
+=
+. 
+
+=== TRANG 12 ===
+ 
+ 
+C. Với hai biến cố 
+,
+A B mà 
+( )
+0, ( )
+0
+P A
+P B
+
+
+, ta có 
+( ). (
+|
+)
+(
+|
+)
+( )
+P B P A B
+P B A
+P A
+=
+. 
+D. Với hai biến cố 
+,
+A B mà 
+( )
+0, ( )
+0
+P A
+P B
+
+
+, ta có 
+( ). (
+|
+)
+(
+|
+)
+( )
+P A P A B
+P B A
+P B
+=
+. 
+Lời giải 
+Chọn C 
+Câu 4. 
+Cho hai biến cố
+,
+A B sao cho 
+( )
+0,3
+P A =
+; 
+( )
+0,6
+P B =
+ và 
+(
+|
+)
+0,2
+P A B =
+. Tính 
+(
+|
+)
+P B A . 
+A. 5
+24 . 
+B. 2
+5 . 
+C. 4
+25 . 
+D. 1
+4 . 
+Lời giải 
+Ta có 
+( ). (
+|
+)
+0,6.0,2
+2
+(
+|
+)
+( )
+0,3
+5
+P B P A B
+P B A
+P A
+=
+=
+=
+. 
+Chọn B 
+Câu 5. 
+Cho hai biến cố 
+,
+A B  có ( )
+0,6
+P B =
+; (
+)
+0,2
+P A
+B
+
+=
+. Xác suất (
+)
+|
+P A B  bằng 
+A. 1
+3 . 
+B. 2
+7 . 
+C. 3
+7 . 
+D. 1
+2 . 
+Lời giải 
+Ta có: 
+(
+)
+(
+)
+( )
+0,2
+1
+|
+0,6
+3
+P A
+B
+P A B
+P B
+
+=
+=
+=
+. 
+Câu 6. 
+Trong hộp có 8 bút bi xanh và 5 bút bi đen, các chiếc bút có cùng kích thước và khối lượng. 
+An lấy ngẫu nhiên 1 chiếc bút từ trong hộp, không trả lại. Sau đó bạn Bình lấy ngẫu nhiên một 
+trong 11 chiếc bút còn lại. Tính xác suất để An lấy được bút xanh và Bình lấy được bút đen.  
+A. 5
+13 . 
+B. 8
+13 . 
+C. 1
+4 . 
+D. 10
+39 . 
+Lời giải 
+Xét hai biến cố sau: 
+A: “An lấy được bút xanh.” 
+B: “Bình lấy được bút đen.” 
+Ta cần tính (
+)
+P AB . 
+Vì ( )
+8
+n A =  nên ( )
+8
+13
+P A =
+. 
+Nếu A xảy ra tức là An lấy được bút xanh thì trong hộp còn 12 bút bi với 5 bút đen. Vậy 
+(
+)
+5
+|
+12
+P B A =
+. 
+Theo công thức nhân xác suất: (
+)
+( )
+(
+)
+8
+5
+10
+.
+|
+.
+13 12
+39
+P AB
+P A P B A
+=
+=
+=
+. 
+Câu 7. 
+Cho ( )
+0,4
+P A =
+; (
+)
+|
+0,2
+P B A =
+ và (
+)
+|
+0,3
+P B A =
+. Giá trị của ( )
+P B  là 
+
+=== TRANG 13 ===
+ 
+ 
+A. 1
+2 . 
+B. 13
+50 . 
+C. 1
+4 . 
+D. 2
+5 . 
+Lời giải 
+Vì ( )
+0,4
+P A =
+ nên ( )
+1 0,4
+0,6
+P A = −
+=
+. 
+Theo công thức xác suất toàn phần ta có:  
+( )
+( )
+(
+)
+( ) (
+)
+.
+|
+.
+|
+P B
+P A P B A
+P A P B A
+=
++
+0,4.0,2
+0,6.0,3
+0,26
+=
++
+=
+. 
+Câu 8. 
+Cho ( )
+0,35
+P A =
+; (
+)
+|
+0,4
+P B A =
+ và (
+)
+|
+0,3
+P B A =
+. Giá trị của (
+)
+|
+P A B  là 
+A. 1
+2 . 
+B. 8
+13 . 
+C. 1
+4 . 
+D. 28
+67 . 
+Lời giải 
+Vì ( )
+0,35
+P A =
+ nên ( )
+1 0,35
+0,65
+P A = −
+=
+. 
+Theo công thức Bayes ta có: 
+(
+)
+( )
+(
+)
+( )
+(
+)
+( )
+(
+)
+.
+|
+|
+.
+|
+.
+|
+P A P B A
+P A B
+P A P B A
+P A P B A
+=
++
+0,35.0,4
+0,35.0,4
+0,65.0,3
+=
++
+28
+67
+=
+. 
+Câu 9. 
+Nếu hai biến cố A, B thỏa mãn 
+( )
+(
+)
+(
+)
+0,6; 
+0,5;
+0,3
+=
+=
+=
+P B
+P A B
+P A B
+ thì ( )
+P A  bằng 
+A. 0,3. 
+B. 0,4. 
+C. 0,46. 
+D. 0,42. 
+Lời giải 
+Ta có: 
+( )
+( )
+(
+)
+( ) (
+)
+.
+.
+0,6.0,5
+0,4.0,3
+0,42
+=
++
+=
++
+=
+P A
+P B P A B
+P B P A B
+  
+Câu 10. Cho hai biến cố A và B , với 
+( )
+0,8
+=
+P B
+, 
+(
+)
+|
+0,7
+=
+P A B
+, (
+)
+|
+0,45
+=
+P A B
+. Giá trị 
+( )
+P A  
+bằng 
+A. 0,25 . 
+B. 0,65. 
+C. 0,55. 
+D. 0,5. 
+Lời giải 
+Ta có: ( )
+( )
+1
+1 0,8
+0,2
+= −
+= −
+=
+P B
+P B
+ 
+Công thức xác suất toàn phần 
+( )
+( )
+(
+)
+( )
+(
+)
+.
+|
+.
+|
+0,8.0,7
+0,2.0,45
+0,65
+=
++
+=
++
+=
+P A
+P B P A B
+P B P A B
+ 
+Câu 11. Bốn quả bóng giống nhau được đánh số 1, 2, 3 và 4 rồi cho vào hộp. Một quả bóng được rút 
+ngẫu  
+nhiên ra khỏi hộp và không được trả lại vào hộp. Quả bóng thứ hai sau đó được rút ngẫu nhiên 
+từ chiếc  
+hộp. Xác suất để số đầu tiên được rút ra là số 2 nếu biết số đó tổng số ghi trê 2 quả lấy ra ít 
+nhất là 4 bằng 
+
+=== TRANG 14 ===
+ 
+ 
+A. 1 .
+4  
+B. 1 .
+3  
+C. 1 .
+12  
+D. 1 .
+5  
+Lời giải 
+Gọi A là biến cố quả thứ 2 rút ra mang số 2. 
+Gọi B là biến cố để tổng các số trên 2 quả lấy ra ít nhất là 4. 
+Ta có: (
+)
+(
+)
+( )
+
+= P A
+B
+P A B
+P B
+. 
+Lại 
+có: 
+các 
+cặp 
+số 
+có 
+tổng 
+ít 
+nhất 
+bằng 
+4 
+là 
+(
+) (
+) (
+) (
+) (
+) (
+) (
+) (
+) (
+) (
+)
+1,3 ; 1,4 ; 2,3 ; 2,4 ; 3,4 ; 3,2 ; 3,1 ; 4,1 ; 4,2 ; 4,3  
+Các cặp số có tổng ít nhất bằng 4 nhưng quả thứ 2 mang số 2 là (
+) (
+)
+3,2 ; 4,2  
+Do đó: 
+( )
+1 1
+5
+. .10
+4 3
+6
+=
+=
+P B
+; 
+(
+)
+1 1
+1
+. .2
+4 3
+6
+
+=
+=
+P A
+B
+. 
+Vậy (
+)
+(
+)
+( )
+1
+5
+
+=
+=
+P A
+B
+P A B
+P B
+. 
+Câu 12. Một trạm chỉ phát hai tín hiệu A và B  với xác suất tương ứng 0,85 và 0,15 do có nhiễu trên 
+đường truyền nên 1
+7  tín hiệu A bị méo và thu được như tín hiệu B ; còn 1
+8  tín hiệu B  bị méo 
+thành và thu được như A. Xác suất thu được tín hiệu A là 
+A. 963
+1120 . 
+B. 283
+1120 . 
+C. 837
+1120 . 
+D. 157
+1120 . 
+Lời giải 
+Gọi A là biến cố “Phát tín hiệu A” 
+Gọi B  là biến cố “Phát tín hiệu A” 
+Gọi 
+A
+T  là biến cố “Phát được tín hiệu A” 
+Gọi 
+B
+T  là biến cố “Phát được tín hiệu B ” 
+Ta cần tính (
+)
+A
+P T
+ 
+Với (
+)
+( )
+(
+)
+( )
+(
+)
+.
+|
+.
+|
+=
++
+A
+A
+A
+P T
+P A P T
+A
+P B P T
+B  
+Ta có: ( )
+0,85
+=
+P A
+ 
+(
+)
+(
+)
+( )
+(
+)
+1
+1
+6
+|
+|
+1
+7
+7
+7
+0,15
+1
+|
+8
+=
+
+= −
+=
+=
+=
+B
+A
+A
+P T
+A
+P T
+A
+P B
+P T
+B
+ 
+
+=== TRANG 15 ===
+ 
+ 
+Do đó 
+(
+)
+( )
+(
+)
+( )
+(
+)
+6
+1
+837
+.
+|
+.
+|
+0,85.
+0,15.
+7
+8
+1120
+=
++
+=
++
+=
+A
+A
+A
+P T
+P A P T
+A
+P B P T
+B
+ 
+☞Phần 2. Trắc nghiệm lựa chọn đúng sai. Thí sinh trả lời từ câu 1 đến câu 4. Trong mỗi ý a), b), 
+c), d) ở mỗi câu, thí sinh chọn đúng hoặc sai. 
+Câu 1: 
+Một xí nghiệp mỗi ngày sản xuất ra 2000 sản phẩm trong đó có 39 sản phẩm lỗi. Lần lượt 
+lấy ra ngẫu nhiên hai sản phẩm không hoàn lại để kiểm tra. 
+a) Xác suất lấy ra sản phẩm lần thứ nhất bị lỗi là 39
+2000 . 
+b) Xác suất lấy ra được cả hai sản phẩm bị lỗi là 2
+39 . 
+c) Xác suất lấy ra sản phẩm lần thứ hai bị lỗi, biết rằng lấy lần thứ nhất sản phẩm không bị lỗi 
+là 39
+1999 . 
+d) Xác suất lấy ra sản phẩm lần thứ hai bị lỗi là 39
+2000 . 
+Lời giải 
+a) Đ Xét các biến cố: 
+1A : Sản phẩm lấy ra lần thứ nhất bị lỗi. Khi đó, ta có: (
+)
+1
+39
+2000
+P A =
+; ( )
+1
+1961
+2000
+P A =
+. 
+2
+A : Sản phẩm lấy ra lần thứ hai bị lỗi. 
+b) S - Khi sản phẩm lấy ra lần thứ nhất bị lỗi thì còn 1999 sản phẩm và trong đó có 38 sản 
+phẩm lỗi nên ta có: (
+)
+2
+1
+38
+1999
+P A A =
+. 
+c) Đ Khi sản phẩm lấy ra lần thứ nhất không bị lỗi thì còn 1999 sản phẩm trong đó có 39sản 
+phẩm lỗi nên ta có: (
+)
+2
+1
+39
+1999
+P A A =
+ 
+d) Đ - Khi sản phẩm lấy ra lần thứ nhất bị lỗi thì còn 1999 sản phẩm và trong đó có 38 sản 
+phẩm lỗi nên ta có: (
+)
+2
+1
+38
+1999
+P A A =
+, suy ra (
+)
+2
+1
+1961
+1999
+P A A =
+. 
+- Khi sản phẩm lấy ra lần thứ nhất không bị lỗi thì còn 1999 sản phẩm trong đó có 39sản 
+phẩm lỗi nên ta có: (
+)
+2
+1
+39
+1999
+P A A =
+, suy ra (
+)
+2
+1
+1960
+1999
+P A A =
+. 
+Khi đó, xác suất để sản phẩm lấy ra lần thứ hai bị lỗi là: 
+(
+)
+(
+)
+(
+)
+(
+)
+( )
+2
+2
+1
+1
+2
+1
+1
+.
+.
+P A
+P A A
+P A
+P A A
+P A
+=
++
+38
+39
+39
+1961
+39
+.
+.
+1999 2000
+1999 2000
+2000
+=
++
+=
+. 
+Câu 2: 
+Khi kiểm tra sức khoẻ tổng quát của bệnh nhân ở một bệnh viện, người ta được kết quả như 
+sau: 
+
+=== TRANG 16 ===
+ 
+ 
+- Có 40% bệnh nhân bị đau dạ dày. 
+- Có 30% bệnh nhân thường xuyên bị stress. 
+- Trong số các bệnh nhân bị stress có 80% bệnh nhân bị đau dạ dày. 
+Chọn ngẫu nhiên 1 bệnh nhân. 
+a) Xác suất chọn được bệnh nhân thường xuyên bị stress là 0,3. 
+b) Xác suất chọn được bệnh nhân bị đau dạ dày, biết bệnh nhân đó thường xuyên bị stress, là 0,8
+. 
+c) Xác suất chọn được bệnh nhân vừa thường xuyên bị stress vừa bị đau dạ dày là 0,24 . 
+d) Xác suất chọn được bệnh nhân thường xuyên bị stress, biết bệnh nhân đó bị đau dạ dày, là 0,6
+. 
+Lời giải 
+a) Đ Xét các biến cố: A: “Chọn được bệnh nhân thường xuyên bị stress”; 
+B : “Chọn được bệnh nhân bị đau dạ dày” 
+Khi đó, ( )
+( )
+P
+0,3; P
+0,4;
+=
+=
+A
+B
+. 
+b) Đ Xác suất chọn được bệnh nhân bị đau dạ dày, biết bệnh nhân đó thường xuyên bị stress, tức 
+là (
+)
+P B A
+∣
+, theo giả thiết ta có (
+)
+P
+0,8
+=
+B A
+∣
+. 
+c) Đ Suy ra xác suất chọn được bệnh nhân thường xuyên bị stress vừa bị đau dạ dày là 
+(
+)
+( )
+(
+)
+P
+P
+P
+0,3 0,8
+0,24
+A
+B
+A
+B A
+
+=
+
+=
+
+=
+∣
+. 
+d) Đ Xác suất chọn được bệnh nhân thường xuyên bị stress, biết bệnh nhân đó bị đau dạ dày, 
+là 
+(
+)
+(
+)
+( )
+0,24
+|
+0,6
+0,4
+P A
+B
+P A B
+P B
+
+=
+=
+=
+. 
+Câu 3: 
+Một cuộc thi khoa học có 36 bộ câu hỏi, trong đó có 20 bộ câu hỏi về chủ đề tự nhiên và 16 
+bộ câu hỏi về chủ đề xã hội. Bạn An lấy ngẫu nhiên 1 bộ câu hỏi (lấy không hoàn lại), sau đó 
+bạn Bình lấy ngẫu nhiên 1 bộ câu hỏi. Các khẳng định sau đúng hay sai? 
+a) Xác suất bạn An chọn được bộ câu hỏi chủ đề tự nhiên là 5
+9  
+b) Xác suất bạn Bình chọn câu hỏi chủ đề xã hội biết bạn An chọn được chủ đề tự nhiên là 16
+27  
+c) Xác suất bạn Bình chọn câu hỏi chủ đề xã hội biết bạn An chọn được chủ đề xã hội là là 15
+27
+. 
+d) Xác suất bạn Bình lấy được bộ câu hỏi về chủ đề xã hội bằng 4
+9  
+Lời giải 
+
+=== TRANG 17 ===
+ 
+ 
+a) Đúng b) Sai c) Sai d) đúng 
+Xét các biến cố: 
+A: "Bạn An lấy được bộ câu hỏi về chủ đề tự nhiên"; 
+B: "Bạn Bình lấy được bộ câu hỏi về chủ đề xã hội". 
+Khi đó ( )
+( )
+( )
+20
+5
+4
+,
+1
+36
+9
+9
+P A
+P A
+P A
+=
+=
+= −
+=
+ 
+Nếu bạn An chọn được một bộ câu hỏi về chủ đề tự nhiên thì sau đó còn 35 bộ câu hỏi, trong 
+đó có 16 bộ câu hỏi về chủ đề xã hội, suy ra (
+)
+16
+|
+35
+P B A =
+ 
+Nếu bạn An chọn được một bộ câu hỏi về chủ đề xã hội thì sau đó còn 35 bộ câu hỏi, trong đó 
+có 15 bộ câu hỏi về chủ đề xã hội, suy ra (
+)
+15
+|
+35
+P B A =
+ 
+Theo công thức xác suất toàn phần, xác suất bạn Bình lấy được bộ câu hỏi về chủ đề 
+xã hội là: ( )
+( )
+(
+)
+( ) (
+)
+5 16
+4 15
+4
+.
+|
+.
+|
+.
+.
+9 35
+9 35
+9
+P B
+P A P B A
+P A P B A
+=
++
+=
++
+=
+ 
+Câu 4: 
+Trong một đợt kiểm tra sức khoẻ, có một loại bệnh X mà tỉ lệ người mắc bệnh là 0,2%và 
+một loại xét nghiệmY mà̀ ai mắc bệnh X khi xét nghiệm Y cũng có phản ứng dương tính. 
+Tuy nhiên, có 6%những người không bị bệnh X lại có phản ứng dương tính với xét nghiệm 
+Y . Chọn ngẫu nhiên 1 người trong đợt kiểm tra sức khoẻ đó. Các khẳng định sau đúng hay 
+sai? 
+a) Xác suất người được chọn không mắc bệnh X là 0,8. 
+b) Xác suất người được chọn có phản ứng dương tính với xét nghiệm Y biết rằng người đó 
+mắc bệnh X là 0,94. 
+c) Xác suất người được chọn không mắc bệnh X biết rằng người đó có phản ứng dương tính 
+với xét nghiệm Y là 0,06 
+d) Giả sử người đó có phản ứng dương tính với xét nghiệm Y. Xác suất người đó bị mắc bệnh 
+X (làm tròn kết quả đến hàng phần trăm) là 0,03. 
+Lời giải 
+a) Sai b) Sai c) Đúng d) đúng 
+Xét các biến cố: 
+A: "Người được chọn mắc bệnh X "; 
+
+=== TRANG 18 ===
+ 
+ 
+B: "Người được chọn có phản ứng dương tính với xét nghiệm Y". 
+Theo giả thiết ta có: ( )
+( )
+( )
+0,002,
+1
+0.998
+P A
+P A
+P A
+=
+= −
+=
+ 
+Xác suất người được chọn có phản ứng dương tính với xét nghiệm Y biết rằng người đó mắc 
+bệnh X là (
+)
+|
+1
+P B A =  
+Xác suất người được chọn không mắc bệnh X biết rằng người đó có phản ứng dương tính với 
+xét nghiệm Y là (
+)
+|
+0,06
+P B A =
+ 
+Theo công thức Bayes, ta có: 
+(
+)
+( )
+(
+)
+( )
+(
+)
+( ) (
+)
+.
+|
+0,002.1
+|
+0,03
+0,002.1 0,998.0,06
+.
+|
+.
+|
+P A P B A
+P A B
+P A P B A
+P A P B A
+=
+=
+
++
++
+ 
+Vậy nếu người được chọn có phản ứng dương tính với xét nghiệm Y thì xác suất bị mắc bệnh 
+X của người đó là khoảng 0,03. 
+☞Phần 3. Câu hỏi trắc nghiệm trả lời ngắn. Thí sinh trả lời từ câu 1 đến câu 6 
+Câu 1. Cho hai biến cố A và B , với ( )
+( )
+(
+)
+0,6;  
+0,7; 
+0,3
+P A
+P B
+P A
+B
+=
+=
+
+=
+. Tính (
+)
+P B A . 
+Trả lời: 0,5 
+Lời giải 
+Ta có: (
+)
+(
+)
+(
+)
+( )
+0,3
+1
+1
+1
+1
+1
+1
+0,6
+2
+2
+P A
+B
+P B A
+P B A
+P A
+
+= −
+= −
+= −
+= −
+=
+ 
+Câu 2. 
+Một lớp học có 95 sinh viên, trong đó có 40 nam và 55 nữ. Trong kì thi môn Xác suất thống 
+kê có 23 sinh viên đạt điểm giỏi (trong đó có 12 nam và 11 nữ). Gọi tên ngẫu nhiên một sinh 
+viên trong danh sách lớp. Tính xác suất gọi được sinh viên đạt điểm giỏi môn Xác suất thống 
+kê, biết rằng sinh viên đó là nam. 
+Trả lời: 0,3 
+Lời giải 
+Gọi A là biến cố "gọi được sinh viên nam". 
+Gọi B là biến cố "gọi được sinh viên đạt điểm giỏi môn Xác suất thống kê", 
+Ta đi tính (
+)
+P B A . Ta có: ( )
+0
+95
+4
+n A =
+ và (
+)
+12
+95
+n A
+B
+
+=
+. 
+Do đó: 
+(
+)
+(
+)
+( )
+3
+12 :
+95 9
+40
+0,
+5
+n A
+B
+P B A
+n A
+
+=
+=
+=
+. 
+Câu 3. 
+Một bình đựng 3 bi xanh và 2  bi trắng. Lấy ngẫu nhiên lần 1 một viên bi (không hoàn lại), 
+rồi lần 2  một viên bi. Tính xác suất để lần 1 lấy một viên bi xanh, lần 2  lấy một viên bi trắng. 
+
+=== TRANG 19 ===
+ 
+ 
+Lời giải 
+Đáp án: 0,3 
+Gọi A là biến cố “Lần 1 lấy một viên bi xanh”. Khi đó 
+( )
+3
+5
+P A =
+.  
+Gọi B  là biến cố “Lần 2  lấy một viên bi trắng”. 
+Gọi C  là biến cố “Lần 1 lấy một viên bi xanh, lần 2  lấy một viên bi trắng”. 
+Nếu A đã xảy ra thì trong bình chỉ còn 2  bi xanh, 2  bi trắng. Khi đó 
+(
+)
+2
+1
+|
+4
+2
+P B A =
+=
+. 
+Mà C
+AB
+=
+. Do đó theo công thức nhân ta có: 
+3 1
+3
+( )
+(
+)
+( ) (
+|
+)
+0,3
+5 2
+10
+P C
+P AB
+P A P B A
+=
+=
+=
+
+=
+=
+. 
+Câu 4. 
+Một công ty đấu thầu 2  dự án. Khả năng thắng thầu của dự án 1 và dự án 2  lần lượt là 0,6  
+và 0,5. Khả năng thắng thầu cả 2  dự án là 0,3. Biết công ty không thắng thầu dự án 1, xác 
+suất công ty thắng thầu dự án 2  là bao nhiêu? 
+Lời giải 
+Đáp án: 0,5 
+Gọi A là biến cố “Thắng thầu dự án 1”, B  là biến cố “Thắng thầu dự án 2 ”. 
+Ta có ( )
+( )
+(
+)
+0,6;
+0,5;
+0,3
+P A
+P B
+P AB
+=
+=
+=
+. 
+Biết công ty không thắng thầu dự án 1, xác suất công ty thắng thầu dự án 2  là 
+(
+)
+(
+)
+( )
+( )
+(
+)
+( )
+0,5
+0,3
+1
+|
+1
+1 0,6
+2
+P BA
+P B
+P AB
+P B A
+P A
+P A
+−
+−
+=
+=
+=
+=
+−
+−
+. 
+Câu 5. 
+Trong một trường học, tỉ lệ học sinh nữ là 48%. Tỉ lệ học sinh nữ và tỉ lệ học sinh tham gia 
+câu lạc bộ nghệ thuật lần lượt là 18%  và 15% . Gặp ngẫu nhiên một học sinh của trường. Biết 
+rằng học sinh có tham gia câu lạc bộ nghệ thuật. Tính xác suất học sinh đó là nam (viết kết quả 
+dưới dạng số thập phân và làm tròn đến hàng phần trăm). 
+Lời giải 
+Trả lời: 0,47 
+Gọi 
+1
+2
+,
+A
+A  lần lượt là các biến cố gặp được một học sinh nữ, một học sinh nam 
+Nên 
+1
+2
+,
+A
+A  là hệ biến cố đầy đủ. 
+Gọi B “ Học sinh đó tham gia câu lạc bộ nghệ thuật ” 
+(
+)
+1
+48
+0 48
+=
+=
+%
+,
+P A
+, (
+)
+2
+1 0 48
+0 52
+= −
+=
+,
+,
+P A
+. 
+(
+)
+1
+18
+0 18
+=
+=
+|
+%
+,
+P B A
+; (
+)
+2
+15
+0 15
+=
+=
+|
+%
+,
+P B A
+ 
+Áp dụng công thức xác suất toàn phần  
+( )
+(
+)
+(
+)
+(
+)
+(
+)
+1
+1
+2
+2
+=
++
+|
+.
+|
+.
+P B
+P B A
+P A
+P B A
+P A
+411
+0 18 0 48
+0 15 0 52
+0 1644
+2500
+=
++
+=
+=
+,
+. ,
+,
+. ,
+,
+ 
+
+=== TRANG 20 ===
+ 
+ 
+Xác suất để học sinh đó là nam, biết rằng học sinh đó tham gia câu lạc bộ nghệ thuật, ta áp 
+dụng công thức Bayes (
+)
+(
+)
+(
+)
+( )
+2
+2
+2
+=
+|
+.
+|
+P B A
+P A
+P A
+B
+P B
+0 15 0 52
+65
+0 47
+0 1644
+137
+=
+=
+
+,
+. ,
+,
+,
+. 
+Câu 6. 
+Trong một kì thi tốt nghiệp trung học phổ thông, một tỉnh X  có 80% học sinh lựa chọn tổ hợp 
+A00 (gồm các môn Toán, Vật lí, Hoá học). Biết rằng, nếu một học sinh chọn tổ hợp A00 thì 
+xác suất để học sinh đó đỗ đại học là 0,6; còn nếu một học sinh không chọn tổ hợp A00 thì xác 
+suất để học sinh đó đỗ đại học là 0,7. Chọn ngẫu nhiên một học sinh của tỉnh X  đã tốt nghiệp 
+trung học phổ thông trong kì thi trên. Biết rằng học sinh này đã đỗ đại học. Tính xác suất để 
+học sinh đó chọn tổ hợp A00. (viết kết quả dưới dạng số thập phân và làm tròn đến hàng phần 
+trăm). 
+Lời giải 
+Trả lời: 0,77 
+Gọi A là biến cố: “Học sinh đó chọn tổ hợp 
+00
+A
+”; B là biến cố: “Học sinh đó đỗ đại học”.  
+Ta cần tính (
+)
+|
+P A B .  
+Theo công thức Bayes, ta cần biết: ( )
+( )
+(
+)
+(
+)
+,
+,
+,
+|
+|
+P A
+P A
+P B A
+P B A .  
+Ta có: ( )
+0 8
+= , ;
+P A
+( )
+( )
+1
+1 0 8
+0 2
+= −
+= −
+=
+,
+,
+P A
+P A
+.  
+(
+)
+|
+P B A là xác suất để một học sinh đỗ đại học với điều kiện học sinh đó chọn tổ hợp 
+00
+A
+ 
+⇒(
+)
+0 6
+= ,
+|
+P B A
+.  
+(
+)
+|
+P B A  là xác suất để một học sinh đỗ đại học với điều kiện học sinh đó không chọn tổ hợp 
+00
+A
+ 
+(
+)
+0 7
+
+=
+|
+,
+P B A
+.  
+Thay 
+vào 
+công 
+thức 
+Bayes 
+ta 
+được:
+(
+)
+( )
+(
+)
+( )
+(
+)
+( ) (
+)
+0 8 0 6
+0 7742
+0 8 0 6
+0 2 0 7
+=
+=
+
++
++
+ 
+.
+|
+, . ,
+|
+ 
+,
+, . ,
+, . ,
+.
+|
+ 
+.
+|
+P A P B A
+P A B
+P A P B A
+P A P B A
+. 
+-----HẾT----- 
+⬩Đề ❸:  
+☞Phần 1. Câu hỏi trắc nghiệm nhiều phương án lựa chọn. Thí sinh trả lời từ câu 1 đến câu 12. Mỗi 
+câu hỏi, thí sinh chỉ chọn 1 phương án. 
+Câu 1. Cho A và B  là hai biến cố, trong đó ( )
+0
+P B 
+. Khi đó 
+A. (
+)
+(
+)
+( )
+P A
+B
+P A B
+P B
+
+=
+. 
+B. (
+)
+(
+)
+( )
+P A
+B
+P A B
+P B
+
+=
+. 
+C. (
+)
+(
+)
+( )
+P A
+B
+P A B
+P A
+
+=
+. D. (
+)
+(
+)
+( )
+P A
+B
+P A B
+P A
+
+=
+. 
+
+=== TRANG 21 ===
+ 
+ 
+Lời giải 
+Ta có (
+)
+(
+)
+( )
+P A
+B
+P A B
+P B
+
+=
+. 
+Câu 2. 
+Với A, B  là hai biến cố bất kỳ thì  
+A. (
+)
+( ) (
+)
+P AB
+P B P A B
+=
+. 
+B. (
+)
+( ) (
+)
+P AB
+P B P B A
+=
+. 
+C. (
+)
+( ) (
+)
+P AB
+P B P A B
+=
+. 
+D. 
+(
+)
+( ) (
+)
+P AB
+P B P A B
+=
+. 
+Lời giải 
+Ta có: 
+(
+)
+( ) (
+)
+P AB
+P B P A B
+=
+. 
+Câu 3. 
+Cho hai biến cố A và B  với 
+( )
+0
+1
+P B
+
+. Khi đó  
+A. ( )
+( ) (
+)
+( ) (
+)
+P A
+P B P A B
+P B P A B
+=
++
+ 
+B. ( )
+( ) (
+)
+( ) (
+)
+P A
+P B P A B
+P B P A B
+=
++
+ 
+C. ( )
+( ) (
+)
+( ) (
+)
+P A
+P B P A B
+P B P A B
+=
++
+ 
+D. ( )
+( ) (
+)
+( ) (
+)
+P A
+P B P A B
+P B P A B
+=
++
+ 
+Lời giải 
+Ta có: 
+( )
+( ) (
+)
+( ) (
+)
+P A
+P B P A B
+P B P A B
+=
++
+ 
+Câu 4. 
+Giả sử A và B  là hai biến cố ngẫu nhiên thỏa mãn 
+( )
+0
+P A 
+ và 
+( )
+0
+1
+P B
+
+. Khi đó  
+A. (
+)
+( ) (
+)
+( ) (
+)
+( ) (
+)
+P B P A B
+P B A
+P B P A B
+P B P A B
+=
++
+. 
+B. (
+)
+( ) (
+)
+( ) (
+)
+( ) (
+)
+P B P A B
+P B A
+P B P A B
+P B P A B
+=
++
+. 
+C. (
+)
+( ) (
+)
+( ) (
+)
+( ) (
+)
+P B P A B
+P B A
+P B P A B
+P B P A B
+=
++
+. 
+D. (
+)
+( ) (
+)
+( ) (
+)
+( ) (
+)
+P B P A B
+P B A
+P B P A B
+P B P A B
+=
++
+. 
+Lời giải 
+Ta có: (
+)
+( ) (
+)
+( ) (
+)
+( ) (
+)
+P B P A B
+P B A
+P B P A B
+P B P A B
+=
++
+ 
+Câu 5. 
+Cho hai biến cố,
+A B sao cho ( )
+0,7
+P B =
+và (
+)
+0,2
+P AB =
+. Tính 
+(
+|
+)
+P A B . 
+A. 7
+10 . 
+B. 2
+7 . 
+C. 7
+50 . 
+D. 1
+2 . 
+Lời giải 
+Ta có 
+(
+)
+0,2
+2
+(
+|
+)
+( )
+0,7
+7
+P AB
+P A B
+P B
+=
+=
+=
+. 
+Câu 6. 
+Cho hai biến cố A và B  độc lập, biết ( )
+( )
+0,4;
+0,7.
+P A
+P B
+=
+=
+ Khi đó (
+)
+|
+P B A  bằng 
+A. 7
+10 . 
+B. 4
+7 . 
+C. 7
+25 . 
+D. 3
+10 . 
+
+=== TRANG 22 ===
+ 
+ 
+Lời giải 
+Vì A và B  là hai biến cố độc lập nên ta có: 
+(
+)
+( )
+( )
+.
+0,4.0,7
+0,28
+P AB
+P A P B
+=
+=
+=
+ 
+Ta có: (
+)
+(
+)
+(
+)
+( )
+0,28
+3
+|
+1
+|
+1
+1
+0,4
+10
+P AB
+P B A
+P B A
+P A
+= −
+= −
+= −
+=
+. 
+Câu 7. 
+Cho hai biến cố A và B  biết ( )
+(
+)
+(
+)
+0,6;
+|
+0,3;
+|
+0,8
+P B
+P A B
+P A B
+=
+=
+=
+. Tính 
+( )
+P A  
+A. 
+( )
+0,3
+P A =
+ 
+B. 
+( )
+0,4
+P A =
+ 
+C. 
+( )
+0,5
+P A =
+ 
+D. 
+( )
+0,6
+P A =
+ 
+Lời giải 
+Ta có: ( )
+( )
+1
+0,4
+P B
+P B
+= −
+=
+ 
+( )
+( )
+(
+)
+( )
+(
+)
+.
+|
+.
+|
+0,6.0,3
+0,4. 0,8
+0,5
+P A
+P B P A B
+P B P A B
+
+=
++
+=
++
+=
+ 
+Câu 8. 
+Một chiếc hộp có 20  viên bi, trong đó có 12 viên bi màu đỏ và 8 viên bi màu vàng; các viên 
+bi có kích thước và khối lượng như nhau. Bạn Minh lấy 1 viên bi từ hộp sau đó bạn Châu lấy 
+viên bi thứ hai. Tính xác suất để bạn Châu lấy được viên bi màu đỏ. 
+A. 3
+5 . 
+B. 2
+5 . 
+C. 4
+5 . 
+D. 1
+5 . 
+Lời giải 
+Xét hai biến cố : 
+:
+A  “ Bạn Châu lấy được viên bi màu đỏ” 
+:
+B  “ Bạn Minh lấy được viên bi màu đỏ” 
+Khi đó ta có: 
+( )
+( )
+( )
+(
+)
+(
+)
+12
+3
+2
+11
+12
+,
+1
+,
+|
+,
+|
+20
+5
+5
+19
+19
+P B
+P B
+P B
+P A B
+P A B
+=
+=
+= −
+=
+=
+=
+ 
+Áp dụng công thức xác suất toàn phần, ta có: 
+( )
+( )
+(
+)
+( )
+(
+)
+3
+11
+2
+12
+3
+.
+|
+.
+|
+.
+.
+5
+19
+5
+19
+5
+P A
+P B P A B
+P B P A B
+=
++
+=
++
+=
+ 
+Câu 9. 
+Cho 
+( )
+0,4
+P A =
+; (
+)
+0,2
+P B A =
+. Giá trị của (
+)
+P BA  là  
+A. 0,2. 
+B. 0,08. 
+C. 0,4 . 
+D. 0,12 . 
+Lời giải 
+Ta có ( )
+( )
+1
+1 0,4
+0,6
+P A
+P A
+= −
+= −
+=
+. 
+(
+)
+( ) (
+)
+.
+0,6.0,2
+0,12
+P BA
+P A P B A
+=
+=
+=
+. 
+Câu 10. Cho 
+( )
+0,3
+P A =
+; 
+( )
+0,5
+P B =
+; (
+)
+0,7
+P B A =
+. Khi đó (
+)
+P A B  bằng  
+A. 0,42 . 
+B. 0,15. 
+C. 0,21. 
+D. 0,35. 
+Lời giải 
+
+=== TRANG 23 ===
+ 
+ 
+Theo công thức Beyes, ta có (
+)
+( )
+(
+)
+( )
+.
+0,3.0,7
+0,42
+0,5
+P A P B A
+P A B
+P B
+=
+=
+=
+.  
+Câu 11. Để được chọn vào đội tuyển học sinh giỏi môn Toán cấp thành phố, mỗi thí sinh phải vượt qua 
+hai vòng thi. Bạn Hà tham dự cuộc tuyển chọn này. Xác suất để Hà qua được vòng thứ nhất là 
+0,8. Nếu qua được vòng thứ nhất thì xác suất để Hà qua được vòng thứ hai là 0,7 . Xác suất 
+để bạn Hà được chọn vào đội tuyển này là 
+A. 0,06 . 
+B. 0,24 . 
+C. 0,56. 
+D. 0,875. 
+Lời giải 
+Gọi A là biến cố: “Hà qua được vòng thứ nhất” và B  là biến cố: “Hà qua được vòng thứ hai”. 
+Khi đó biến cố: “Hà được chọn vào đội tuyển” là AB . 
+Ta có 
+(
+)
+( )
+(
+)
+.
+0,8.0,7
+0,56
+P AB
+P A P B A
+=
+=
+=
+.  
+Câu 12. Có hai chiếc hộp đựng bóng. Hộp I có 7  quả bóng trắng và 8 quả bóng xanh. Hộp II có 5 quả 
+bóng trắng và 3 quả bóng xanh. Trước tiên, từ hộp I lấy ra ngẫu nhiên 1 quả bóng rồi cho vào 
+hộp II. Sau đó, từ hộp II lấy ra ngẫu nhiên 1 quả bóng. Xác suất để quả bóng được lấy ra màu 
+trắng là  
+A. 11
+18 . 
+B. 61
+128 . 
+C. 83
+135 . 
+D. 82
+135 . 
+Lời giải 
+Gọi A là biến cố: “Lấy được quả bóng trắng từ hộp I”. 
+Gọi B  là biến cố: “Lấy được quả bóng trắng từ hộp II”.  
+Theo công thức xác suất toàn phần 
+( )
+( )
+(
+)
+( ) (
+)
+.
+.
+P B
+P A P B A
+P A P B A
+=
++
+ 
+Ta có 
+( )
+7
+15
+P A =
+; ( )
+( )
+7
+8
+1
+1 15
+15
+P A
+P A
+= −
+= −
+=
+. 
+Nếu A xảy ra thì hộp II có 6  quả bóng trắng và 3 quả bóng xanh. Vậy (
+)
+6
+2
+9
+3
+P B A =
+=
+. 
+Nếu A không xảy ra thì hộp II có 5 quả bóng trắng và 4  quả bóng xanh. Vậy (
+)
+5
+9
+P B A =
+. 
+Vậy 
+( )
+7 2
+8 5
+82
+.
+.
+15 3
+15 9
+135
+P B =
++
+=
+. 
+ 
+☞Phần 2. Trắc nghiệm lựa chọn đúng sai. Thí sinh trả lời từ câu 1 đến câu 4. Trong mỗi ý a), b), 
+c), d) ở mỗi câu, thí sinh chọn đúng hoặc sai. 
+Câu 1: Cho hai biến cố A và B  có ( )
+0,6
+P A =
+, ( )
+0,4
+P B =
+, (
+)
+0,2
+P AB =
+. 
+a) ( )
+0,6
+P A =
+. 
+b) ( )
+0,6
+P B =
+. 
+
+=== TRANG 24 ===
+ 
+ 
+c)
+(
+)
+|
+0,4
+P A B =
+. 
+d) 
+(
+)
+1
+|
+3
+P B A =
+. 
+Lời giải 
+a) s ( )
+1 0,6
+0,4
+0,6
+P A = −
+=
+
+. 
+b) Đ ( )
+1 0,4
+0,6
+P B = −
+=
+. 
+c) s 
+(
+)
+(
+)
+( )
+0,2
+|
+0,5
+0,4
+0,4
+P AB
+P A B
+P B
+=
+=
+=
+
+. 
+d) Đ (
+)
+(
+)
+( )
+0,2
+1
+|
+0,6
+3
+P AB
+P B A
+P A
+=
+=
+=
+. 
+Câu 2: Một lớp học có 40 học sinh, trong đó có 15 học sinh nam và 25 học sinh nữ. Khi tổng kết cuối 
+năm, lớp có 20 học sinh giỏi, trong đó có 8 học sinh nam và 12 học sinh nữ. Chọn ngẫu nhiên 
+1 học sinh trong lớp. 
+a) Xác suất học sinh được chọn là học sinh giỏi bằng 0,5. 
+b) Xác suất học sinh được chọn là học sinh nữ bằng 0,6 . 
+c) Xác suất học sinh được chọn vừa là học sinh giỏi và là học sinh nữ bằng 0,625. 
+d) Biết rằng học sinh được chọn là nữ, xác suất học sinh đó là học sinh giỏi bằng 0,48 . 
+Lời giải 
+Xét hai biến số sau: 
+A: “Học sinh được chọn là học sinh giỏi”. 
+B : “ Học sinh được chọn là học sinh nữ”. 
+a) Đ Xác suất học sinh được chọn là học sinh giỏi: 
+( )
+20
+0,5
+40
+P A =
+=
+. 
+b) s Xác suất học sinh được chọn là học sinh nữ: 
+( )
+25
+0,625
+0,6
+40
+P B =
+=
+
+. 
+c) s Xác suất học sinh được chọn vừa là học sinh giỏi và là học sinh nữ: 
+(
+)
+12
+0,3
+0,625
+40
+P AB =
+=
+
+. 
+d) Đ Biết rằng học sinh được chọn là nữ, xác suất học sinh đó là học sinh nữ: 
+(
+)
+(
+)
+( )
+(
+)
+( )
+12
+|
+0,48
+25
+P AB
+n A
+B
+P A B
+P B
+n B
+
+=
+=
+=
+=
+. 
+
+=== TRANG 25 ===
+ 
+ 
+Câu 3: Một lô hàng mới sản xuất có 90 sản phẩm, trong đó có 50 sản phẩm loại A và 40  sản phẩm loại 
+B; các sản phẩm có kích thước và khối lượng như nhau. Sau khi kiểm tra, người ta thấy: sản 
+phẩm loại A có 10%  sản phẩm là phế phẩm và sản phẩm loại B có 5%  sản phẩm là phế phẩm; 
+còn lại là các sản phẩm đạt chuẩn. 
+a) Sản phẩm loại A có 5 sản phẩm là phế phẩm. 
+b) Sản phẩm loại B có 20  sản phẩm đạt chuẩn. 
+c) Lấy ngẫu nhiên một sản phẩm. Xác suất để sản phẩm lấy ra là phế phẩm bằng 13,5%. 
+d) Lấy ngẫu nhiên một sản phẩm. Xác suất để sản phẩm lấy ra là sản phẩm đạt chuẩn bằng 
+86,5%. 
+Lời giải 
+a) Đ b) s c) s d) s 
+a) Sản phẩm loại A có số phế phẩm là 10%.50
+5
+=
+. 
+b) Sản phẩm loại B có số sản phẩm đạt chuẩn chiếm 100%
+5%
+95%
+−
+=
+ và là 95%.40
+38
+=
+ 
+sản phẩm. 
+c) Gọi A là biến cố “sản phẩm lấy ra là sản phẩm loại A” thì A  là biến cố “sản phẩm lấy ra là 
+sản phẩm loại B”. 
+Gọi S  là biến cố “sản phẩm lấy ra là phế phẩm” thì S  là biến cố “sản phẩm lấy ra là sản phẩm 
+đạt chuẩn”. 
+Khi đó 
+( )
+50
+5
+90
+9
+P A =
+=
+ và ( )
+40
+4
+90
+9
+P A =
+=
+. 
+(
+)
+1
+|
+10%
+10
+P S A =
+=
+ và (
+)
+1
+|
+5%
+20
+P S A =
+=
+. 
+Ta có: Xác suất để sản phẩm lấy ra là phế phẩm là : 
+( )
+( )
+(
+)
+( )
+(
+)
+5 1
+4 1
+7
+.
+|
+.
+|
+9 10
+9 20
+90
+P S
+P A P S A
+P A P S A
+=
++
+=
+
++
+
+=
+. 
+d) Xác suất để sản phẩm lấy ra là sản phẩm đạt chuẩn bằng ( )
+( )
+7
+83
+1
+1
+90
+90
+P S
+P S
+= −
+= −
+=
+. 
+Câu 4: Một lớp học có 50 học sinh, trong đó có 30 học sinh nam. Biết tỷ lệ học sinh biết bơi trong số 
+học sinh nam là 60% và tỷ lệ học sinh biết bơi trong số học sinh nữ là 50%. Chọn ngẫu nhiên 
+một học sinh. 
+a) Xác suất học sinh được chọn là nam bằng 3
+5 . 
+b) Xác suất học sinh được chọn là học sinh biết bơi, biết học sinh này là nam bằng 3
+5 . 
+
+=== TRANG 26 ===
+ 
+ 
+c) Biết học sinh được chọn là học sinh biết bơi thì xác suất học sinh đó là học sinh nam bằng 
+1
+4 . 
+d) Xác suất để học sinh được chọn là nam khi biết học sinh đó không biết bơi là 6
+11. 
+Lời giải 
+a) Đ b) Đ c) s d) Đúng 
+Gọi A là biến cố “học sinh được chọn là học sinh nam" thì A  là biến cố “học sinh được chọn 
+là học sinh nữ"; 
+B  là biến cố: "Học sinh được chọn là học sinh biết bơi" thì B  là biến cố: "Học sinh được chọn 
+là học sinh không biết bơi". 
+Theo giả thiết ta có: 
+( )
+30
+3
+50
+5
+P A =
+=
+ và ( )
+50
+30
+2
+50
+5
+P A
+−
+=
+=
+. 
+(
+)
+3
+60%
+5
+P B A =
+=
+∣
+ và (
+)
+1
+50%
+2
+P B A =
+=
+∣
+. 
+a) Xác suất học sinh được chọn là nam bằng 
+( )
+3
+5
+P A =
+. 
+b) Xác suất học sinh được chọn là học sinh biết bơi, biết học sinh này là nam bằng 
+(
+)
+3
+5
+P B A =
+∣
+. 
+c) Xác suất học sinh được chọn là học sinh biết bơi là 
+( )
+(
+) ( )
+(
+) ( )
+3 3
+1 2
+14
+5 5
+2 5
+25
+P B
+P B A P A
+P B A P A
+=
++
+=
+
++
+
+=
+∣
+∣
+; 
+Học sinh được chọn là học sinh biết bơi thì xác suất học sinh đó là học sinh nam bằng 
+(
+)
+(
+) ( )
+( )
+3 3
+9
+5 5
+14
+14
+25
+P B A P A
+P A B
+P B
+
+=
+=
+=
+∣
+∣
+. 
+d) Vì 
+(
+)
+3
+5
+P B A =
+∣
+ nên (
+)
+(
+)
+3
+2
+1
+1
+5
+5
+P B A
+P B A
+= −
+= −
+=
+∣
+∣
+. 
+Mặt khác, ( )
+14
+25
+P B =
+ nên ( )
+11
+25
+P B =
+. 
+Do đó, theo công thức Bayes, xác suất để học sinh được chọn là nam khi biết học sinh đó 
+không biết bơi là 
+
+=== TRANG 27 ===
+ 
+ 
+(
+)
+(
+) ( )
+( )
+2 3
+6
+5 5
+11
+11
+25
+P B A P A
+P A B
+P B
+
+=
+=
+=
+∣
+∣
+. 
+☞Phần 3. Câu hỏi trắc nghiệm trả lời ngắn. Thí sinh trả lời từ câu 1 đến câu 6 
+Câu 1. 
+Gieo hai con xúc xắc cân đối, đồng chất. Biết rằng số chấm trên hai con xúc xắc là số nguyên 
+tố. Tính xác suất để tổng số chấm lớn hơn 6  (làm tròn kết quả đến hàng phần trăm). 
+Lời giải 
+Đáp án: 0,56  
+Gọi A là biến cố: “Tổng số chấm lớn hơn 6 ”. 
+B  là biến cố: “Số chấm trên hai con xúc xắc là số nguyên tố”. 
+Ta có: 
+(
+) (
+) (
+) (
+) (
+) (
+) (
+) (
+) (
+)
+
+
+2;2 ; 2;3 ; 2;5 ; 3;2 ; 3;3 ; 3;5 ; 5;2 ; 5;3 ; 5;5
+B =
+;  
+Ta có ( )
+9
+n B =
+, ( )
+6.6
+36
+n =
+=
+. Vậy ( )
+9
+36
+P B =
+;  
+(
+) (
+) (
+) (
+) (
+)
+
+
+(
+)
+2;5 ; 3;5 ; 5;2 ; 5;3 ; 5;5
+5
+AB
+A
+B
+n AB
+=
+
+=
+
+=
+. 
+Do đó (
+)
+5
+36
+P AB =
+. Vậy (
+)
+(
+)
+( )
+5
+|
+0,56
+9
+P AB
+P A B
+P B
+=
+=
+
+. 
+Câu 2. 
+Trong một đêm thi hát, mỗi người phải tham gia hát hai bài : Một bài theo phong cách âm nhạc 
+dân gian, một bài theo phong cách âm nhạc nhạc nhẹ. Một đội có 20  người tham gia đêm thi 
+hát đó. Kết quả là 15 người đạt bài thi theo phong cách âm nhạc dân gian, 17  người đạt bài 
+thi theo phong cách âm nhạc nhạc nhẹ; 2  người không đạt cả hai bài. Chọn ngẫu nhiên một 
+người. Tính xác suất để người đó đạt bài thi theo phong cách âm nhạc nhạc nhẹ biết rằng người 
+đó đạt bài thi theo phong cách âm nhạc dân gian (làm tròn kết quả đến hàng phần trăm). 
+Lời giải 
+Đáp án: 0,93  
+Gọi A là biến cố: “Người đó đạt bài thi theo phong cách âm nhạc nhạc nhẹ”. 
+B  là biến cố: “Người đó đạt bài thi theo phong cách âm nhạc dân gian”. 
+Ta có: 
+( )
+17
+20
+P A =
+; ( )
+15
+20
+P B =
+; (
+)
+2
+20
+P AB =
+. 
+Do đó: 
+(
+)
+(
+)
+2
+18
+1
+1
+20
+20
+P A
+B
+P AB
+
+= −
+= −
+=
+. 
+(
+)
+( )
+( )
+(
+)
+17
+15
+18
+14
+20
+20
+20
+20
+P AB
+P A
+P B
+P A
+B
+=
++
+−
+
+=
++
+−
+=
+. 
+Vậy (
+)
+(
+)
+( )
+14
+|
+0,93
+15
+P AB
+P A B
+P B
+=
+=
+
+. 
+Câu 3. 
+Có hai hộp đựng bi, các viên bi có cùng kích thước và khối lượng. Hộp thứ nhất có 6 viên bi 
+màu đỏ và 2 viên bi màu xanh. Hộp thứ hai có 4 viên bi màu đỏ và 6 viên bi màu xanh. Chọn 
+ngẫu nhiên một hộp và từ đó lấy ngẫu nhiên ra một viên bi. Tính xác suất để lấy được viên bi 
+màu đỏ (kết quả làm tròn đến hàng phần trăm). 
+
+=== TRANG 28 ===
+ 
+ 
+Lời giải 
+Đáp án: 0,58. 
+Xét các biến cố: 
+A: “Lấy được viên bi màu đỏ”; 
+1
+H : “Chọn được hộp thứ nhất”; 
+2
+H : “Chọn được hộp thứ hai”. 
+Do hộp thứ nhất và hộp thứ hai có vai trò như nhau, nên xác suất chọn được một trong hai hộp 
+là như nhau, tức là 
+(
+)
+(
+)
+1
+2
+1
+2
+=
+=
+P H
+P H
+. 
+Ta có  
+(
+)
+1
+6
+|
+8
+=
+P A H
+ và 
+(
+)
+2
+4
+|
+10
+=
+P A H
+. 
+Theo công thức xác suất toàn phần, ta có: 
+( )
+(
+)
+(
+)
+(
+)
+(
+)
+1
+1
+2
+2
+1 6
+1 4
+23
+.
+|
+.
+|
+.
+.
+0,575
+2 8
+2 10
+40
+=
++
+=
++
+=
+=
+P A
+P H
+P A H
+P H
+P A H
+. 
+Vậy xác suất lấy được viên bi màu đỏ là 0,58. 
+Câu 4. 
+Lớp 12A có 60% học sinh nam và 40% học sinh nữ. Trong số học sinh nam có 40% là học 
+sinh giỏi; trong số học sinh nữ có 20% là học sinh giỏi. Chọn ra ngẫu nhiên một học sinh trong 
+lớp. Tính xác suất để học sinh được chọn ra là học sinh nam, biết rằng học sinh đó là học sinh 
+giỏi. 
+Lời giải 
+Đáp án: 0,75. 
+Xét các biến cố: 
+A: “Học sinh được chọn là học sinh nam”; 
+B : “Học sinh được chọn là học sinh giỏi”. 
+Theo bài ra ta có: 
+( )
+0,6
+=
+P A
+; ( )
+0,4
+=
+P A
+; (
+)
+|
+0,4
+=
+P B A
+; (
+)
+|
+0,2
+=
+P B A
+. 
+Áp dụng công thức xác suất toàn phần, ta có: 
+( )
+( )
+(
+)
+( ) (
+)
+.
+|
+.
+|
+0,6.0,4
+0,4.0,2
+0,32
+=
++
+=
++
+=
+P B
+P A P B A
+P A P B A
+ 
+Áp dụng công thức Bayes, ta có: 
+(
+)
+( )
+(
+)
+( )
+.
+|
+0,6.0,4
+|
+0,75
+0,32
+=
+=
+
+P A P B A
+P A B
+P B
+. 
+Vậy xác suất để học sinh được chọn là học sinh nam với điều kiện là học sinh giỏi là 0,75. 
+
+=== TRANG 29 ===
+ 
+ 
+Câu 5. 
+Trong một đợt nghiên cứu tỷ lệ ung thư do hút thuốc lá gây nên, người ta thấy rằng tại tỉnh Hà 
+Nam tỉ lệ người dân của tỉnh nghiện thuốc lá là 20%; tỉ lệ người bị bệnh ung thư trong số người 
+nghiện thuốc lá là 70%, trong số người không nghiện thuốc lá là 15%. Hỏi khi gặp một người 
+bị bệnh ung thư tại tỉnh này thì xác suất người đó nghiện thuốc lá là bao nhiêu ( kết quả làm 
+tròn đến hàng phần trăm)? 
+Lời giải 
+Đáp án: 0,54 
+Gọi A là biến cố “người nghiện thuốc lá”, suy ra A  là biến cố “người không nghiện thuốc lá” 
+Gọi B  là biến cố “người bị bệnh ung thư” 
+Theo giả thiết ta có: 
+( )
+( )
+(
+)
+(
+)
+0,2
+0,8
+|
+0,7
+|
+0,15
+P A
+P A
+P B A
+P B A
+=
+
+=
+=
+=
+ 
+Áp 
+dụng 
+công 
+thức 
+xác 
+suất 
+toàn 
+phần 
+ta 
+có: 
+( )
+( )
+(
+)
+( )
+(
+)
+.
+|
+.
+|
+0,2.0,7
+0,8.0,15
+0,26
+P B
+P A P B A
+P A P B A
+=
++
+=
++
+=
+ 
+Xác suất mà người đó là nghiện thuốc lá khi biết bị bệnh ung thư là 
+(
+)
+|
+P A B  
+Theo công thức Bayes, ta có 
+(
+)
+( )
+(
+)
+( )
+.
+|
+0,2.0,7
+7
+|
+0,54
+0,26
+13
+P A P B A
+P A B
+P B
+=
+=
+=
+
+. 
+Như vậy khi gặp một người bị bệnh ung thư tại tỉnh này thì xác suất (làm tròn đến hàng phần 
+trăm) người đó nghiện thuốc lá là 0,54. 
+Câu 6. 
+Một nhà máy sản xuất bóng đèn có tỉ lệ bóng đèn đạt tiêu chuẩn là 80%. Trước khi xuất ra thị 
+trường, mỗi bóng đèn đều được kiểm tra chất lượng. Vì sự kiểm tra không thể tuyệt đối hoàn 
+hảo nên tỉ lệ công nhận một bóng đèn đạt tiêu chuẩn là 0,9 và tỉ lệ loại bỏ một bóng hỏng là 
+0,95. Hãy tính tỉ lệ bóng đạt tiêu chuẩn sau khi qua khâu kiểm tra chất lượng. 
+Lời giải 
+Đáp án: 0,73 
+Gọi A là biến cố “bóng đạt chuẩn sau khi qua kiểm tra chất lượng” 
+B  là biến cố “sản phẩm đạt tiêu chuẩn”. 
+Theo bài ra ta có: 
+( )
+0,8
+P B =
+; ( )
+1 0,8
+0,2
+P B = −
+=
+ 
+Do tỉ lệ công nhận một bóng đèn đạt tiêu chuẩn là 0,9 nên 
+(
+)
+|
+0,9
+P A B =
+. 
+Tỉ lệ loại bỏ một bóng hỏng là 0,95 nên (
+)
+|
+1 0,95
+0,05
+P A B = −
+=
+. 
+
+=== TRANG 30 ===
+ 
+ 
+Theo công thức xác suất toàn phần ta có: 
+( )
+( )
+(
+)
+( ) (
+)
+.
+|
+.
+|
+0,8.0,9
+0,2.0,05
+0,73
+P A
+P B P A B
+P B P A B
+=
++
+=
++
+=
+. 
+Đáp số: 0,73. 
+-----HẾT----- 
+
